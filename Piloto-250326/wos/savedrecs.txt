@@ -1,0 +1,387 @@
+﻿FN Clarivate Analytics Web of Science
+VR 1.0
+PT J
+AU Cherednichenko, O
+   Maliarenko, V
+   Táncosová, J
+   Nebesky, L
+AF Cherednichenko, Olga
+   Maliarenko, Vladyslav
+   Tancosova, Judita
+   Nebesky, Lubomir
+TI USE OF ARTIFICIAL INTELLIGENCE FOR BUSINESS DECISION-MAKING
+SO ENTREPRENEURSHIP AND SUSTAINABILITY ISSUES
+LA English
+DT Article
+DE ICT for business; Decision Model and Notation (DMN); Decision-making;
+   Large Language Model; Natural Language Processing; Retrieval-Augmented
+   Generation (RAG); Artificial Intelligence (AI)
+AB The Decision Model and Notation (DMN) standard provides a unified framework for the representation of business decisions, with decision tables constituting its central construct. Despite the advantages offered by the manual creation of DMN decision tables from textual descriptions in terms of transparency and analysis, the process is time-consuming and prone to errors. This results in a discrepancy between the textual rules and the formal structures required for automation. The proposed framework integrates Large Language Models (LLMs) with Retrieval-Augmented Generation (RAG), facilitating the automated conversion of natural language descriptions into decision tables. The framework utilises a modular pipeline comprising schema injection, retrieval of relevant domain-specific data, prompt composition, generation, and validation. This design guarantees that the resulting decision tables comply with DMN's rigorous XML-based specification while also capturing the contextual meaning of the original rules. A significant challenge in relying exclusively on LLMs is their proclivity to hallucinate or deviate from the required format. The integration of RAG has been demonstrated to mitigate these issues by grounding generation in reliable sources, enhancing both factual accuracy and structural consistency. The experimental results demonstrate that the LLM-RAG configuration significantly enhances the precision and robustness of generated DMN decision models, producing valid and contextually appropriate outputs with minimal human intervention. The advancement of automation in the field of decision modelling has the potential to enhance the efficiency, transparency and adaptability of decision-making processes. The findings indicate a pathway towards scalable, explainable, and verifiable decision automation across diverse business domains.
+C1 [Cherednichenko, Olga; Tancosova, Judita; Nebesky, Lubomir] Bratislava Univ Econ & Management, Bratislava, Slovakia.
+   [Maliarenko, Vladyslav] Natl Tech Univ, Kharkiv Polytech Inst, Kharkiv, Ukraine.
+C3 Ministry of Education & Science of Ukraine; National Technical
+   University Kharkiv Polytechnic Institute
+RP Cherednichenko, O (corresponding author), Bratislava Univ Econ & Management, Bratislava, Slovakia.
+EM olga.cherednichenko@vsemba.sk; vladyslav.maliarenko@cs.khpi.edu.ua;
+   judita.tancosova@vsemba.sk; lubomir.nebesky@vsemba.sk
+FU EU NextGenerationEU through the Recovery and Resilience Plan for
+   Slovakia [09I03-03-V01-00078]
+FX Funding: This research was funded by the EU NextGenerationEU through the
+   Recovery and Resilience Plan for Slovakia under the project No.
+   09I03-03-V01-00078
+NR 29
+TC 0
+Z9 0
+U1 1
+U2 1
+PU ENTERPRENEURSHIP & SUSTAINABILITY CENTER
+PI VILNUS
+PA M K CIURLIONIO STR 86A, VILNUS, 03100, LITHUANIA
+SN 2345-0282
+J9 ENTREP SUSTAIN ISS
+JI Entrepreneurship. Sustain.
+PD MAR
+PY 2026
+VL 13
+IS 3
+BP 345
+EP 359
+DI 10.9770/r6749942424
+PG 15
+WC Business
+WE Emerging Sources Citation Index (ESCI)
+SC Business & Economics
+GA FA4IS
+UT WOS:001714069700023
+OA gold
+DA 2026-03-25
+ER
+
+PT J
+AU Hoang, M
+   Madisetti, VK
+AF Hoang, Mia
+   Madisetti, Vijay K.
+TI To RAG or Not to RAG, That Is the Question: Effective Text-to-SQL
+   Generation Under Ambiguity
+SO IEEE ACCESS
+LA English
+DT Article
+DE Benchmark testing; Databases; Retrieval augmented generation; Structured
+   Query Language; Pipelines; Business; Training; Toy manufacturing
+   industry; Large language models; Electronic mail; Text-to-SQL; natural
+   language interfaces; query ambiguity resolution; retrieval-augmented
+   generation; curriculum learning; group relative policy optimization;
+   unanswerability detection; large language models; agentic AI; database
+   management
+AB Natural language interfaces to databases promise to democratize data access, yet current text-to-SQL systems fail to address a fundamental challenge: user questions are often ambiguous. Existing benchmarks and frameworks either ignore ambiguity entirely or require extensive training data and domain expertise during inference, limiting their practical deployment. We present two contributions to address this gap. First, we introduce Ambrosia+, a comprehensive benchmark that extends Ambrosia with 2535 unanswerable questions, creating a total of 6777 examples spanning linguistic ambiguity (scope, attachment, vagueness) and unanswerability across 16 domains and multi-table databases. Second, we propose Shakespeare-SQL, an efficient modular framework that integrates adaptive question routing, hybrid retrieval combining structural and semantic similarity, and curriculum-based Group Relative Policy Optimization (GRPO) with AI feedback for interpretation generation. Our framework achieves 72.6% full coverage on the schema-ambiguous AmbiQT benchmark using only 300 training examples-a 36.5% relative improvement over the state-of-the-art DFPL (53.2%). On Ambrosia+, Shakespeare-SQL achieves 73.0% full coverage compared to DFPL's 30.5%, while generating 89% fewer SQL queries. On unambiguous benchmarks, our framework maintains satisfactory performance: 86.7% execution accuracy on SPIDER and 56.8% on BIRD. This work demonstrates that a strategic training methodology outweighs dataset size in ambiguity resolution, enabling production deployment without extensive and costly fine-tuning.
+C1 [Hoang, Mia] Georgia Inst Technol, Coll Comp, Atlanta, GA 30332 USA.
+   [Madisetti, Vijay K.] Georgia Inst Technol, Sch Cybersecur & Privacy, Atlanta, GA 30332 USA.
+C3 University System of Georgia; Georgia Institute of Technology;
+   University System of Georgia; Georgia Institute of Technology
+RP Madisetti, VK (corresponding author), Georgia Inst Technol, Sch Cybersecur & Privacy, Atlanta, GA 30332 USA.
+EM vkm@gatech.edu
+NR 39
+TC 0
+Z9 0
+U1 0
+U2 0
+PU IEEE-INST ELECTRICAL ELECTRONICS ENGINEERS INC
+PI PISCATAWAY
+PA 445 HOES LANE, PISCATAWAY, NJ 08855-4141 USA
+SN 2169-3536
+J9 IEEE ACCESS
+JI IEEE Access
+PY 2026
+VL 14
+BP 35440
+EP 35458
+DI 10.1109/ACCESS.2026.3670064
+PG 19
+WC Computer Science, Information Systems; Engineering, Electrical &
+   Electronic; Telecommunications
+WE Science Citation Index Expanded (SCI-EXPANDED)
+SC Computer Science; Engineering; Telecommunications
+GA EW1AW
+UT WOS:001711131800036
+OA Green Submitted, gold
+DA 2026-03-25
+ER
+
+PT J
+AU Wang, RZ
+   Zhang, XS
+   Liu, QL
+   Su, JQ
+   Zhang, YZ
+   Ma, YL
+AF Wang, Runzhou
+   Zhang, Xinsheng
+   Liu, Qilei
+   Su, Jinqi
+   Zhang, Yuezhou
+   Ma, Yulong
+TI Visual information identification and Q&A of intangible cultural
+   heritage inheritors by using enhanced Graph-Retrieval framework
+SO NPJ HERITAGE SCIENCE
+LA English
+DT Article
+ID EXTRACTION; IMAGES
+AB Visual business cards provide a digital medium for presenting information on intangible cultural heritage (ICH) inheritors. Accurately recognizing these cards allows the extraction of key details that, when combined with large language models, support semantic understanding and contextual reasoning to generate enriched cultural content. This study introduces a Graph-Retrieval framework that integrates graph-based methods with retrieval-augmented generation for visual information recognition and ICH-related question answering. A dataset of Chinese ICH inheritors' visual cards was built, covering 10 information types. To enhance extraction robustness, graph feature enhancement is applied through semantic recognition, random node masking, and edge deletion, while positional attention captures spatial relationships. A complementary Loop-RAG strategy dynamically integrates external knowledge with inner-outer loop retrieval. Experiments show the Graph-Retrieval framework surpasses benchmarks on multiple datasets, achieving a macro-average F1 of 0.928, with ablation studies validating feature enhancements. Loop-RAG also excels in report generation, question answering and few-shot conditions.
+C1 [Wang, Runzhou; Liu, Qilei; Su, Jinqi] Xian Univ Posts & Telecommun, Sch Econ & Management, Xian, Peoples R China.
+   [Zhang, Xinsheng; Ma, Yulong] Xian Univ Architecture & Technol, Sch Management, Xian, Peoples R China.
+   [Zhang, Yuezhou] Northwestern Polytech Univ, Inst Flexible Elect, Xian, Peoples R China.
+C3 Xi'an University of Posts & Telecommunications; Xi'an University of
+   Architecture & Technology; Northwestern Polytechnical University
+RP Wang, RZ (corresponding author), Xian Univ Posts & Telecommun, Sch Econ & Management, Xian, Peoples R China.
+EM wrz@xupt.edu.cn
+FU Shaanxi Provincial Social Science Fund [No.2024R055]; Humanities and
+   Social Sciences Research Planning Fund Project of the Ministry of
+   Education [No.24YJA630129]; Science Research Project of Shaanxi
+   Provincial Education Department [No.25JK023]
+FX This work was supported by the Humanities and Social Sciences Research
+   Planning Fund Project of the Ministry of Education (No.24YJA630129);
+   Shaanxi Provincial Social Science Fund (No.2024R055). Science Research
+   Project of Shaanxi Provincial Education Department (No.25JK023).
+NR 50
+TC 0
+Z9 0
+U1 2
+U2 2
+PU SPRINGER
+PI NEW YORK
+PA ONE NEW YORK PLAZA, SUITE 4600, NEW YORK, NY, UNITED STATES
+EI 3059-3220
+J9 NPJ HERIT SCI
+JI npj Herit. Sci.
+PD FEB 20
+PY 2026
+VL 14
+IS 1
+AR 113
+DI 10.1038/s40494-026-02384-z
+PG 19
+WC Humanities, Multidisciplinary; Chemistry, Analytical; Materials Science,
+   Multidisciplinary; Spectroscopy
+WE Science Citation Index Expanded (SCI-EXPANDED); Arts &amp; Humanities Citation Index (A&amp;HCI)
+SC Arts & Humanities - Other Topics; Chemistry; Materials Science;
+   Spectroscopy
+GA DZ5HZ
+UT WOS:001695791600001
+OA hybrid
+DA 2026-03-25
+ER
+
+PT J
+AU Meddeb, S
+   Batti, S
+   Fathallah, H
+AF Meddeb, Sourour
+   Batti, Selma
+   Fathallah, Habib
+TI BPMN DMN decision table generation based on agentic AI for critical
+   applications
+SO BUSINESS PROCESS MANAGEMENT JOURNAL
+LA English
+DT Article; Early Access
+DE Agentic artificial intelligence; BPMN (business process model and
+   notation); DMN (decision model and notation); Decision tables; Large
+   language models (LLMs); ReAct (reasoning plus acting);
+   Retrieval-augmented generation (RAG); Critical systems; Decision-making
+   processes; Business process optimization; Supply chain management;
+   Automated decision support systems
+ID ARTIFICIAL-INTELLIGENCE; MANAGEMENT
+AB PurposeThis study investigates the feasibility of developing an automated solution that can generate dynamic decision tables from business process model and notation (BPMN)models using agentic artificial intelligence (AI). This work purpose is to reduce human error, inconsistencies and cognitive biases that can be introduced by traditional decision management in BPMN environments, which is often achieved by manually creating decision model and notation (DMN) decision tables (Richter et al., 2025).Design/methodology/approachA novel AI-based solution is developed to generate dynamic decision tables from BPMN models. The proposed system integrates large language models within an agentic AI framework that autonomously analyses BPMN processes, identifies decision points and produces optimized DMN tables. The system employs agents for BPMN analysis, decision extraction, rule generation and validation, coordinated through a ReAct (Reasoning + Acting) engine with retrieval-augmented generation (RAG) capabilities (Zhang et al., 2025; Braunschweiler et al., 2025).FindingsExperimental evaluation of critical applications demonstrated that the system enhances decision-making by suggesting decision tables with values that humans might not intuitively identify. The system optimizes processes by transforming ambiguous paths into precise decisions. The framework is particularly effective in identifying non-obvious decision criteria and threshold parameters, resulting in significant process automation improvements.Practical implicationsThis approach establishes the foundation for intelligent, adaptive decision support systems within mission-critical environments and autonomous decision modeling that can dynamically adapt to evolving business requirements.Originality/valueThis innovative approach represents the implementation of agentic AI specifically designed for automated DMN decision table generation from BPMN models, addressing a gap in the literature.
+C1 [Meddeb, Sourour; Batti, Selma; Fathallah, Habib] Univ Carthage, Fac Sci Bizerte, Bizerte, Tunisia.
+C3 Universite de Carthage
+RP Meddeb, S (corresponding author), Univ Carthage, Fac Sci Bizerte, Bizerte, Tunisia.
+EM sourour.meddeb@fsb.ucar.tn; Selma.batti@fsb.ucar.tn;
+   habib.fathallah@fsb.ucar.tn
+OI Meddeb, Sourour/0009-0000-8697-6909
+NR 89
+TC 0
+Z9 0
+U1 10
+U2 10
+PU EMERALD GROUP PUBLISHING LTD
+PI Leeds
+PA Floor 5, Northspring 21-23 Wellington Street, Leeds, W YORKSHIRE,
+   ENGLAND
+SN 1463-7154
+EI 1758-4116
+J9 BUS PROCESS MANAG J
+JI Bus. Process. Manag. J.
+PD 2026 JAN 22
+PY 2026
+DI 10.1108/BPMJ-08-2025-1254
+EA JAN 2026
+PG 34
+WC Business; Management
+WE Social Science Citation Index (SSCI)
+SC Business & Economics
+GA CH9FW
+UT WOS:001666191300001
+DA 2026-03-25
+ER
+
+PT J
+AU Leonard, E
+   Sheehan, B
+   Mullins, M
+   Shannon, D
+AF Leonard, Eamon
+   Sheehan, Barry
+   Mullins, Martin
+   Shannon, Darren
+TI Generative AI for enhanced risk management in SMEs
+SO JOURNAL OF RISK RESEARCH
+LA English
+DT Article; Early Access
+DE Risk management cycle; risk register; generative artificial
+   intelligence; SMEs; retrieval augmented generation
+AB Establishing and sustaining small and medium-sized enterprises (SMEs) presents considerable challenges. Entrepreneurs must navigate limited resources and significant knowledge gaps across a spectrum of information requirements-from health and safety to corporate governance, taxation, and personnel management. Despite the extensive deployment of generative artificial intelligence (GAI) across sectors such as medicine, education, and finance, its application and research in SME risk management remain notably sparse. This research aims to bridge this gap by showcasing the benefits of GAI within the risk management cycle, which is critical to enhancing the prospects of success among smaller business entities. With rapid technological advancements and the widespread integration of GAI in office and home settings, an opportunity arises to develop customised risk management tools specifically tailored for SMEs. The analysis outlines a conceptual case study in the food and beverage sector, where an entrepreneur launches a new restaurant. The study tracks GAI's iterative application across all phases of the risk management cycle: identification, comprehension, assessment, treatment, and monitoring. Specifically, it integrates retrieval augmented generation (RAG), which accesses and incorporates information from the Irish Health and Safety Authority (HSA) into its processes. Additionally, GAI assistants are created and employed to execute tasks integral to the risk management cycle, such as calculating risk factors. A key outcome is the creation of a risk register for each potential hazard, demonstrating GAI's practical application in risk assessment. These tools illustrate the potential of GAI to navigate the complex, information-dense, and regulatory-heavy landscape of contemporary business environments. This exploration underscores how GAI can improve decision-making and risk evaluation and promotes further discussion and research on developing user-friendly GAI technologies.
+C1 [Leonard, Eamon; Sheehan, Barry; Mullins, Martin; Shannon, Darren] Univ Limerick, Kemmy Business Sch, Limerick, Ireland.
+C3 University of Limerick
+RP Leonard, E (corresponding author), Univ Limerick, Kemmy Business Sch, Limerick V94 PH93, Ireland.
+EM eamon.leonard@ul.ie
+RI Shannon, Darren/AAX-4421-2021; Sheehan, Barry/W-4850-2019
+FU Interreg [Project ID 01C0232]
+FX This sudy was funded by Interreg Europe Funding supported this work
+   under the Applied Data-Science and AI for proactive SME service
+   (PROACTsme) project, Project ID 01C0232.
+NR 78
+TC 0
+Z9 0
+U1 1
+U2 1
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 1366-9877
+EI 1466-4461
+J9 J RISK RES
+JI J. Risk Res.
+PD 2026 FEB 17
+PY 2026
+DI 10.1080/13669877.2026.2627597
+EA FEB 2026
+PG 34
+WC Social Sciences, Interdisciplinary
+WE Social Science Citation Index (SSCI)
+SC Social Sciences - Other Topics
+GA EJ4WA
+UT WOS:001702548700001
+DA 2026-03-25
+ER
+
+PT J
+AU Almutairy, F
+   Almutairi, S
+   Abdullah, M
+   Salman, S
+AF Almutairy, Fayha
+   Almutairi, Shahad
+   Abdullah, Milaf
+   Salman, Sara
+TI SmartLaw Advisor: AI-Powered Legal Consultation and Contract Analysis
+   for Saudi Arabia
+SO IEEE ACCESS
+LA English
+DT Article
+DE Law; Artificial intelligence; Contracts; Accuracy; Pipelines;
+   Reliability; Fraud; Business; Semantics; Chatbots; AI law; artificial
+   intelligence; legislation; contract analysis; legal advice
+AB The complexity of local laws and the scarcity of affordable legal support in Saudi Arabia make discerning legal issues a challenge. The scarcity of Arabic digital assistants and the absence of innovative platforms compatible with Saudi legislation compound this challenge. We present an innovative virtual legal advisory platform to enhance access to legal help using state-of-the-art language models. The system is designed around two main functions: 1) a legal chatbot built on Google's Gemini 1.5, with a standard RAG (Retrieval-Augmented Generation) pipeline and a custom Arabic legal corpus based on official Saudi regulations; and 2) a contract analysis system that extracts and classifies Arabic legal documents to determine their compliance with national law. With a simple RAG formulation, the model retrieves relevant legal texts via semantic matching and produces precise, regulation-aligned answers without needing to retrain it. The system was evaluated on 150 legal questions across ten domains and tested on 50 real contract drafts. Gemini outperformed models such as GPT-4, GPT-3.5, Command-A, and ALLaM in terms of accuracy (98.67%), response speed, and expert evaluation. This work demonstrates how AI can provide affordable and efficient legal advice in Arabic and contribute to Saudi Arabia's digital transformation and Vision 2030. The system was further validated using a legally verified Saudi corpus and an expert-reviewed dataset comprising 150 legal questions and 50 contract samples, ensuring methodological rigor and dataset reliability.
+C1 [Almutairy, Fayha; Almutairi, Shahad; Abdullah, Milaf; Salman, Sara] Shaqra Univ, Coll Comp & Informat Technol, Dept Comp Sci, Shaqra 11961, Saudi Arabia.
+C3 Shaqra University
+RP Almutairy, F (corresponding author), Shaqra Univ, Coll Comp & Informat Technol, Dept Comp Sci, Shaqra 11961, Saudi Arabia.
+EM Fayha.Almutairy@gmail.com
+RI Almutairy, Fayha/T-7953-2018
+NR 29
+TC 0
+Z9 0
+U1 0
+U2 0
+PU IEEE-INST ELECTRICAL ELECTRONICS ENGINEERS INC
+PI PISCATAWAY
+PA 445 HOES LANE, PISCATAWAY, NJ 08855-4141 USA
+SN 2169-3536
+J9 IEEE ACCESS
+JI IEEE Access
+PY 2026
+VL 14
+BP 32638
+EP 32654
+DI 10.1109/ACCESS.2026.3665420
+PG 17
+WC Computer Science, Information Systems; Engineering, Electrical &
+   Electronic; Telecommunications
+WE Science Citation Index Expanded (SCI-EXPANDED)
+SC Computer Science; Engineering; Telecommunications
+GA ER7PK
+UT WOS:001708173300030
+OA Green Submitted, gold
+DA 2026-03-25
+ER
+
+PT J
+AU Duan, YK
+   Zhao, GY
+   Geng, Q
+   Ji, P
+   Jin, J
+AF Duan, Yongkang
+   Zhao, Guangyu
+   Geng, Qian
+   Ji, Ping
+   Jin, Jian
+TI From reactive to proactive policy implement method through intelligent
+   enterprise matching
+SO ENTERPRISE INFORMATION SYSTEMS
+LA English
+DT Article
+DE Policy-enterprise matching; large language models; enterprise risk
+   prediction; retrieval-augmented generation; micro, small and
+   medium-sized enterprises; cross-region recommendation
+AB Despite the availability of pro-business policies, many micro, small and medium-sized enterprises (MSMEs) struggle to effectively utilise these resources due to limited capacity. This study proposes an policy-enterprise matching framework that transforms 'enterprises seeking policies' approach into a 'policies seeking enterprises' mechanism. The mechanism uses large language models (LLMs) as tool for extracting policy restrictive clauses and generating compliance checking strategies. Meanwhile, machine learning methods are used for enterprise risk prediction. The matching framework broadens the research perspective of policy analysis and risk prediction, and provides government staff with decision support based on risk prediction.
+C1 [Duan, Yongkang; Zhao, Guangyu; Geng, Qian; Jin, Jian] Beijing Normal Univ, Dept Informat Management, B503,Main Bldg,19 Xinjiekouwai St, Beijing 100875, Peoples R China.
+   [Duan, Yongkang] Beijing Univ Posts & Telecommun, Sch Comp Sci, Natl Pilot Software Engn Sch, Beijing, Peoples R China.
+   [Duan, Yongkang] Beijing Zhongguancun Acad, Beijing, Peoples R China.
+   [Ji, Ping] Khalifa Univ Sci & Technol, Dept Management Sci & Engn, Abu Dhabi, U Arab Emirates.
+C3 Beijing Normal University; Beijing University of Posts &
+   Telecommunications; Khalifa University of Science & Technology
+RP Jin, J (corresponding author), Beijing Normal Univ, Dept Informat Management, B503,Main Bldg,19 Xinjiekouwai St, Beijing 100875, Peoples R China.
+EM jinjian.jay@bnu.edu.cn
+FU Fundamental Research Funds for the Central Universities [1253200058];
+   National Natural Science Foundation of China [72374030]
+FX This work was supported by the National Natural Science Foundation of
+   China [No.72374030] and the Fundamental Research Funds for the Central
+   Universities [No. 1253200058].
+NR 53
+TC 0
+Z9 0
+U1 0
+U2 0
+PU TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OR14 4RN, OXON, ENGLAND
+SN 1751-7575
+EI 1751-7583
+J9 ENTERP INF SYST-UK
+JI Enterp. Inf. Syst.
+PD MAR 4
+PY 2026
+VL 20
+IS 3
+DI 10.1080/17517575.2026.2628701
+EA FEB 2026
+PG 33
+WC Computer Science, Information Systems
+WE Science Citation Index Expanded (SCI-EXPANDED)
+SC Computer Science
+GA EP2YS
+UT WOS:001689471400001
+DA 2026-03-25
+ER
+
+EF
