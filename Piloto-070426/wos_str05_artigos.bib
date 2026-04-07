@@ -1,0 +1,2153 @@
+﻿
+@article{ WOS:001662651700001,
+Author = {Jiang, Zhuoxuan and Zhang, Tianyang and Bai, Shengguang and Lin, Lin and
+   Zhang, Haotian and Xun, Yinong and Ren, Jiawei and Si, Wen and Zhang,
+   Shaohua},
+Title = {Towards enterprise-specific question-answering for IT operations and
+   maintenance based on retrieval-augmented generation mechanism},
+Journal = {EXPERT SYSTEMS WITH APPLICATIONS},
+Year = {2026},
+Volume = {307},
+Month = {APR 25},
+Abstract = {In the field of IT operations and maintenance, Question-Answering (QA)
+   systems are very important for fault diagnosis, employee training,
+   knowledge management and other aspects of providing high-quality
+   services. While Large Language Models (LLMs) have significantly enhanced
+   the performance of open-domain QA, the efficient handling of
+   enterprise-exclusive corpora and the development of domain-specific high
+   intelligent QA systems (e.g., QA for troubleshooting) remain
+   underexplored in application settings. This paper proposes a
+   comprehensive methodology based on Retrieval Augmented Generation (RAG)
+   to facilitate the entire process of establishing such QA systems for IT
+   operations and maintenance. Our methodology consists of two main
+   components: (1) Offline Models Fine-tuning \& Data Vectorization and (2)
+   Online QA System Process. In the first component, we design a general
+   data preprocessing pipeline and employ a contrastive learning method
+   with two negative sampling strategies, i.e., Homogeneous In-Batch
+   Sampling (HIS) and Auxiliary Hard Negative Sampling (AHNS), to fine-tune
+   the embedding model. We also design instruction templates to fine-tune
+   the LLM using Continue Pre-Training (CPT) and Retrieval Augmented
+   Fine-Tuning (RAFT). In the second component, we develop an efficient
+   RAG-based QA system process for online deployment. We gather
+   enterprise-specific data from the domain of cloud computing, and our
+   extensive experiments on the data demonstrate that the proposed methods
+   outperforms counterparts on various QA tasks which have different
+   difficulty levels. The experiments also illustrate a practical
+   application of the proposed methodology in real-world enterprise-level
+   scenarios.},
+Publisher = {PERGAMON-ELSEVIER SCIENCE LTD},
+Address = {THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, ENGLAND},
+Type = {Article},
+Language = {English},
+Affiliation = {Jiang, ZX (Corresponding Author), Shanghai Business Sch, Shanghai, Peoples R China.
+   Jiang, Zhuoxuan; Si, Wen; Zhang, Shaohua, Shanghai Business Sch, Shanghai, Peoples R China.
+   Zhang, Tianyang; Bai, Shengguang; Zhang, Haotian; Xun, Yinong; Ren, Jiawei, Learnable Ai, Shanghai, Peoples R China.
+   Lin, Lin, UCloud Technol Co Ltd, Shanghai, Peoples R China.},
+DOI = {10.1016/j.eswa.2025.130961},
+EarlyAccessDate = {JAN 2026},
+Article-Number = {130961},
+ISSN = {0957-4174},
+EISSN = {1873-6793},
+Keywords = {IT operations and maintenance; Question-answering system; Large language
+   model; Retrieval augmented generation},
+Research-Areas = {Computer Science; Engineering; Operations Research \& Management Science},
+Web-of-Science-Categories  = {Computer Science, Artificial Intelligence; Engineering, Electrical \&
+   Electronic; Operations Research \& Management Science},
+Author-Email = {jzx@sbs.edu.cn
+   tianyang.zhang@learnable.ai
+   shengguang.bai@learnable.ai
+   lesley.lin@ucloud.cn
+   tianyang.zhang@learnable.ai
+   yinong.xun@learnable.ai
+   jiawei.ren@learnable.ai
+   siw@sbs.edu.cn
+   tianyang.zhang@learnable.ai},
+Affiliations = {Shanghai Business School},
+ResearcherID-Numbers = {Jiang, Zhuoxuan/IVV-3034-2023},
+Funding-Acknowledgement = {Shanghai Science International Cooperation Project, China
+   {[}24170790602]; Program of Shanghai Committee of Science and
+   Technology, China {[}24511103204]; Natural Science Foundation of
+   Shanghai {[}25ZR1401273]; Artificial Intelligence Promotion on the
+   Reform of Scientific Research Paradigms of Shanghai Committee of
+   Education, China},
+Funding-Text = {This work is supported by the Shanghai Science International Cooperation
+   Project, China (Grant No. 24170790602) , the Program of Shanghai
+   Committee of Science and Technology, China (Grant No. 24511103204) , the
+   Natural Science Foundation of Shanghai (Grant No. 25ZR1401273) , and the
+   2024 special program of Artificial Intelligence Promotion on the Reform
+   of Scientific Research Paradigms of Shanghai Committee of Education,
+   China.},
+Number-of-Cited-References = {67},
+Times-Cited = {0},
+Usage-Count-Last-180-days = {8},
+Usage-Count-Since-2013 = {8},
+Journal-ISO = {Expert Syst. Appl.},
+Doc-Delivery-Number = {CC7DD},
+Web-of-Science-Index = {Science Citation Index Expanded (SCI-EXPANDED)},
+Unique-ID = {WOS:001662651700001},
+DA = {2026-04-07},
+}
+
+@article{ WOS:001643474000033,
+Author = {Yang, Jie-Si and Zeng, Zhuoqi and Shen, Zijian},
+Title = {Neural-Symbolic Dual-Indexing Architectures for Scalable
+   Retrieval-Augmented Generation},
+Journal = {IEEE ACCESS},
+Year = {2025},
+Volume = {13},
+Pages = {210507-210519},
+Abstract = {Contemporary retrieval-augmented generation systems face a fundamental
+   trade-off between semantic comprehensiveness and computational
+   tractability when scaling to billion-token corpora. We present a unified
+   framework that reconciles this tension through neural-symbolic
+   dual-indexing, wherein sparse graph skeletons constructed from
+   high-centrality document chunks enable structured reasoning, while
+   complementary bipartite keyword indices ensure broad semantic coverage.
+   Our architecture achieves this decomposition by formulating retrieval as
+   a constrained optimization problem over heterogeneous index structures,
+   employing Prize-Collecting Steiner Trees for subgraph extraction and
+   Personalized PageRank for multi-hop traversal. Through synergistic
+   integration of Graph Neural Networks with vector embeddings, the system
+   performs explicit relational reasoning while maintaining sub-second
+   query latency. Empirical evaluation across 6.0 benchmark datasets
+   demonstrates that selective skeleton construction from the top 20.0\% of
+   chunks-identified via eigenvector centrality on k-nearest neighbor
+   graphs-yields 10.0x cost reduction relative to exhaustive knowledge
+   graph construction while improving generation quality by 32.4\% and
+   retrieval coverage by 92.4\%. Furthermore, neural-symbolic coupling
+   enables 7.0-billion parameter models to match GPT-4 performance on
+   multi-hop question answering through single-step graph-guided inference,
+   eliminating iterative retrieval overhead. Production deployments
+   validate sub-200.0ms latency at scale through hierarchical caching
+   strategies that reduce time-to-first-token by 4.0x. The proposed
+   framework establishes dual-indexing as the canonical architecture for
+   enterprise retrieval systems, providing a principled methodology for
+   balancing semantic understanding against structured reasoning in
+   large-scale information access.},
+Publisher = {IEEE-INST ELECTRICAL ELECTRONICS ENGINEERS INC},
+Address = {445 HOES LANE, PISCATAWAY, NJ 08855-4141 USA},
+Type = {Article},
+Language = {English},
+Affiliation = {Zeng, ZQ (Corresponding Author), NYU, New York, NY 11201 USA.
+   Yang, Jie-Si, Univ Utah, Salt Lake City, UT 84112 USA.
+   Zeng, Zhuoqi, NYU, New York, NY 11201 USA.
+   Shen, Zijian, Carnegie Mellon Univ, Pittsburgh, PA 15213 USA.},
+DOI = {10.1109/ACCESS.2025.3638761},
+ISSN = {2169-3536},
+Keywords = {Cognition; Knowledge graphs; Indexing; Skeleton; Graph neural networks;
+   Semantics; Retrieval augmented generation; Optimization; Computer
+   architecture; Iterative methods; Retrieval-augmented generation;
+   knowledge graphs; multi-hop reasoning; information retrieval},
+Research-Areas = {Computer Science; Engineering; Telecommunications},
+Web-of-Science-Categories  = {Computer Science, Information Systems; Engineering, Electrical \&
+   Electronic; Telecommunications},
+Author-Email = {zz3810@nyu.edu},
+Affiliations = {Utah System of Higher Education; University of Utah; New York
+   University; Carnegie Mellon University},
+ResearcherID-Numbers = {Yang, Jie-Si/OUH-8167-2025
+   Zeng, Zhuoqi/PFR-7594-2026
+   },
+ORCID-Numbers = {Yang, Jie-Si/0000-0002-9826-4252
+   Zeng, Zhuoqi/0009-0007-9499-7735
+   Shen, Zijian/0009-0001-1157-6510},
+Number-of-Cited-References = {60},
+Times-Cited = {0},
+Usage-Count-Last-180-days = {2},
+Usage-Count-Since-2013 = {2},
+Journal-ISO = {IEEE Access},
+Doc-Delivery-Number = {AA4LH},
+Web-of-Science-Index = {Science Citation Index Expanded (SCI-EXPANDED)},
+Unique-ID = {WOS:001643474000033},
+OA = {Green Submitted, gold},
+DA = {2026-04-07},
+}
+
+@article{ WOS:001591900300031,
+Author = {Wang, Sili and Yang, Heng and Bai, Guangzu},
+Title = {Construction of intelligent decision support systems through integration
+   of retrieval-augmented generation and knowledge graphs},
+Journal = {SCIENTIFIC REPORTS},
+Year = {2025},
+Volume = {15},
+Number = {1},
+Month = {OCT 10},
+Abstract = {This article proposes a novel framework for intelligent decision support
+   systems based on retrieval augmented generation models and knowledge
+   graphs, in order to overcome the shortcomings of current approaches.
+   Systems Like Mistral 7B, LLaMA-2, and others tend to fail at contextual
+   understanding, transparency, and reasoning over many steps involving
+   many domains. Our proposed architecture combines the strengths of
+   generative models, enhanced by external knowledge retrieval, with
+   structured, linked representations of domain knowledge. With this
+   synergy, we show improvement in decision accuracy, reasoning
+   transparency, and context relevance compared to using either technology
+   alone. The structure has a flexible knowledge orchestration layer that
+   optimizes information exchange between structured representations and
+   generative capabilities. Research conducted on three areas, namely,
+   financial services, healthcare management, and the supply chain has
+   shown that our method performs particularly well when it comes to
+   cross-domain reasoning and ambiguous queries. This study deepens our
+   understanding of knowledge-enhancing artificial intelligence systems as
+   well as offers a roadmap for a next-generation decision support system.
+   The framework is designed to tackle some of the most challenging issues
+   faced by enterprises in making decisions. In particular, it draws from
+   both context and expertise to provide explainable recommendations.},
+Publisher = {NATURE PORTFOLIO},
+Address = {HEIDELBERGER PLATZ 3, BERLIN, 14197, GERMANY},
+Type = {Article},
+Language = {English},
+Affiliation = {Wang, SL (Corresponding Author), Chinese Acad Sci, Northwest Inst Ecoenvironm \& Resources, Key Lab Ecol Safety \& Sustainable Dev Arid Lands, Lanzhou 730000, Peoples R China.
+   Wang, SL (Corresponding Author), Key Lab Knowledge Comp \& Intelligent Decis, Lanzhou 730000, Gansu, Peoples R China.
+   Wang, Sili; Yang, Heng; Bai, Guangzu, Chinese Acad Sci, Northwest Inst Ecoenvironm \& Resources, Key Lab Ecol Safety \& Sustainable Dev Arid Lands, Lanzhou 730000, Peoples R China.
+   Wang, Sili; Yang, Heng; Bai, Guangzu, Key Lab Knowledge Comp \& Intelligent Decis, Lanzhou 730000, Gansu, Peoples R China.},
+DOI = {10.1038/s41598-025-19257-3},
+Article-Number = {35462},
+ISSN = {2045-2322},
+Keywords = {Intelligent decision support systems; Retrieval-augmented generation;
+   Knowledge graphs; Hybrid AI; Explainable AI; Enterprise decision-making;
+   Semantic integration; Neural-symbolic systems},
+Research-Areas = {Science \& Technology - Other Topics},
+Web-of-Science-Categories  = {Multidisciplinary Sciences},
+Author-Email = {wangsl@llas.ac.cn},
+Affiliations = {Chinese Academy of Sciences},
+Funding-Acknowledgement = {Natural Science Foundation of Gansu Province {[}23JRRA581]},
+Funding-Text = {This research was supported by the Natural Science Foundation of Gansu
+   Province (No. 23JRRA581)},
+Number-of-Cited-References = {34},
+Times-Cited = {2},
+Usage-Count-Last-180-days = {19},
+Usage-Count-Since-2013 = {19},
+Journal-ISO = {Sci Rep},
+Doc-Delivery-Number = {8MB4S},
+Web-of-Science-Index = {Science Citation Index Expanded (SCI-EXPANDED)},
+Unique-ID = {WOS:001591900300031},
+OA = {Green Submitted, gold},
+DA = {2026-04-07},
+}
+
+@article{ WOS:001177602100001,
+Author = {O'Leary, Daniel E.},
+Title = {The Rise and Design of Enterprise Large Language Models},
+Journal = {IEEE INTELLIGENT SYSTEMS},
+Year = {2024},
+Volume = {39},
+Number = {1},
+Pages = {60-63},
+Month = {JAN},
+Abstract = {This article investigates a new phenomenon of enterprise large language
+   models (ELLMs) focusing on what they are, why they are being developed,
+   and what are some key capabilities. In addition, the article drills down
+   on issues associated with integrating retrieval augmented generation
+   approaches into ELLMs, including emerging research issues.},
+Publisher = {IEEE COMPUTER SOC},
+Address = {10662 LOS VAQUEROS CIRCLE, PO BOX 3014, LOS ALAMITOS, CA 90720-1314 USA},
+Type = {Article},
+Language = {English},
+Affiliation = {O'Leary, DE (Corresponding Author), Univ Southern Calif, Los Angeles, CA 90007 USA.
+   O'Leary, Daniel E., Univ Southern Calif, Los Angeles, CA 90007 USA.},
+DOI = {10.1109/MIS.2023.3345591},
+ISSN = {1541-1672},
+EISSN = {1941-1294},
+Keywords = {Focusing; Intelligent systems},
+Research-Areas = {Computer Science; Engineering},
+Web-of-Science-Categories  = {Computer Science, Artificial Intelligence; Engineering, Electrical \&
+   Electronic},
+Author-Email = {oleary@usc.edu},
+Affiliations = {University of Southern California},
+ResearcherID-Numbers = {O'Leary, Daniel Edmund/B-6469-2008},
+ORCID-Numbers = {O'Leary, Daniel Edmund/0000-0002-5240-9516},
+Number-of-Cited-References = {8},
+Times-Cited = {6},
+Usage-Count-Last-180-days = {2},
+Usage-Count-Since-2013 = {53},
+Journal-ISO = {IEEE Intell. Syst.},
+Doc-Delivery-Number = {KB8W7},
+Web-of-Science-Index = {Science Citation Index Expanded (SCI-EXPANDED)},
+Unique-ID = {WOS:001177602100001},
+DA = {2026-04-07},
+}
+
+@article{ WOS:001518764300041,
+Author = {Liu, Jie and Chu, Shiwei},
+Title = {Text2SQL Business Intelligence System Based on Retrieval-Augmented
+   Generation (RAG)},
+Journal = {ENGINEERING REPORTS},
+Year = {2025},
+Volume = {7},
+Number = {6},
+Month = {JUN},
+Abstract = {Modern enterprises increasingly depend on data-driven decision-making,
+   yet traditional SQL queries require technical expertise, limiting
+   accessibility for nonspecialists. Advances in natural language
+   processing, particularly deep learning generative models, have enabled
+   text-to-SQL (text2SQL) conversion, making database interaction more
+   intuitive. Retrieval-Augmented Generation (RAG) enhances this by
+   integrating retrieval and generation for greater accuracy and relevance.
+   This article proposes a text2SQL business intelligence system based on
+   RAG, allowing enterprise users to extract insights from complex
+   databases using natural language queries. By streamlining data retrieval
+   and lowering technical barriers, the system achieves state-of-the-art
+   performance in generating SQL queries for complex tasks. It leverages
+   the BERT (Bidirectional Encoder Representations from Transformers) model
+   for vectorized retrieval, Generative Pretrained Transformer 4 (GPT-4)
+   for query generation, and Graph Neural Networks (GNNs) for modeling
+   database structures. User interaction and feedback mechanisms further
+   refine semantic understanding and query accuracy. Experimental results
+   demonstrate the system's effectiveness. For multitable joins, query
+   matching accuracy using BERT + GPT-4 + GNN reaches 52.3\% and 55.1\%
+   with beam widths of 1 and 10, respectively. For nested queries involving
+   multitable joins, accuracy increases to 60.2\% and 61.9\% under the same
+   conditions. Additionally, the system achieves the highest user
+   satisfaction scores, validating its practical utility. By enhancing the
+   ability to handle complex queries and reducing data access barriers, the
+   proposed RAG-based text2SQL system provides enterprise users with an
+   efficient, user-friendly tool for database interaction, significantly
+   improving decision-making processes.},
+Publisher = {WILEY},
+Address = {111 RIVER ST, HOBOKEN 07030-5774, NJ USA},
+Type = {Article},
+Language = {English},
+Affiliation = {Chu, SW (Corresponding Author), Anhui Univ, Sch Elect \& Informat Engn, Hefei, Peoples R China.
+   Liu, Jie, iFLYTEK Co Ltd, Hefei, Peoples R China.
+   Chu, Shiwei, Anhui Univ, Sch Elect \& Informat Engn, Hefei, Peoples R China.},
+DOI = {10.1002/eng2.70249},
+Article-Number = {e70249},
+EISSN = {2577-8196},
+Keywords = {business intelligence systems; natural language big models; natural
+   language queries; retrieval-augmented generation; text to structured
+   query language},
+Research-Areas = {Computer Science; Engineering; Materials Science},
+Web-of-Science-Categories  = {Computer Science, Interdisciplinary Applications; Engineering,
+   Multidisciplinary; Materials Science, Multidisciplinary},
+Author-Email = {chushiwei2022@bjfu.edu.cn},
+Affiliations = {Anhui University},
+ResearcherID-Numbers = {chu, shiwei/ODM-8168-2025},
+Number-of-Cited-References = {31},
+Times-Cited = {0},
+Usage-Count-Last-180-days = {4},
+Usage-Count-Since-2013 = {6},
+Journal-ISO = {Eng. Rep.},
+Doc-Delivery-Number = {4IK5V},
+Web-of-Science-Index = {Emerging Sources Citation Index (ESCI)},
+Unique-ID = {WOS:001518764300041},
+OA = {Green Submitted, gold},
+DA = {2026-04-07},
+}
+
+@article{ WOS:001691066800024,
+Author = {Khaliq, Ayesha and Adebayo, Kolawole J.},
+Title = {DKC-LLM: Dynamic Knowledge Caching for Large Language Models in Business
+   Applications},
+Journal = {IEEE ACCESS},
+Year = {2026},
+Volume = {14},
+Pages = {22318-22334},
+Abstract = {Large Language Models (LLMs) often face severe latency and computational
+   cost constraints which hinder their adoption in real-time enterprise
+   applications. Retrieval-Augmented Generation (RAG) frameworks, while
+   improving factual accuracy, further increase inference delays owing to
+   additional retrieval and context integration steps. To address these
+   challenges, we propose Dynamic Knowledge Caching for Large Language
+   Models (DKC-LLM), a novel framework that integrates dynamic semantic
+   caching with an adaptive cache management strategy, which detects and
+   compensates for semantic drift to accelerate response generation while
+   ensuring accuracy and freshness. We evaluate DKC-LLM on two distinct
+   question-answering benchmarks: BankFAQs, a domain-specific dataset with
+   5,000 selected queries and HotpotQA, an open-domain dataset with 5,000
+   selected queries, totaling 10,000 evaluation queries. Experimental
+   results demonstrate that DKC-LLM achieves 20-30\% lower latency, i.e.,
+   5.3-6.8 ms vs. RAG's 8-10 ms, a 63-70.5\% cache hit rate, and a 60\%
+   reduction in LLM compute overhead, while maintaining 83-90\% response
+   accuracy. Additionally, DKC-LLM reduced hallucination rates by 75\%,
+   outperforming baseline RAG by up to 15 percentage points. These findings
+   posit that DKC-LLM is a cost-efficient, low-latency, and high-accuracy
+   solution for real-time, high-frequency business scenarios such as
+   customer support and enterprise information retrieval.},
+Publisher = {IEEE-INST ELECTRICAL ELECTRONICS ENGINEERS INC},
+Address = {445 HOES LANE, PISCATAWAY, NJ 08855-4141 USA},
+Type = {Article},
+Language = {English},
+Affiliation = {Adebayo, KJ (Corresponding Author), Maynooth Univ, Adapt Ctr, Comp Sci Dept, Maynooth W23F2H6, Ireland.
+   Adebayo, KJ (Corresponding Author), Maynooth Univ, Maynooth Int Engn Coll, Maynooth W23 F2H6, Ireland.
+   Khaliq, Ayesha, Iqra Univ, Karachi 75550, Pakistan.
+   Adebayo, Kolawole J., Maynooth Univ, Adapt Ctr, Comp Sci Dept, Maynooth W23F2H6, Ireland.
+   Adebayo, Kolawole J., Maynooth Univ, Maynooth Int Engn Coll, Maynooth W23 F2H6, Ireland.},
+DOI = {10.1109/ACCESS.2026.3662344},
+ISSN = {2169-3536},
+Keywords = {Retrieval augmented generation; Semantics; Business; Accuracy; Real-time
+   systems; Large language models; Optimization; Computer architecture;
+   Technological innovation; Customer services; Retrieval-augmented
+   generation (RAG); large language models (LLMs); cache-augmented
+   generation (CAG); semantic caching; real-time question answering},
+Research-Areas = {Computer Science; Engineering; Telecommunications},
+Web-of-Science-Categories  = {Computer Science, Information Systems; Engineering, Electrical \&
+   Electronic; Telecommunications},
+Author-Email = {Kolawole.adebayo@adaptcentre.ie},
+Affiliations = {Iqra University},
+Number-of-Cited-References = {72},
+Times-Cited = {0},
+Usage-Count-Last-180-days = {1},
+Usage-Count-Since-2013 = {1},
+Journal-ISO = {IEEE Access},
+Doc-Delivery-Number = {DS5VW},
+Web-of-Science-Index = {Science Citation Index Expanded (SCI-EXPANDED)},
+Unique-ID = {WOS:001691066800024},
+OA = {gold},
+DA = {2026-04-07},
+}
+
+@article{ WOS:001626465900018,
+Author = {Jeong, Jooyoung and Lee, Sang-Goo},
+Title = {Permission-Aware RAG: Identity and Access Management (IAM)-Based Access
+   Filtering in Multi-Resource Environments},
+Journal = {IEEE ACCESS},
+Year = {2025},
+Volume = {13},
+Pages = {192819-192835},
+Abstract = {Retrieval-Augmented Generation (RAG) enhances large language models
+   (LLMs) by integrating external knowledge sources, which significantly
+   improves response accuracy and contextual relevance. However, most
+   existing RAG research implicitly assumes that all retrieved content is
+   equally accessible to any user. This approach fails to address the
+   complex, fine-grained access control required in enterprise environments
+   in which data originates from multiple, independently governed sources.
+   Attempting to merge heterogeneous authorization models, such as RBAC and
+   ABAC, often leads to significant compliance burdens and unintended data
+   exposure. To address this issue, we propose a permission-aware RAG
+   framework that enforces resource-level access control by directly
+   interfacing with provider-controlled Identity and Access Management
+   (IAM) systems. By performing real-time permission validation against
+   native IAM endpoints without requiring policy merging, this design
+   preserves governance boundaries and ensures compliance. We implemented a
+   prototype and conducted a comprehensive evaluation using a multi-hop QA
+   benchmark. The evaluation included scenario-based qualitative analysis
+   to verify policy enforcement, large-scale quantitative validation that
+   confirms its scalable policy enforcement and quantifies the impact of
+   access levels on answer quality. Results demonstrate that our framework
+   provides secure, scalable information retrieval while maintaining strict
+   adherence to diverse access policies across multi-resource environments.},
+Publisher = {IEEE-INST ELECTRICAL ELECTRONICS ENGINEERS INC},
+Address = {445 HOES LANE, PISCATAWAY, NJ 08855-4141 USA},
+Type = {Article},
+Language = {English},
+Affiliation = {Lee, SG (Corresponding Author), Seoul Natl Univ, Dept Comp Sci \& Engn, Seoul 08826, South Korea.
+   Lee, SG (Corresponding Author), IntelliSys Co Ltd, Seoul 08826, South Korea.
+   Jeong, Jooyoung, Seoul Natl Univ, Grad Sch Engn Practice, Seoul 08826, South Korea.
+   Lee, Sang-Goo, Seoul Natl Univ, Dept Comp Sci \& Engn, Seoul 08826, South Korea.
+   Lee, Sang-Goo, IntelliSys Co Ltd, Seoul 08826, South Korea.},
+DOI = {10.1109/ACCESS.2025.3628960},
+ISSN = {2169-3536},
+Keywords = {Retrieval augmented generation; Authorization; Real-time systems; Zero
+   Trust; Law; Authentication; Vectors; Semantics; Privacy; Large language
+   models; Access control; identity and access management (IAM); large
+   language models (LLMs); multi-resource environments; permission-aware
+   retrieval; retrieval-augmented generation (RAG); secure information
+   retrieval},
+Research-Areas = {Computer Science; Engineering; Telecommunications},
+Web-of-Science-Categories  = {Computer Science, Information Systems; Engineering, Electrical \&
+   Electronic; Telecommunications},
+Author-Email = {sglee@europa.snu.ac.kr},
+Affiliations = {Seoul National University (SNU); Seoul National University (SNU)},
+ORCID-Numbers = {Jeong, Jooyoung/0009-0004-4097-5328
+   Lee, Sang-goo/0000-0002-0063-0083},
+Number-of-Cited-References = {35},
+Times-Cited = {0},
+Usage-Count-Last-180-days = {1},
+Usage-Count-Since-2013 = {1},
+Journal-ISO = {IEEE Access},
+Doc-Delivery-Number = {I3564},
+Web-of-Science-Index = {Science Citation Index Expanded (SCI-EXPANDED)},
+Unique-ID = {WOS:001626465900018},
+OA = {Green Submitted, gold},
+DA = {2026-04-07},
+}
+
+@article{ WOS:001696661100032,
+Author = {Huang, Pin-Chieh and Mao, Ching-Hao and Lai, Chun-Ming},
+Title = {AegisGuard: A Context-Aware Framework for Semantic Vulnerability
+   Detection and Risk Stratification},
+Journal = {IEEE ACCESS},
+Year = {2026},
+Volume = {14},
+Pages = {26538-26551},
+Abstract = {The growing complexity of cyber threats has exposed the limitations of
+   traditional vulnerability assessment tools, which primarily rely on
+   static scanning and CVSS-based scoring. These approaches often fail to
+   capture dynamic configurations and evolving threat surfaces in
+   enterprise environments. To address this gap, we present AegisGuard, a
+   context-aware framework for automated vulnerability detection and
+   adaptive risk stratification. AegisGuard integrates structured system
+   telemetry, semantic threat intelligence through retrieval-augmented
+   generation (RAG), and a specialized large language model (LLM) to infer
+   CVE applicability and assign five-level risk labels (L0-L4) that reflect
+   both technical severity and environmental context. Unlike conventional
+   scanners, AegisGuard dynamically adjusts its reasoning to
+   system-specific privilege settings, exposure levels, and service
+   criticality, enabling the identification of both critical exploits and
+   subtle misconfigurations often missed by static tools. Our evaluation
+   spans heterogeneous Linux and Windows platforms and leverages a
+   dual-layer ground truth methodology: Core Ground Truth (C-GT) for
+   verified vulnerabilities and Extended Ground Truth (E-GT) for
+   semantically related threats. Results show that AegisGuard achieves an
+   F1 score of up to 0.79 in CVE detection and exceeds 90\% classification
+   accuracy within a +/- 1 risk margin. Complementary ablation and prompt
+   sensitivity analyses confirm the importance of RAG-based enrichment and
+   structured input design in maximizing LLM effectiveness. Overall, these
+   findings demonstrate that semantic, context-aware modeling is essential
+   for accurate, scalable, and operationally relevant vulnerability
+   management.},
+Publisher = {IEEE-INST ELECTRICAL ELECTRONICS ENGINEERS INC},
+Address = {445 HOES LANE, PISCATAWAY, NJ 08855-4141 USA},
+Type = {Article},
+Language = {English},
+Affiliation = {Lai, CM (Corresponding Author), Tunghai Univ, Dept Comp Sci, Taichung 407, Taiwan.
+   Huang, Pin-Chieh; Lai, Chun-Ming, Tunghai Univ, Dept Comp Sci, Taichung 407, Taiwan.
+   Mao, Ching-Hao, Wistron NeWeb Corp WNC, Dept Adv Technol Dev, Hsinchu 300, Taiwan.},
+DOI = {10.1109/ACCESS.2026.3663577},
+ISSN = {2169-3536},
+Keywords = {Semantics; Telemetry; Runtime; Cognition; Linux; Pipelines; Monitoring;
+   Retrieval augmented generation; Real-time systems; Large language
+   models; Vulnerability detection; risk stratification; cyber threat
+   intelligence; large language models; retrieval-augmented generation;
+   automated remediation},
+Research-Areas = {Computer Science; Engineering; Telecommunications},
+Web-of-Science-Categories  = {Computer Science, Information Systems; Engineering, Electrical \&
+   Electronic; Telecommunications},
+Author-Email = {cmlai@thu.edu.tw},
+Affiliations = {Tunghai University},
+Funding-Acknowledgement = {National Science and Technology Council (NSTC), Taiwan
+   {[}113-2221-E-029-009-MY3, 114-2634-F-027-001-MBK]},
+Funding-Text = {This work was supported by the National Science and Technology Council
+   (NSTC), Taiwan, under Grant 113-2221-E-029-009-MY3 and Grant
+   114-2634-F-027-001-MBK.},
+Number-of-Cited-References = {23},
+Times-Cited = {0},
+Usage-Count-Last-180-days = {0},
+Usage-Count-Since-2013 = {0},
+Journal-ISO = {IEEE Access},
+Doc-Delivery-Number = {EA8DC},
+Web-of-Science-Index = {Science Citation Index Expanded (SCI-EXPANDED)},
+Unique-ID = {WOS:001696661100032},
+OA = {gold},
+DA = {2026-04-07},
+}
+
+@article{ WOS:001580079700001,
+Author = {Byun, Grace and Lee, Shinsun and Choi, Nayoung and Choi, Jinho D.},
+Title = {Secure Multifaceted-RAG: Hybrid Knowledge Retrieval with Security
+   Filtering},
+Journal = {INFORMATION},
+Year = {2025},
+Volume = {16},
+Number = {9},
+Month = {SEP 16},
+Abstract = {Existing Retrieval-Augmented Generation (RAG) systems face challenges in
+   enterprise settings due to limited retrieval scope and data security
+   risks. When relevant internal documents are unavailable, the system
+   struggles to generate accurate and complete responses. Additionally,
+   using closed-source Large Language Models (LLMs) raises concerns about
+   exposing proprietary information. To address these issues, we propose
+   the Secure Multifaceted-RAG (SecMulti-RAG) framework, which retrieves
+   not only from internal documents but also from two supplementary
+   sources: pre-generated expert knowledge for anticipated queries and
+   on-demand external LLM-generated knowledge. To mitigate security risks,
+   we adopt a local open-source generator and selectively utilize external
+   LLMs only when prompts are deemed safe by a filtering mechanism. This
+   approach enhances completeness, prevents data leakage, and reduces
+   costs. In our evaluation on a report generation task in the automotive
+   industry, SecMulti-RAG significantly outperforms traditional
+   RAG-achieving 79.3-91.9\% win rates across correctness, richness, and
+   helpfulness in LLM-based evaluation and 56.3-70.4\% in human evaluation.
+   This highlights SecMulti-RAG as a practical and secure solution for
+   enterprise RAG.},
+Publisher = {MDPI},
+Address = {MDPI AG, Grosspeteranlage 5, CH-4052 BASEL, SWITZERLAND},
+Type = {Article},
+Language = {English},
+Affiliation = {Byun, G; Choi, JD (Corresponding Author), Emory Univ, Comp Sci \& Informat, Atlanta Campus, Atlanta, GA 30322 USA.
+   Byun, Grace; Lee, Shinsun; Choi, Nayoung; Choi, Jinho D., Emory Univ, Comp Sci \& Informat, Atlanta Campus, Atlanta, GA 30322 USA.
+   Lee, Shinsun, Hyundai Motor Co, Seoul 06797, South Korea.},
+DOI = {10.3390/info16090804},
+Article-Number = {804},
+EISSN = {2078-2489},
+Keywords = {Large Language Model (LLM); information retrieval; Retrieval-Augmented
+   Generation (RAG); domain-specific text generation; security; data
+   confidentiality},
+Research-Areas = {Computer Science},
+Web-of-Science-Categories  = {Computer Science, Information Systems},
+Author-Email = {grace.byun@emory.edu
+   shinsun.lee@emory.edu
+   nayoung.choi@emory.edu
+   jinho.choi@emory.edu},
+Affiliations = {Emory University; Hyundai Motors},
+ORCID-Numbers = {Choi, Jinho/0000-0003-2693-6934},
+Funding-Acknowledgement = {Hyundai Motor Company},
+Funding-Text = {We gratefully acknowledge the support of the Hyundai Motor Company. Any
+   opinions, findings, and conclusions or recommendations expressed in this
+   material are those of the authors and do not necessarily reflect the
+   views of Hyundai Motor Company.},
+Number-of-Cited-References = {24},
+Times-Cited = {1},
+Usage-Count-Last-180-days = {10},
+Usage-Count-Since-2013 = {10},
+Journal-ISO = {Information},
+Doc-Delivery-Number = {7UR0T},
+Web-of-Science-Index = {Emerging Sources Citation Index (ESCI)},
+Unique-ID = {WOS:001580079700001},
+OA = {Green Submitted, gold},
+DA = {2026-04-07},
+}
+
+@article{ WOS:001657242100001,
+Author = {Podpora, Michal and Baranowski, Marek and Chopcian, Maciej and
+   Kwasniewicz, Lukasz and Radziewicz, Wojciech},
+Title = {LLM Firewall Using Validator Agent for Prevention Against Prompt
+   Injection Attacks},
+Journal = {APPLIED SCIENCES-BASEL},
+Year = {2025},
+Volume = {16},
+Number = {1},
+Month = {DEC 21},
+Abstract = {Large Language Models with Retrieval-Augmented Generation are considered
+   to be modern, chat-native interfaces to enterprise knowledge. However,
+   deploying such systems safely requires precautions more advanced than
+   input filtering. Numerous LLM-related security threats (including the
+   top one: prompt injection attacks) demand robust defense mechanisms
+   beyond input filtering. This paper extends our dual-agent RAG
+   architecture as an LLM firewall with output-level security validation.
+   Similar to network firewalls, which monitor semantic boundaries, we
+   position the Validator Agent as a response firewall performing
+   multi-feature security checks: prompt injection detection, policy
+   compliance verification, sensitive information redaction, and toxic
+   content filtering. While existing defense approaches focus mainly on
+   input-level screening, our architecture proposes to analyze the output,
+   where a successful attack becomes more obvious. The proposed
+   architecture was verified to be viable using the Polish Bielik 2.3 LLM
+   in an on-premise RAG system designed for energy auditing.},
+Publisher = {MDPI},
+Address = {MDPI AG, Grosspeteranlage 5, CH-4052 BASEL, SWITZERLAND},
+Type = {Article},
+Language = {English},
+Affiliation = {Podpora, M (Corresponding Author), Univ Opole, Inst Comp Sci, Oleska 48, PL-45052 Opole, Poland.
+   Baranowski, M (Corresponding Author), Opole Univ Technol, Fac Comp Sci, Proszkowska 76, PL-45758 Opole, Poland.
+   Baranowski, M (Corresponding Author), Opolskie Ctr Zarzadzan Projektami, Technol 2, PL-45839 Opole, Poland.
+   Podpora, Michal; Chopcian, Maciej, Univ Opole, Inst Comp Sci, Oleska 48, PL-45052 Opole, Poland.
+   Baranowski, Marek; Radziewicz, Wojciech, Opole Univ Technol, Fac Comp Sci, Proszkowska 76, PL-45758 Opole, Poland.
+   Baranowski, Marek, Opolskie Ctr Zarzadzan Projektami, Technol 2, PL-45839 Opole, Poland.
+   Kwasniewicz, Lukasz, Marie Curie Sklodowska Univ, Inst Comp Sci, Akad 9, PL-20033 Lublin, Poland.},
+DOI = {10.3390/app16010085},
+Article-Number = {85},
+EISSN = {2076-3417},
+Keywords = {LLM firewall; LLM vulnerabilities; prompt injection defense;
+   Retrieval-Augmented Generation security; dual-agent architecture; output
+   validation; on-premise LLM deployment; multi-agent systems; response
+   filtering; RAG security; multi-agent defense},
+Research-Areas = {Chemistry; Engineering; Materials Science; Physics},
+Web-of-Science-Categories  = {Chemistry, Multidisciplinary; Engineering, Multidisciplinary; Materials
+   Science, Multidisciplinary; Physics, Applied},
+Author-Email = {michal.podpora@uni.opole.pl
+   marek.baranowski@student.po.edu.pl},
+Affiliations = {University of Opole; Opole University of Technology; Maria
+   Curie-Sklodowska University},
+ResearcherID-Numbers = {Podpora, Michal/K-2277-2012
+   },
+ORCID-Numbers = {Baranowski, Marek/0000-0002-9892-7212
+   Chopcian, Maciej/0009-0002-4750-7477},
+Funding-Acknowledgement = {European Union from the European Regional Development Fund
+   {[}FEOP.01.01-IP.01-0009/23-00]},
+Funding-Text = {This research was funded by the European Union from the European
+   Regional Development Fund under the regional program ``European Funds
+   for Opole Voivodship{''} 2021-2027. Project title: ``e-Assistant for
+   energy and environmental auditor-Industrial research and experimental
+   development work in the field of artificial intelligence application in
+   energy and environmental assessments of residential buildings in
+   Europe{''}. Grant number FEOP.01.01-IP.01-0009/23-00.},
+Number-of-Cited-References = {81},
+Times-Cited = {1},
+Usage-Count-Last-180-days = {3},
+Usage-Count-Since-2013 = {3},
+Journal-ISO = {Appl. Sci.-Basel},
+Doc-Delivery-Number = {AU7OS},
+Web-of-Science-Index = {Science Citation Index Expanded (SCI-EXPANDED)},
+Unique-ID = {WOS:001657242100001},
+OA = {Green Submitted, gold},
+DA = {2026-04-07},
+}
+
+@article{ WOS:001727131100001,
+Author = {Hsieh, Cheng-Hui and Cheng, Chen-Yi and Wang, Yung-Chung},
+Title = {A Zero-Touch Vulnerability Remediation Framework Based on OpenVAS,
+   Threat Intelligence, and RAG-Enhanced Large Language Models},
+Journal = {MATHEMATICS},
+Year = {2026},
+Volume = {14},
+Number = {6},
+Month = {MAR 22},
+Abstract = {Vulnerability disclosures are outpacing manual remediation capacity. We
+   present a Zero-Touch Vulnerability Remediation Framework combining
+   OpenVAS scanning, multi-source threat intelligence, and Large Language
+   Models (LLMs) enhanced through Retrieval-Augmented Generation (RAG). The
+   Scanning Layer normalizes findings into structured JSON; the AI Decision
+   Layer applies hybrid FAISS + BM25 retrieval, dual-LLM verification (a
+   primary generator checked by a gpt-4o auxiliary verifier), and
+   confidence-based routing; the Orchestration Layer executes validated
+   patches via CI/CD pipelines with automated rollback. On 350 real-world
+   vulnerability cases across five GPT-family models, the full Prompt + RAG
+   pipeline raised accuracy from 52.0\% to 76.7-82.6\% (all p < 0.001,
+   Cohen's h = 0.51-0.68) and reduced hallucination from 23.4\% to 7.8\%.
+   Confidence routing routed 34.9\% of cases to the high-confidence
+   auto-execution tier, yielding a 4.1\% rollback rate and zero service
+   outages. The framework addresses the most relevant categories of the
+   OWASP LLM Top 10 and lays groundwork for enterprise-scale, Zero-Touch
+   vulnerability management.},
+Publisher = {MDPI},
+Address = {MDPI AG, Grosspeteranlage 5, CH-4052 BASEL, SWITZERLAND},
+Type = {Article},
+Language = {English},
+Affiliation = {Wang, YC (Corresponding Author), Natl Taipei Univ Technol, Dept Elect Engn, Taipei 10608, Taiwan.
+   Hsieh, Cheng-Hui; Cheng, Chen-Yi; Wang, Yung-Chung, Natl Taipei Univ Technol, Dept Elect Engn, Taipei 10608, Taiwan.},
+DOI = {10.3390/math14061072},
+Article-Number = {1072},
+EISSN = {2227-7390},
+Keywords = {zero-touch vulnerability remediation; OpenVAS; retrieval-augmented
+   generation (RAG); threat intelligence; large language models (LLMs);
+   prompt engineering},
+Keywords-Plus = {NETWORK; MANAGEMENT; 5G},
+Research-Areas = {Mathematics},
+Web-of-Science-Categories  = {Mathematics},
+Author-Email = {salonpas1008@gmail.com
+   jessica.cheng@securityscorecard.io
+   ycwang@ntut.edu.tw},
+Affiliations = {National Taipei University of Technology},
+Number-of-Cited-References = {62},
+Times-Cited = {0},
+Usage-Count-Last-180-days = {0},
+Usage-Count-Since-2013 = {0},
+Journal-ISO = {Mathematics},
+Doc-Delivery-Number = {FT6SE},
+Web-of-Science-Index = {Science Citation Index Expanded (SCI-EXPANDED)},
+Unique-ID = {WOS:001727131100001},
+OA = {Green Submitted, gold},
+DA = {2026-04-07},
+}
+
+@article{ WOS:001689471400001,
+Author = {Duan, Yongkang and Zhao, Guangyu and Geng, Qian and Ji, Ping and Jin,
+   Jian},
+Title = {From reactive to proactive policy implement method through intelligent
+   enterprise matching},
+Journal = {ENTERPRISE INFORMATION SYSTEMS},
+Year = {2026},
+Volume = {20},
+Number = {3},
+Month = {MAR 4},
+Abstract = {Despite the availability of pro-business policies, many micro, small and
+   medium-sized enterprises (MSMEs) struggle to effectively utilise these
+   resources due to limited capacity. This study proposes an
+   policy-enterprise matching framework that transforms `enterprises
+   seeking policies' approach into a `policies seeking enterprises'
+   mechanism. The mechanism uses large language models (LLMs) as tool for
+   extracting policy restrictive clauses and generating compliance checking
+   strategies. Meanwhile, machine learning methods are used for enterprise
+   risk prediction. The matching framework broadens the research
+   perspective of policy analysis and risk prediction, and provides
+   government staff with decision support based on risk prediction.},
+Publisher = {TAYLOR \& FRANCIS LTD},
+Address = {2-4 PARK SQUARE, MILTON PARK, ABINGDON OR14 4RN, OXON, ENGLAND},
+Type = {Article},
+Language = {English},
+Affiliation = {Jin, J (Corresponding Author), Beijing Normal Univ, Dept Informat Management, B503,Main Bldg,19 Xinjiekouwai St, Beijing 100875, Peoples R China.
+   Duan, Yongkang; Zhao, Guangyu; Geng, Qian; Jin, Jian, Beijing Normal Univ, Dept Informat Management, B503,Main Bldg,19 Xinjiekouwai St, Beijing 100875, Peoples R China.
+   Duan, Yongkang, Beijing Univ Posts \& Telecommun, Sch Comp Sci, Natl Pilot Software Engn Sch, Beijing, Peoples R China.
+   Duan, Yongkang, Beijing Zhongguancun Acad, Beijing, Peoples R China.
+   Ji, Ping, Khalifa Univ Sci \& Technol, Dept Management Sci \& Engn, Abu Dhabi, U Arab Emirates.},
+DOI = {10.1080/17517575.2026.2628701},
+EarlyAccessDate = {FEB 2026},
+ISSN = {1751-7575},
+EISSN = {1751-7583},
+Keywords = {Policy-enterprise matching; large language models; enterprise risk
+   prediction; retrieval-augmented generation; micro, small and
+   medium-sized enterprises; cross-region recommendation},
+Research-Areas = {Computer Science},
+Web-of-Science-Categories  = {Computer Science, Information Systems},
+Author-Email = {jinjian.jay@bnu.edu.cn},
+Affiliations = {Beijing Normal University; Beijing University of Posts \&
+   Telecommunications; Khalifa University of Science \& Technology},
+Funding-Acknowledgement = {Fundamental Research Funds for the Central Universities {[}1253200058];
+   National Natural Science Foundation of China {[}72374030]},
+Funding-Text = {This work was supported by the National Natural Science Foundation of
+   China {[}No.72374030] and the Fundamental Research Funds for the Central
+   Universities {[}No. 1253200058].},
+Number-of-Cited-References = {53},
+Times-Cited = {0},
+Usage-Count-Last-180-days = {1},
+Usage-Count-Since-2013 = {1},
+Journal-ISO = {Enterp. Inf. Syst.},
+Doc-Delivery-Number = {EP2YS},
+Web-of-Science-Index = {Science Citation Index Expanded (SCI-EXPANDED)},
+Unique-ID = {WOS:001689471400001},
+DA = {2026-04-07},
+}
+
+@article{ WOS:001583431300001,
+Author = {Arslan, Muhammad and Munawar, Saba and Riaz, Zainab},
+Title = {Empowering SMEs with SustainWater Bot to advance urban
+   water sustainability},
+Journal = {SUSTAINABLE CITIES AND SOCIETY},
+Year = {2025},
+Volume = {132},
+Month = {SEP 15},
+Abstract = {Climate change, population growth, and resource constraints are
+   intensifying pressure on urban water systems (UWSs), prompting a shift
+   toward integrated information management. Due to their agility and
+   reach, small- and medium-sized enterprises (SMEs) are central to this
+   transition. However, many SMEs lack access to robust information systems
+   (ISs) that consolidate government initiatives, industry trends, and
+   broader water-related data, impeding sustainable adoption. This study
+   introduces SustainWater Bot, a chatbot driven by generative artificial
+   Intelligence (GenAI), including large language models (LLMs) and
+   retrieval-augmented generation (RAG). Designed to fill this information
+   gap, SustainWater Bot addresses the shortcomings of conventional LLMs,
+   such as information misalignment, over-complexity, and information
+   deficiencies. RAG enables semantic consolidation of various sources,
+   such as news, government reports, industry insights, academic research,
+   and social media, into an integrated IS. The evaluation results showed
+   that RAG with LLM-based methods outperformed traditional information
+   retrieval (IR) techniques, with Llama3.2:3b achieving top scores in
+   precision (95 \%), completeness (95 \%), and exact match (90 \%).
+   Traditional IR techniques such as term frequency-inverse document
+   frequency (TF-IDF) and best matching 25 (BM25) performed lower but
+   offered quicker responses. SustainWater Bot supports informed
+   decision-making through a question-answering (QA) framework that
+   delivers relevant insights on sustainable urban water initiatives
+   (SUWIs). It is built on open-source technologies and offers SMEs a
+   costeffective, scalable, and sustainable solution to enhance
+   eco-friendly water practices and operational efficiency.},
+Publisher = {ELSEVIER},
+Address = {RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS},
+Type = {Article},
+Language = {English},
+Affiliation = {Arslan, M (Corresponding Author), Univ West England, Sch Architecture \& Environm, Bristol, England.
+   Arslan, Muhammad, Univ West England, Sch Architecture \& Environm, Bristol, England.
+   Munawar, Saba, Natl Univ Comp \& Emerging Sci, Telecommun Engn, Islamabad, Pakistan.
+   Riaz, Zainab, Abu Dhabi Univ, Coll Business, Abu Dhabi, U Arab Emirates.},
+DOI = {10.1016/j.scs.2025.106793},
+EarlyAccessDate = {SEP 2025},
+Article-Number = {106793},
+ISSN = {2210-6707},
+EISSN = {2210-6715},
+Keywords = {Urban water decision-making; Sustainable transitions; Small and
+   medium-sized enterprises (SMEs); Large language models (LLMs);
+   Retrieval-augmented generation (RAG)},
+Keywords-Plus = {MEDIUM ENTERPRISES; MANAGEMENT; SYSTEMS; FUTURE; POLICY; TOOL},
+Research-Areas = {Construction \& Building Technology; Science \& Technology - Other
+   Topics; Energy \& Fuels},
+Web-of-Science-Categories  = {Construction \& Building Technology; Green \& Sustainable Science \&
+   Technology; Energy \& Fuels},
+Author-Email = {muhammad.arslan@uwe.ac.uk},
+Affiliations = {University of West England; Abu Dhabi University},
+ResearcherID-Numbers = {Arslan, Muhammad/T-6589-2018},
+ORCID-Numbers = {Arslan, Muhammad/0000-0003-3682-7002},
+Funding-Acknowledgement = {University of the West of England},
+Funding-Text = {The authors express their gratitude to the University of the West of
+   England for funding this research.},
+Number-of-Cited-References = {124},
+Times-Cited = {1},
+Usage-Count-Last-180-days = {11},
+Usage-Count-Since-2013 = {11},
+Journal-ISO = {Sust. Cities Soc.},
+Doc-Delivery-Number = {7ZP6V},
+Web-of-Science-Index = {Science Citation Index Expanded (SCI-EXPANDED)},
+Unique-ID = {WOS:001583431300001},
+OA = {hybrid},
+DA = {2026-04-07},
+}
+
+@article{ WOS:001595040300002,
+Author = {Blefari, Francesco and Cosentino, Cristian and Pironti, Francesco
+   Aurelio and Furfaro, Angelo and Marozzo, Fabrizio},
+Title = {CyberRAG: An agentic RAG cyber attack classification and reporting tool},
+Journal = {FUTURE GENERATION COMPUTER SYSTEMS-THE INTERNATIONAL JOURNAL OF ESCIENCE},
+Year = {2026},
+Volume = {176},
+Month = {MAR},
+Abstract = {Intrusion Detection and Prevention Systems (IDS/IPS) in large
+   enterprises can generate hundreds of thousands of alerts per hour,
+   overwhelming analysts with logs requiring rapidly evolving expertise.
+   Conventional machine-learning detectors reduce alert volume but still
+   yield many false positives, while standard Retrieval-Augmented
+   Generation (RAG) pipelines often retrieve irrelevant context and fail to
+   justify predictions. We present CyberRAG, a modular agent-based RAG
+   framework that delivers real-time classification, explanation, and
+   structured reporting for cyber-attacks. A central LLM agent
+   orchestrates: (i) fine-tuned classifiers specialized by attack family;
+   (ii) tool adapters for enrichment and alerting; and (iii) an iterative
+   retrieval-and-reason loop that queries a domain-specific knowledge base
+   until evidence is relevant and self-consistent. Unlike traditional RAG,
+   CyberRAG adopts an agentic design that enables dynamic control flow and
+   adaptive reasoning. This architecture autonomously refines threat labels
+   and natural-language justifications, reducing false positives and
+   enhancing interpretability. It is also extensible: new attack types can
+   be supported by adding classifiers without retraining the core agent.
+   CyberRAG was evaluated on SQL Injection, XSS, and SSTI, achieving over
+   94\% accuracy per class and a final classification accuracy of 94.92 \%
+   through semantic orchestration. Generated explanations reached 0.94 in
+   BERTScore and 4.9/5 in GPT-4-based expert evaluation, with robustness
+   preserved against adversarial and unseen payloads. These results show
+   that agentic, specialist-oriented RAG can combine high detection
+   accuracy with trustworthy, SOC-ready prose, offering a flexible path
+   toward partially automated cyber-defense workflows.},
+Publisher = {ELSEVIER},
+Address = {RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS},
+Type = {Article},
+Language = {English},
+Affiliation = {Blefari, F (Corresponding Author), Univ Calabria, Via Pietro Bucci, I-87036 Arcavacata Di Rende, Italy.
+   Blefari, F (Corresponding Author), IMT Sch Adv Studies, Piazza San Francesco, I-55100 Lucca, Italy.
+   Blefari, Francesco; Cosentino, Cristian; Pironti, Francesco Aurelio; Furfaro, Angelo; Marozzo, Fabrizio, Univ Calabria, Via Pietro Bucci, I-87036 Arcavacata Di Rende, Italy.
+   Blefari, Francesco, IMT Sch Adv Studies, Piazza San Francesco, I-55100 Lucca, Italy.},
+DOI = {10.1016/j.future.2025.108186},
+EarlyAccessDate = {OCT 2025},
+Article-Number = {108186},
+ISSN = {0167-739X},
+EISSN = {1872-7115},
+Keywords = {Large language models; Agentic retrieval-augmented generation; Cyber
+   threat detection; Fine-tuned security classifiers; Intrusion detection
+   systems},
+Keywords-Plus = {STATE},
+Research-Areas = {Computer Science},
+Web-of-Science-Categories  = {Computer Science, Theory \& Methods},
+Author-Email = {francesco.blefari@unical.it
+   cristian.cosentino@unical.it
+   francesco.blefari@unical.it
+   angelo.furfaro@unical.it
+   fabrizio.marozzo@unical.it},
+Affiliations = {University of Calabria; IMT School for Advanced Studies Lucca},
+ResearcherID-Numbers = {Marozzo, Fabrizio/B-8802-2017
+   Blefari, Francesco/PII-6608-2026
+   Furfaro, Angelo/N-2923-2019
+   Pironti, Francesco Aurelio/PFR-5472-2026},
+Funding-Acknowledgement = {FAIR {[}PE00000014]; MUR National Recovery and Resilience Plan -
+   European Union-NextGenerationEU {[}PE0000013]},
+Funding-Text = {This work was partially supported by the projects SERICS (PE00000014)
+   and FAIR (PE0000013) under the MUR National Recovery and Resilience Plan
+   funded by the European Union-NextGenerationEU. The work of Francesco A.
+   Pironti was supported by Agenzia per la cybersicurezza nazionale under
+   the 2024-2025 funding programme for promotion of XL cycle PhD research
+   in cybersecurity (CUP H23C24000640005) .},
+Number-of-Cited-References = {64},
+Times-Cited = {0},
+Usage-Count-Last-180-days = {16},
+Usage-Count-Since-2013 = {16},
+Journal-ISO = {Futur. Gener. Comp. Syst.},
+Doc-Delivery-Number = {8QR5W},
+Web-of-Science-Index = {Science Citation Index Expanded (SCI-EXPANDED)},
+Unique-ID = {WOS:001595040300002},
+OA = {Green Submitted, hybrid},
+DA = {2026-04-07},
+}
+
+@article{ WOS:001198383800001,
+Author = {Ge, Jin and Sun, Steve and Owens, Joseph and Galvez, Victor and
+   Gologorskaya, Oksana and Lai, Jennifer C. and Pletcher, Mark J. and Lai,
+   Ki},
+Title = {Development of a liver disease-Specific large language model chat
+   Interface using retrieval augmented generation},
+Journal = {HEPATOLOGY},
+Year = {2024},
+Volume = {80},
+Number = {5},
+Pages = {1158-1168},
+Month = {NOV},
+Abstract = {Background:Large language models (LLMs) have significant capabilities in
+   clinical information processing tasks. Commercially available LLMs,
+   however, are not optimized for clinical uses and are prone to generating
+   hallucinatory information. Retrieval-augmented generation (RAG) is an
+   enterprise architecture that allows embedding of customized data into
+   LLMs. This approach ``specializes{''} the LLMs and is thought to reduce
+   hallucinations. Methods:We developed ``LiVersa,{''} a liver
+   disease-specific LLM, by using our institution's protected health
+   information (PHI)-complaint text embedding and LLM platform,
+   ``Versa.{''} We conducted RAG on 30 publicly available American
+   Association for the Study of Liver Diseases guidance documents to be
+   incorporated into LiVersa. Results:We evaluated LiVersa's performance by
+   conducting two rounds of testing. First, we compared LiVersa's outputs
+   versus those of trainees from a previously published knowledge
+   assessment. LiVersa answered all 10 questions correctly. Second, we
+   asked 15 hepatologists to evaluate the outputs to ten hepatology topic
+   questions generated by LiVersa, OpenAI's ChatGPT 4, and Meta's LLaMA 2.
+   LiVersa's outputs were more accurate but were rated less comprehensive
+   and safe compared to those of ChatGPT 4. Discussion:In this
+   demonstration, we built a disease-specific and PHI-compliant LLMs using
+   RAG. While LiVersa demonstrated higher accuracy in answering questions
+   related to hepatology - there were some deficiencies due to limitations
+   set by the number of documents used for RAG. LiVersa will likely require
+   further refinement before potential live deployment. The LiVersa
+   prototype, however, is a proof of concept for utilizing RAG to customize
+   LLMs for clinical use cases.},
+Publisher = {LIPPINCOTT WILLIAMS \& WILKINS},
+Address = {TWO COMMERCE SQ, 2001 MARKET ST, PHILADELPHIA, PA 19103 USA},
+Type = {Article},
+Language = {English},
+Affiliation = {Ge, J (Corresponding Author), 513 Parnassus Ave,S-357, San Francisco, CA 94143 USA.
+   Ge, Jin; Lai, Jennifer C., Univ Calif San Francisco, Dept Med, Div Gastroenterol \& Hepatol, San Francisco, CA USA.
+   Sun, Steve; Owens, Joseph; Galvez, Victor; Gologorskaya, Oksana; Lai, Ki, Univ Calif San Francisco, UCSF Hlth Informat Technol, San Francisco, CA USA.
+   Gologorskaya, Oksana, Univ Calif San Francisco, Bakar Computat Hlth Sci Inst, San Francisco, CA USA.
+   Pletcher, Mark J., Univ Calif San Francisco, Dept Epidemiol \& Biostat, San Francisco, CA USA.
+   Ge, Jin, 513 Parnassus Ave,S-357, San Francisco, CA 94143 USA.},
+DOI = {10.1097/HEP.0000000000000834},
+EarlyAccessDate = {MAR 2024},
+ISSN = {0270-9139},
+EISSN = {1527-3350},
+Research-Areas = {Gastroenterology \& Hepatology},
+Web-of-Science-Categories  = {Gastroenterology \& Hepatology},
+Author-Email = {jin.ge@ucsf.edu
+   steve.sun@ucsf.edu
+   joseph.owens@ucsf.edu
+   victor.galvez@ucsf.edu
+   oksana.gologorskaya@ucsf.edu
+   jennifer.lai@ucsf.edu
+   mark.pletcher@ucsf.edu
+   ki.lai@ucsf.edu},
+Affiliations = {University of California System; University of California San Francisco;
+   University of California System; University of California San Francisco;
+   University of California System; University of California San Francisco;
+   University of California System; University of California San Francisco},
+ResearcherID-Numbers = {Ge, Jin/AAV-9835-2020
+   sun, steve/KWU-0519-2024},
+ORCID-Numbers = {Lai, Jennifer/0000-0003-2092-6380
+   Pletcher, Mark/0000-0002-6966-1312
+   Ge, Jin/0000-0003-1574-1525
+   Gologorskaya, Oksana/0009-0005-3505-7300
+   },
+Funding-Acknowledgement = {National Center for Advancing Translational Sciences {[}KL2TR001870];
+   UCSF Liver Center Grant {[}P30DK026743]; National Center for Advancing
+   Translational Sciences {[}UL1TR001872]; National Institute on Aging
+   {[}R01AG059183/K24AG080021]},
+Funding-Text = {The authors of this study were supported in part by the KL2TR001870
+   (National Center for Advancing Translational Sciences, Ge), P30DK026743
+   (UCSF Liver Center Grant, Ge and Lai), UL1TR001872 (National Center for
+   Advancing Translational Sciences, Pletcher), and R01AG059183/K24AG080021
+   (National Institute on Aging, Lai). The content is solely the
+   responsibility of the authors and does not necessarily represent the
+   official views of the National Institutes of Health or any other funding
+   agencies. The funding agencies played no role in the analysis of the
+   data or the preparation of this manuscript.},
+Number-of-Cited-References = {35},
+Times-Cited = {87},
+Usage-Count-Last-180-days = {37},
+Usage-Count-Since-2013 = {265},
+Journal-ISO = {Hepatology},
+Doc-Delivery-Number = {J3C2E},
+Web-of-Science-Index = {Science Citation Index Expanded (SCI-EXPANDED)},
+Unique-ID = {WOS:001198383800001},
+OA = {Green Submitted},
+DA = {2026-04-07},
+}
+
+@article{ WOS:001715357500001,
+Author = {Zang, Tianshuo and Li, Yuke and Yang, Maolin and Jiang, Pingyu},
+Title = {Event-state knowledge graph-enhanced GraphRAG for order-driven 3D
+   printing supply chain configuration},
+Journal = {EXPERT SYSTEMS WITH APPLICATIONS},
+Year = {2026},
+Volume = {317},
+Month = {JUN 25},
+Abstract = {In large-scale mass-customized 3D printing supply chains, lead
+   enterprises are required to decompose complex customer orders into
+   multiple manufacturing tasks and execute them collaboratively across
+   distributed factory clusters. However, owing to the lack of unified
+   modeling and reasoning mechanisms for order decomposition processes and
+   cluster-level resources, order-driven multi-factory collaborative supply
+   chain configuration remains a significant challenge. This paper proposes
+   an intelligent supply chain configuration method that integrates an
+   event-state knowledge graph (ESKG) with graph-based retrieval-augmented
+   generation (GraphRAG). The method first constructs a dynamically
+   updatable ESKG by defining six categories of event-state descriptive
+   triples. Subsequently, a BS-LRTE hybrid extraction method is introduced
+   to extract the aforementioned triples. This method employs a
+   BERT-BiLSTM-CRF model as a structural-constraint module and a large
+   language model (LLM) as a semantic-reasoning and completion module,
+   thereby enhancing the recognition of implicit engineering semantics
+   while mitigating hallucination in generative models. Finally, an
+   ESKG-GraphRAG-based hybrid retrieval-augmented mechanism is developed,
+   in which the ESKG serves as GraphRAG's local knowledge base to enable
+   synergy between textual semantic retrieval and structured reasoning.
+   Ablation studies are conducted to systematically analyze the
+   contributions of key components, including ESKG, GraphRAG, and LLMs, to
+   recommendation performance. In addition, comparative analyses of LLMs
+   with different scales are performed using representative case studies.
+   Experimental results demonstrate that the proposed framework achieves
+   accurate supply chain configuration under both normal and abnormal
+   scenarios.},
+Publisher = {PERGAMON-ELSEVIER SCIENCE LTD},
+Address = {THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, ENGLAND},
+Type = {Article},
+Language = {English},
+Affiliation = {Jiang, PY (Corresponding Author), Xi An Jiao Tong Univ, State Key Lab Mfg Syst Engn, Xian 710049, Peoples R China.
+   Zang, Tianshuo; Li, Yuke; Yang, Maolin; Jiang, Pingyu, Xi An Jiao Tong Univ, State Key Lab Mfg Syst Engn, Xian 710049, Peoples R China.},
+DOI = {10.1016/j.eswa.2026.131938},
+Article-Number = {131938},
+ISSN = {0957-4174},
+EISSN = {1873-6793},
+Keywords = {GraphRAG; Large language model; Event-stateknowledgegraph; Supply chain
+   configuration; 3D printing supply chain},
+Research-Areas = {Computer Science; Engineering; Operations Research \& Management Science},
+Web-of-Science-Categories  = {Computer Science, Artificial Intelligence; Engineering, Electrical \&
+   Electronic; Operations Research \& Management Science},
+Author-Email = {IBubble@stu.xjtu.edu.cn
+   yukeli@stu.xjtu.edu.cn
+   maolin@xjtu.edu.cn
+   pjiang@mail.xjtu.edu.cn},
+Affiliations = {Xi'an Jiaotong University},
+Funding-Acknowledgement = {National Natural Science Foundation of China {[}52375512]},
+Funding-Text = {This work was supported by the National Natural Science Foundation of
+   China (No. 52375512) .},
+Number-of-Cited-References = {52},
+Times-Cited = {0},
+Usage-Count-Last-180-days = {2},
+Usage-Count-Since-2013 = {2},
+Journal-ISO = {Expert Syst. Appl.},
+Doc-Delivery-Number = {FC3HZ},
+Web-of-Science-Index = {Science Citation Index Expanded (SCI-EXPANDED)},
+Unique-ID = {WOS:001715357500001},
+DA = {2026-04-07},
+}
+
+@article{ WOS:001652010400012,
+Author = {Elkiran, Harun and Rasheed, Jawad},
+Title = {EvaRAG: Evaluating Advanced RAG Techniques With Indexing and Distance
+   Metrics},
+Journal = {IEEE ACCESS},
+Year = {2025},
+Volume = {13},
+Pages = {215724-215747},
+Abstract = {Retrieval Augmented Generation (RAG) has emerged as a powerful paradigm
+   for enhancing large language models (LLMs) with external knowledge. Yet,
+   the performance of RAG pipelines is susceptible to design choices across
+   retrieval, similarity metrics, indexing, and reranking. Despite growing
+   adoption, little systematic work has explored the trade-offs between
+   retrieval quality, semantic accuracy, computational efficiency, and cost
+   in RAG systems. This study addresses this gap by conducting a
+   comprehensive evaluation of RAG configurations across multiple
+   dimensions. We propose a benchmarking framework that systematically
+   varies retrievers (Fusion, HyDe, Hierarchical, SCaNN), indexing methods
+   (HNSW, IVF, Flat), similarity metrics (Cosine, Inner Product, L2), and
+   rerankers (BGE, minilm) over datasets of three scales (small, medium,
+   and large). Performance is assessed through coverage, recall, MRR, and
+   nDCG, while semantic quality is measured using correctness,
+   faithfulness, and relevance. Efficiency is quantified via latency,
+   throughput, and computational cost. Our experiments reveal that
+   HNSW-IP-Fusion-minilm achieves the strongest semantic performance, with
+   Coverage Retrieval of 0.942, Correctness of 0.909, and Faithfulness of
+   0.970, making it ideal for accuracy-critical tasks. Conversely,
+   IVF-L2-Hierarchical demonstrates the lowest latency (1.736 ns) and cost,
+   making it suitable for real-time deployments. Reranker analysis shows
+   modest but consistent gains for minilm over BGE, while HyDe excels in
+   precision at the expense of efficiency. Notably, no single configuration
+   dominates; optimal designs depend on the application's needs, whether it
+   is maximizing semantic accuracy, minimizing latency, or striking a
+   balance between the two. By demonstrating concrete trade-offs, this work
+   provides a practical foundation for scaling RAG pipelines across diverse
+   domains, including information retrieval, enterprise search, and
+   knowledge-intensive reasoning.},
+Publisher = {IEEE-INST ELECTRICAL ELECTRONICS ENGINEERS INC},
+Address = {445 HOES LANE, PISCATAWAY, NJ 08855-4141 USA},
+Type = {Article},
+Language = {English},
+Affiliation = {Rasheed, J (Corresponding Author), Istanbul Sabahattin Zaim Univ, Dept Comp Engn, TR-34303 Istanbul, Turkiye.
+   Rasheed, J (Corresponding Author), Istanbul Aydin Univ, Dept Software Engn, TR-34295 Istanbul, Turkiye.
+   Rasheed, J (Corresponding Author), Istanbul Medipol Univ, Res Inst, TR-34810 Istanbul, Turkiye.
+   Rasheed, J (Corresponding Author), Appl Sci Private Univ, Appl Sci Res Ctr, Amman, Jordan.
+   Elkiran, Harun; Rasheed, Jawad, Istanbul Sabahattin Zaim Univ, Dept Comp Engn, TR-34303 Istanbul, Turkiye.
+   Rasheed, Jawad, Istanbul Aydin Univ, Dept Software Engn, TR-34295 Istanbul, Turkiye.
+   Rasheed, Jawad, Istanbul Medipol Univ, Res Inst, TR-34810 Istanbul, Turkiye.
+   Rasheed, Jawad, Appl Sci Private Univ, Appl Sci Res Ctr, Amman, Jordan.},
+DOI = {10.1109/ACCESS.2025.3646665},
+ISSN = {2169-3536},
+Keywords = {Retrieval augmented generation; Measurement; Indexing; Vectors;
+   Pipelines; Accuracy; Mathematical models; Benchmark testing; Costs;
+   Transformers; Data retrieval; large language model; natural language
+   processing; question answering systems; RAG},
+Research-Areas = {Computer Science; Engineering; Telecommunications},
+Web-of-Science-Categories  = {Computer Science, Information Systems; Engineering, Electrical \&
+   Electronic; Telecommunications},
+Author-Email = {jawad.rasheed@izu.edu.tr},
+Affiliations = {Istanbul Sabahattin Zaim University; Istanbul Aydin University; Istanbul
+   Medipol University; Applied Science Private University},
+ResearcherID-Numbers = {Rasheed, Jawad/AAY-5207-2020
+   ELKIRAN, HARUN/ABC-7061-2022},
+ORCID-Numbers = {Rasheed, Jawad/0000-0003-3761-1641
+   ELKIRAN, HARUN/0000-0002-5834-6210},
+Number-of-Cited-References = {31},
+Times-Cited = {0},
+Usage-Count-Last-180-days = {1},
+Usage-Count-Since-2013 = {1},
+Journal-ISO = {IEEE Access},
+Doc-Delivery-Number = {AN0QY},
+Web-of-Science-Index = {Science Citation Index Expanded (SCI-EXPANDED)},
+Unique-ID = {WOS:001652010400012},
+OA = {gold},
+DA = {2026-04-07},
+}
+
+@article{ WOS:001334923600001,
+Author = {Arslan, Muhammad and Mahdjoubi, Lamine and Munawar, Saba},
+Title = {Driving sustainable energy transitions with a multi-source RAG-LLM
+   system},
+Journal = {ENERGY AND BUILDINGS},
+Year = {2024},
+Volume = {324},
+Month = {DEC 1},
+Abstract = {By 2035, the UK aims to upgrade all homes to achieve a net-zero economy
+   by 2050, thereby reducing energy consumption, household costs, and
+   improving living conditions. Small and Medium-sized Enterprises (SMEs)
+   play a crucial role in this transition. However, many SME contractors
+   lack essential information on Sustainable Energy Initiatives (SEIs) and
+   the relevant Energy landscape necessary for driving Sustainable Energy
+   Transitions (SETs). This knowledge gap poses risks to SME interventions,
+   potentially leading to increased costs and inefficiencies. Accessing
+   timely information on SEIs including government policies, funding,
+   technologies, and environmental impacts from various media sources is
+   essential for guiding effective SETs and understanding the relevant
+   Energy landscape, thereby facilitating informed decision-making.
+   Currently, SMEs lack an integrated system that consolidates data from
+   diverse media sources into a centralized Information System (IS),
+   limiting their ability to effectively navigate SEIs. To address this
+   gap, this research introduces an Energy Chatbot, a sustainable IS that
+   utilizes Large Language Models (LLMs) integrated with multi-source
+   Retrieval Augmented Generation (RAG). This system encompasses diverse
+   media sources, including news articles, government reports, industry
+   publications, academic research, and social media. The Energy Chatbot is
+   designed to enhance decisionmaking for SMEs by providing comprehensive
+   Energy sector insights through a Question Answering (QA) system. Key
+   findings emphasize that this approach reduces costs by utilizing
+   open-source models. Moreover, the Energy Chatbot provides SMEs with
+   access to up-to-date information, enabling them to identify long-term
+   sustainability strategies and maintain a competitive edge in the
+   evolving Energy landscape.},
+Publisher = {ELSEVIER SCIENCE SA},
+Address = {PO BOX 564, 1001 LAUSANNE, SWITZERLAND},
+Type = {Article},
+Language = {English},
+Affiliation = {Arslan, M (Corresponding Author), Univ West England, Architecture \& Environm, Bristol, England.
+   Arslan, Muhammad; Mahdjoubi, Lamine, Univ West England, Architecture \& Environm, Bristol, England.
+   Munawar, Saba, Natl Univ Comp \& Emerging Sci NUCES, Elect Telecommun Engn, Islamabad, Pakistan.},
+DOI = {10.1016/j.enbuild.2024.114827},
+EarlyAccessDate = {OCT 2024},
+Article-Number = {114827},
+ISSN = {0378-7788},
+EISSN = {1872-6178},
+Keywords = {Data-driven operations; Sustainable Energy Transitions (SETs);
+   Information Extraction (IE); Large Language Models (LLMs); Retrieval
+   Augmented Generation (RAG); Sustainable Development Goals (SDGs)},
+Keywords-Plus = {RENEWABLE ENERGY; TECHNOLOGY},
+Research-Areas = {Construction \& Building Technology; Energy \& Fuels; Engineering},
+Web-of-Science-Categories  = {Construction \& Building Technology; Energy \& Fuels; Engineering, Civil},
+Author-Email = {muhammad.arslan@uwe.ac.uk},
+Affiliations = {University of West England},
+ResearcherID-Numbers = {Arslan, Muhammad/T-6589-2018
+   },
+ORCID-Numbers = {Gaona Cumbicus, Luis Angel/0009-0002-0541-9647
+   Arslan, Muhammad/0000-0003-3682-7002
+   Munawar, Saba/0009-0007-1255-9425},
+Funding-Acknowledgement = {University of the West of England, Bristol, United Kingdom},
+Funding-Text = {The authors would like to express their gratitude to the University of
+   the West of England, Bristol, United Kingdom, for funding this research.},
+Number-of-Cited-References = {109},
+Times-Cited = {27},
+Usage-Count-Last-180-days = {26},
+Usage-Count-Since-2013 = {91},
+Journal-ISO = {Energy Build.},
+Doc-Delivery-Number = {J1R9J},
+Web-of-Science-Index = {Science Citation Index Expanded (SCI-EXPANDED)},
+Unique-ID = {WOS:001334923600001},
+OA = {hybrid},
+DA = {2026-04-07},
+}
+
+@article{ WOS:001702548700001,
+Author = {Leonard, Eamon and Sheehan, Barry and Mullins, Martin and Shannon,
+   Darren},
+Title = {Generative AI for enhanced risk management in SMEs},
+Journal = {JOURNAL OF RISK RESEARCH},
+Year = {2026},
+Month = {2026 FEB 17},
+Abstract = {Establishing and sustaining small and medium-sized enterprises (SMEs)
+   presents considerable challenges. Entrepreneurs must navigate limited
+   resources and significant knowledge gaps across a spectrum of
+   information requirements-from health and safety to corporate governance,
+   taxation, and personnel management. Despite the extensive deployment of
+   generative artificial intelligence (GAI) across sectors such as
+   medicine, education, and finance, its application and research in SME
+   risk management remain notably sparse. This research aims to bridge this
+   gap by showcasing the benefits of GAI within the risk management cycle,
+   which is critical to enhancing the prospects of success among smaller
+   business entities. With rapid technological advancements and the
+   widespread integration of GAI in office and home settings, an
+   opportunity arises to develop customised risk management tools
+   specifically tailored for SMEs. The analysis outlines a conceptual case
+   study in the food and beverage sector, where an entrepreneur launches a
+   new restaurant. The study tracks GAI's iterative application across all
+   phases of the risk management cycle: identification, comprehension,
+   assessment, treatment, and monitoring. Specifically, it integrates
+   retrieval augmented generation (RAG), which accesses and incorporates
+   information from the Irish Health and Safety Authority (HSA) into its
+   processes. Additionally, GAI assistants are created and employed to
+   execute tasks integral to the risk management cycle, such as calculating
+   risk factors. A key outcome is the creation of a risk register for each
+   potential hazard, demonstrating GAI's practical application in risk
+   assessment. These tools illustrate the potential of GAI to navigate the
+   complex, information-dense, and regulatory-heavy landscape of
+   contemporary business environments. This exploration underscores how GAI
+   can improve decision-making and risk evaluation and promotes further
+   discussion and research on developing user-friendly GAI technologies.},
+Publisher = {ROUTLEDGE JOURNALS, TAYLOR \& FRANCIS LTD},
+Address = {2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND},
+Type = {Article; Early Access},
+Language = {English},
+Affiliation = {Leonard, E (Corresponding Author), Univ Limerick, Kemmy Business Sch, Limerick V94 PH93, Ireland.
+   Leonard, Eamon; Sheehan, Barry; Mullins, Martin; Shannon, Darren, Univ Limerick, Kemmy Business Sch, Limerick, Ireland.},
+DOI = {10.1080/13669877.2026.2627597},
+EarlyAccessDate = {FEB 2026},
+ISSN = {1366-9877},
+EISSN = {1466-4461},
+Keywords = {Risk management cycle; risk register; generative artificial
+   intelligence; SMEs; retrieval augmented generation},
+Research-Areas = {Social Sciences - Other Topics},
+Web-of-Science-Categories  = {Social Sciences, Interdisciplinary},
+Author-Email = {eamon.leonard@ul.ie},
+Affiliations = {University of Limerick},
+ResearcherID-Numbers = {Shannon, Darren/AAX-4421-2021
+   Sheehan, Barry/W-4850-2019},
+Funding-Acknowledgement = {Interreg {[}Project ID 01C0232]},
+Funding-Text = {This sudy was funded by Interreg Europe Funding supported this work
+   under the Applied Data-Science and AI for proactive SME service
+   (PROACTsme) project, Project ID 01C0232.},
+Number-of-Cited-References = {78},
+Times-Cited = {0},
+Usage-Count-Last-180-days = {7},
+Usage-Count-Since-2013 = {7},
+Journal-ISO = {J. Risk Res.},
+Doc-Delivery-Number = {EJ4WA},
+Web-of-Science-Index = {Social Science Citation Index (SSCI)},
+Unique-ID = {WOS:001702548700001},
+DA = {2026-04-07},
+}
+
+@article{ WOS:001691053100004,
+Author = {Poomekum, Potchakorn and Sorsoontornnirat, Thanapat and Suriyawong,
+   Arisara and Topiya, Pimmada and Fugkeaw, Somchart},
+Title = {Chimera-RL: An End-to-End Autonomous Red-Teaming Framework for LLM
+   Applications},
+Journal = {IEEE ACCESS},
+Year = {2026},
+Volume = {14},
+Pages = {21507-21525},
+Abstract = {Large Language Model (LLM)-integrated enterprise applications introduce
+   a dynamic and evolving attack surface, where vulnerabilities arise not
+   from static code defects but from semantic misalignment, unsafe tool
+   invocation, and multi-turn contextual reasoning. Existing security
+   practices-including manual red teaming, prompt fuzzing, heuristic
+   guardrails, and adversarial prompt libraries-remain limited in
+   scalability and depth: they are labor-intensive, predominantly
+   short-horizon, and rarely uncover multi-vector or multi-step exploit
+   chains, while also lacking reproducible forensic evidence and systematic
+   mitigation support. These limitations complicate the rigorous validation
+   and hardening of complex LLM-tool-Retrieval Augmented Generation (RAG)
+   systems. This paper presents Chimera-RL, an end-to-end autonomous
+   red-teaming framework that operationalizes established reinforcement
+   learning and attack-graph concepts within a unified system tailored to
+   LLM-integrated applications. Rather than introducing a new learning
+   algorithm, Chimera-RL combines curriculum-driven Hierarchical
+   Reinforcement Learning (HRL), parameterized macro-actions, and
+   mission-graph-guided exploration to enable long-horizon, campaign-level
+   vulnerability discovery. The framework further integrates
+   cryptographically hash-chained forensic logging and a template-driven
+   mitigation playbook generator, providing verifiable attack traces and
+   actionable defensive guidance. Experimental results demonstrate that
+   Chimera-RL converges faster and more stably than standard deep RL
+   baselines, including Proximal Policy Optimization (PPO) and Advantage
+   Actor-Critic (A2C), while discovering shorter and lower-cost exploit
+   paths. When the generated mitigation playbooks are deployed, the attack
+   success rate is reduced by nearly half, the median steps-to-compromise
+   increase by a factor of seven, and the attacker's operational cost more
+   than doubles. These results indicate that Chimera-RL provides a
+   practical and scalable system-level approach for automated red teaming
+   and security hardening of LLM-integrated systems.},
+Publisher = {IEEE-INST ELECTRICAL ELECTRONICS ENGINEERS INC},
+Address = {445 HOES LANE, PISCATAWAY, NJ 08855-4141 USA},
+Type = {Article},
+Language = {English},
+Affiliation = {Fugkeaw, S (Corresponding Author), Thammasat Univ, Sirindhorn Int Inst Technol, Sch Informat Comp \& Commun Technol ICT, Pathum Thani 12000, Thailand.
+   Poomekum, Potchakorn; Sorsoontornnirat, Thanapat; Suriyawong, Arisara; Topiya, Pimmada; Fugkeaw, Somchart, Thammasat Univ, Sirindhorn Int Inst Technol, Sch Informat Comp \& Commun Technol ICT, Pathum Thani 12000, Thailand.},
+DOI = {10.1109/ACCESS.2026.3659626},
+ISSN = {2169-3536},
+Keywords = {Reinforcement learning; Security; Prevention and mitigation; Cognition;
+   Forensics; Training; Safety; Retrieval augmented generation; Pipelines;
+   Testing; Large language models (LLMs); automated red teaming;
+   hierarchical reinforcement learning (HRL); mission graph; forensic
+   logging; mitigation playbook},
+Keywords-Plus = {REINFORCEMENT; DEFENSE},
+Research-Areas = {Computer Science; Engineering; Telecommunications},
+Web-of-Science-Categories  = {Computer Science, Information Systems; Engineering, Electrical \&
+   Electronic; Telecommunications},
+Author-Email = {Somchart@siit.tu.ac.th},
+Affiliations = {Thammasat University},
+ResearcherID-Numbers = {Fugkeaw, Somchart/ABC-4883-2021},
+Number-of-Cited-References = {56},
+Times-Cited = {0},
+Usage-Count-Last-180-days = {0},
+Usage-Count-Since-2013 = {0},
+Journal-ISO = {IEEE Access},
+Doc-Delivery-Number = {DS5QP},
+Web-of-Science-Index = {Science Citation Index Expanded (SCI-EXPANDED)},
+Unique-ID = {WOS:001691053100004},
+OA = {gold},
+DA = {2026-04-07},
+}
+
+@article{ WOS:001689894700002,
+Author = {Lin, Yu-Chi and Dang, Jr-Fong},
+Title = {From product specifications to smart manufacturing: Generative AI-driven
+   process innovation for BOM digitization and its applications},
+Journal = {ADVANCED ENGINEERING INFORMATICS},
+Year = {2026},
+Volume = {71},
+Number = {C},
+Month = {APR},
+Abstract = {As global manufacturing advances toward digital transformation and
+   intelligent operations, seamless integration between product
+   specification documents and Bills of Materials (BOM) has become
+   increasingly critical. Conventional BOM creation processes rely heavily
+   on manual interpretation. This often leads to inconsistencies in part
+   numbering, redundant records, and extended engineering cycles,
+   especially when documentation is unstructured and multilingual. To
+   address these challenges, this study proposes a generative AI-driven
+   framework that integrates large language models (LLMs) with
+   retrieval-augmented generation (RAG) for intelligent BOM digitization.
+   The framework establishes a closed-loop pipeline. It converts
+   unstructured product datasheets into rule-validated and semantically
+   consistent part numbers through multi-stage document parsing, knowledge
+   retrieval, and constrained decoding. A human-in-the-loop verification
+   mechanism is incorporated to ensure semantic precision and traceability.
+   By leveraging the multimodal capabilities of the Qwen model, the
+   proposed framework effectively parses and understands bilingual
+   (Chinese-English) technical documents. This enhances cross-lingual
+   semantic comprehension and data accuracy. The validated outputs are
+   consolidated into an executable Electrical and Digital BOM (x-EDBOM).
+   This x-EDBOM serves as a unified source of truth across Product
+   Lifecycle Management (PLM), Enterprise Resource Planning (ERP), and
+   Manufacturing Execution Systems (MES). Empirical validation at a
+   mid-sized electronics manufacturer demonstrates a 12.5x reduction in
+   processing time (25 to 2 min), an average accuracy of 91\%. It also
+   indicates estimated monthly cost savings of approximately USD 0.7
+   million. Furthermore, the x-EDBOM enables comparative analysis of
+   identical components across multiple suppliers. It integrates their
+   price, lead-time, and specification data within a unified system,
+   thereby supporting data-driven sourcing optimization and supplier
+   management. Beyond efficiency improvements, the proposed framework
+   supports cross-lingual data normalization, supplier benchmarking, and
+   postmerger system harmonization. It provides a scalable foundation for
+   intelligent product data management and smart manufacturing
+   transformation.},
+Publisher = {ELSEVIER SCI LTD},
+Address = {125 London Wall, London, ENGLAND},
+Type = {Article},
+Language = {English},
+Affiliation = {Dang, JF (Corresponding Author), Natl Taiwan Univ Sci \& Technol, Grad Inst Intelligent Mfg Technol, Taipei, Taiwan.
+   Lin, Yu-Chi; Dang, Jr-Fong, Natl Taiwan Univ Sci \& Technol, Grad Inst Intelligent Mfg Technol, Taipei, Taiwan.},
+DOI = {10.1016/j.aei.2026.104451},
+EarlyAccessDate = {FEB 2026},
+Article-Number = {104451},
+ISSN = {1474-0346},
+EISSN = {1873-5320},
+Keywords = {Smart manufacturing; Generative AI; BOM digitization;
+   Retrieval-Augmented Generation (RAG); Product Lifecycle Management
+   (PLM); x-EDBOM},
+Research-Areas = {Computer Science; Engineering},
+Web-of-Science-Categories  = {Computer Science, Artificial Intelligence; Engineering,
+   Multidisciplinary},
+Author-Email = {jfdang@mail.ntust.edu.tw},
+Affiliations = {National Taiwan University of Science \& Technology},
+ORCID-Numbers = {Dang, Jr-Fong/0000-0003-1034-677X},
+Number-of-Cited-References = {24},
+Times-Cited = {0},
+Usage-Count-Last-180-days = {2},
+Usage-Count-Since-2013 = {2},
+Journal-ISO = {Adv. Eng. Inform.},
+Doc-Delivery-Number = {DQ8OD},
+Web-of-Science-Index = {Science Citation Index Expanded (SCI-EXPANDED)},
+Unique-ID = {WOS:001689894700002},
+DA = {2026-04-07},
+}
+
+@article{ WOS:001574689200001,
+Author = {Chang, Zhi-Xing and Guo, Wei and Wang, Lei and Shao, Hong-Yu and Zhang,
+   Yuan-Rong and Guo, Xiao},
+Title = {A generation framework of conceptual solutions integrating link
+   prediction and large language model},
+Journal = {JOURNAL OF ENGINEERING DESIGN},
+Year = {2025},
+Month = {2025 SEP 12},
+Abstract = {In the increasingly intense market environment, both the innovativeness
+   and the generating speed of conceptual solutions is vital for companies.
+   In previous studies, researchers have proposed various methods for
+   identifying innovative ideas. However, the transition from these ideas
+   to conceptual solutions still relies on designers' expertise and manual
+   efforts. To address this challenge, we propose a generation framework of
+   conceptual solutions. This framework employs semantic embedding methods
+   to retrieve technologies relevant to requirements and utilises link
+   prediction methods to uncover innovation opportunities. Subsequently,
+   based on these opportunities, it leverages patent data and
+   retrieval-augmented generation techniques to enable the large language
+   model (LLM) to generate innovative and feasible conceptual solutions.
+   Finally, we validated the effectiveness of the proposed framework
+   through two case studies and demonstrated that the ConceptInnoGPT tool,
+   developed based on this framework, significantly enhances the
+   innovativeness, feasibility, efficiency, and variety of conceptual
+   design. This study highlights the potential of LLM and advanced
+   data-driven technologies in the automated generation of conceptual
+   solutions, aiding enterprises in rapidly generating innovations to
+   achieve a competitive edge.},
+Publisher = {TAYLOR \& FRANCIS LTD},
+Address = {2-4 PARK SQUARE, MILTON PARK, ABINGDON OR14 4RN, OXON, ENGLAND},
+Type = {Article; Early Access},
+Language = {English},
+Affiliation = {Wang, L; Shao, HY (Corresponding Author), Tianjin Univ, Key Lab Mech Theory \& Equipment Design, Minist Educ, 35 Yaguan Rd, Tianjin 300350, Peoples R China.
+   Chang, Zhi-Xing; Guo, Wei; Wang, Lei; Shao, Hong-Yu; Zhang, Yuan-Rong; Guo, Xiao, Tianjin Univ, Key Lab Mech Theory \& Equipment Design, Minist Educ, 35 Yaguan Rd, Tianjin 300350, Peoples R China.
+   Guo, Wei, Tianjin Renai Coll, Sch Intelligent Media \& Design Arts, Tianjin, Peoples R China.},
+DOI = {10.1080/09544828.2025.2558333},
+EarlyAccessDate = {SEP 2025},
+ISSN = {0954-4828},
+EISSN = {1466-1837},
+Keywords = {Conceptual design; link prediction; patent analysis; large language
+   model},
+Keywords-Plus = {TECHNOLOGY},
+Research-Areas = {Engineering},
+Web-of-Science-Categories  = {Engineering, Multidisciplinary},
+Author-Email = {tjuwl@tju.edu.cn
+   shaohongyu@tju.edu.cn},
+Affiliations = {Tianjin University; Tianjin University; Tianjin Renai College},
+ResearcherID-Numbers = {Shao, Hongyu/NNG-7698-2025},
+Funding-Acknowledgement = {National Natural Science Foundation of China {[}72371185]; State Key
+   Laboratory of Engines {[}K2024-01]},
+Funding-Text = {This work was supported by the National Natural Science Foundation of
+   China (grant number 72371185) and the State Key Laboratory of Engines
+   (grant number K2024-01).},
+Number-of-Cited-References = {60},
+Times-Cited = {1},
+Usage-Count-Last-180-days = {29},
+Usage-Count-Since-2013 = {32},
+Journal-ISO = {J. Eng. Des.},
+Doc-Delivery-Number = {7MS5D},
+Web-of-Science-Index = {Science Citation Index Expanded (SCI-EXPANDED)},
+Unique-ID = {WOS:001574689200001},
+DA = {2026-04-07},
+}
+
+@article{ WOS:001327688000004,
+Author = {Jeong, Cheonsu},
+Title = {A Study on the Implementation of Generative AI Services Using an
+   Enterprise Data-Based LLM Application Architecture},
+Journal = {ADVANCES IN ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING},
+Year = {2023},
+Volume = {3},
+Number = {4},
+Pages = {1588-1618},
+Month = {OCT},
+Abstract = {This study presents a method for implementing generative AI services by
+   utilizing the Large Language Models (LLM) application architecture. With
+   recent advancements in generative AI technology, LLMs have gained
+   prominence across various domains. In this context, the research
+   addresses the challenge of information scarcity and proposes specific
+   remedies by harnessing LLM capabilities. The investigation delves into
+   strategies for mitigating the issue of inadequate data, offering
+   tailored solutions. The study delves into the efficacy of employing
+   fine-tuning techniques and direct document integration to alleviate data
+   insufficiency. A significant contribution of this work is the
+   development of a Retrieval-Augmented Generation (RAG) model, which
+   tackles the aforementioned challenges. The RAG model is carefully
+   designed to enhance information storage and retrieval processes,
+   ensuring improved content generation. The research elucidates the key
+   phases of the information storage and retrieval methodology underpinned
+   by the RAG model. A comprehensive analysis of these steps is undertaken,
+   emphasizing their significance in addressing the scarcity of data. The
+   study highlights the efficacy of the proposed method, showcasing its
+   applicability through illustrative instances. By implementing the RAG
+   model for information storage and retrieval, the research not only
+   contributes to a deeper comprehension of generative AI technology but
+   also facilitates its practical usability within enterprises utilizing
+   LLMs. This work holds substantial value in advancing the field of
+   generative AI, offering insights into enhancing data-driven content
+   generation and fostering active utilization of LLM-based services within
+   corporate settings.},
+Publisher = {Shimur Publications},
+Address = {Tc-1/7, TC-1, New Moti Nagar, Delhi, INDIA},
+Type = {Article},
+Language = {English},
+Affiliation = {Jeong, C (Corresponding Author), SAMSUND SDS, Dept AI Automat Team, Olymp Ro 125, Seoul, South Korea.
+   Jeong, Cheonsu, SAMSUND SDS, Dept AI Automat Team, Olymp Ro 125, Seoul, South Korea.},
+EISSN = {2582-9793},
+Keywords = {Embedding; Generative AI; LLM framework; RAG; Vector store},
+Research-Areas = {Computer Science},
+Web-of-Science-Categories  = {Computer Science, Artificial Intelligence},
+Author-Email = {csu.jeong@samsung.com},
+ResearcherID-Numbers = {Jeong, Cheonsu/JQX-2553-2023},
+ORCID-Numbers = {Jeong, Cheonsu/0000-0003-0751-3987},
+Number-of-Cited-References = {22},
+Times-Cited = {17},
+Usage-Count-Last-180-days = {3},
+Usage-Count-Since-2013 = {28},
+Journal-ISO = {Adv. Artif. Intell. Mach. Learn.},
+Doc-Delivery-Number = {I1B8I},
+Web-of-Science-Index = {Emerging Sources Citation Index (ESCI)},
+Unique-ID = {WOS:001327688000004},
+DA = {2026-04-07},
+}
+
+@article{ WOS:001606658900006,
+Author = {Hong, Kijae and Park, Yeonsu},
+Title = {Large Language Models for Semantic Join: A Comprehensive Survey},
+Journal = {IEEE ACCESS},
+Year = {2025},
+Volume = {13},
+Pages = {184478-184493},
+Abstract = {Semantic join, the operation of integrating information siloed across
+   heterogeneous data sources, is critical for modern data science, yet
+   traditional methods have long been hampered by the persistent challenges
+   of deep semantic ambiguity, poor scalability, and prohibitive manual
+   intervention. This survey posits that Large Language Models (LLMs)
+   represent a promising new paradigm, offering the potential to overcome
+   these long-standing hurdles. By replacing brittle rules and syntactic
+   analysis with deep contextual understanding, LLMs leverage their core
+   capabilities in contextual representation learning and in-context
+   learning (ICL) to automate and significantly improve the accuracy of
+   linking records based on their underlying conceptual relatedness. We
+   provide a comprehensive and structured review of this burgeoning field,
+   synthesizing the state-of-the-art from foundational methodologies-such
+   as data textualization and bi/cross-encoder architectures-to advanced
+   techniques including Retrieval-Augmented Generation (RAG), structured
+   prompting for complex reasoning, and optimizations for scalability.
+   Furthermore, we survey transformative applications across enterprise
+   data management, knowledge graph (KG) construction, and scientific
+   research. By consolidating current knowledge, structuring the landscape
+   of techniques, and identifying key open questions, this survey aims to
+   catalyze future research and guide the development of the next
+   generation of more powerful, reliable, and responsible semantic data
+   integration solutions.},
+Publisher = {IEEE-INST ELECTRICAL ELECTRONICS ENGINEERS INC},
+Address = {445 HOES LANE, PISCATAWAY, NJ 08855-4141 USA},
+Type = {Article},
+Language = {English},
+Affiliation = {Park, Y (Corresponding Author), Kangwon Natl Univ, Dept Comp Sci \& Engn, Chunchon 24341, South Korea.
+   Hong, Kijae, Ceres Technol, Daegu 41209, South Korea.
+   Park, Yeonsu, Kangwon Natl Univ, Dept Comp Sci \& Engn, Chunchon 24341, South Korea.},
+DOI = {10.1109/ACCESS.2025.3625753},
+ISSN = {2169-3536},
+Keywords = {Large language models; Large language models; semantic join; semantic
+   join; data integration; data integration},
+Keywords-Plus = {SIMILARITY; EMBEDDINGS},
+Research-Areas = {Computer Science; Engineering; Telecommunications},
+Web-of-Science-Categories  = {Computer Science, Information Systems; Engineering, Electrical \&
+   Electronic; Telecommunications},
+Author-Email = {yeonsu.park@kangwon.ac.kr},
+Affiliations = {Kangwon National University},
+ResearcherID-Numbers = {Park, Yeonsu/LKN-3712-2024},
+ORCID-Numbers = {Park, Yeonsu/0009-0001-9355-2140},
+Funding-Acknowledgement = {National Research Foundation of Korea(NRF) grant - Korea
+   government(MSIT) {[}RS-2023-00242528]; Kangwon National University},
+Funding-Text = {This work was supported in part by the National Research Foundation of
+   Korea(NRF) grant funded by the Korea government(MSIT)
+   (RS-2023-00242528), and in part by the 2025 Research Grant from Kangwon
+   National University.},
+Number-of-Cited-References = {117},
+Times-Cited = {0},
+Usage-Count-Last-180-days = {5},
+Usage-Count-Since-2013 = {5},
+Journal-ISO = {IEEE Access},
+Doc-Delivery-Number = {9HT5T},
+Web-of-Science-Index = {Science Citation Index Expanded (SCI-EXPANDED)},
+Unique-ID = {WOS:001606658900006},
+OA = {Green Submitted, gold},
+DA = {2026-04-07},
+}
+
+@article{ WOS:001647494200001,
+Author = {Chen, Qianqian and Tang, Zhongjun and He, Duokui and Wang, Yiran and Lu,
+   Yingtong},
+Title = {A perceived quality quantification method for experiential products
+   considering ambiguity, correlation, and dynamics of features},
+Journal = {ELECTRONIC COMMERCE RESEARCH},
+Year = {2025},
+Month = {2025 DEC 24},
+Abstract = {Experience products refer to goods whose value is perceived and
+   evaluated by consumers through participatory experiential processes.
+   Quantifying the perceived quality of experience products is of great
+   significance for both content acquisition decisions on the platform side
+   and product development process optimization on the enterprise side.
+   Existing methods often struggle to address the ambiguity, correlation,
+   and dynamics of perceived quality features for experience products. This
+   study proposes a perceived quality quantification method based on
+   user-generated content, comprehensively considering the ambiguity,
+   correlation, and dynamics of features. First, useful online reviews are
+   identified through data cleaning and usefulness screening. Second,
+   driven by large language models, a model for perceived quality feature
+   identification and network description is proposed. Finally, perceived
+   quality quantification is conducted by extending the Ising model. The
+   effectiveness of the proposed method is validated on three animation
+   datasets, a micro-drama dataset, a new energy vehicle dataset and Yelp
+   public dataset, and the commonalities and differences of its perceived
+   quality features are analyzed and compared, providing directions for
+   quality improvement. Additionally, its effectiveness and superiority are
+   further verified by comparing it with the baseline method in two
+   dimensions. Moreover, this method is also applicable to other functional
+   and experience products.},
+Publisher = {SPRINGER},
+Address = {VAN GODEWIJCKSTRAAT 30, 3311 GZ DORDRECHT, NETHERLANDS},
+Type = {Article; Early Access},
+Language = {English},
+Affiliation = {Tang, ZJ (Corresponding Author), Beijing Univ Technol, Sch Econ \& Management, Beijing 100124, Peoples R China.
+   Chen, Qianqian; Tang, Zhongjun; He, Duokui; Wang, Yiran; Lu, Yingtong, Beijing Univ Technol, Sch Econ \& Management, Beijing 100124, Peoples R China.},
+DOI = {10.1007/s10660-025-10035-x},
+EarlyAccessDate = {DEC 2025},
+ISSN = {1389-5753},
+EISSN = {1572-9362},
+Keywords = {Perceived quality quantification; Large language models; Retrieval
+   augmented generation; Ising model; User-generated content},
+Research-Areas = {Business \& Economics},
+Web-of-Science-Categories  = {Business; Management},
+Author-Email = {tangzhongjun@bjut.edu.cn},
+Affiliations = {Beijing University of Technology},
+ORCID-Numbers = {Tang, Zhongjun/0000-0002-0300-6198},
+Funding-Acknowledgement = {National Natural Science Foundation of China {[}71672004]},
+Funding-Text = {This work was supported by National Natural Science Foundation of China:
+   {[}Grant Number 71672004].},
+Number-of-Cited-References = {87},
+Times-Cited = {0},
+Usage-Count-Last-180-days = {6},
+Usage-Count-Since-2013 = {6},
+Journal-ISO = {Electron. Commer. Res.},
+Doc-Delivery-Number = {AG3VY},
+Web-of-Science-Index = {Social Science Citation Index (SSCI)},
+Unique-ID = {WOS:001647494200001},
+DA = {2026-04-07},
+}
+
+@article{ WOS:001636972700001,
+Author = {Wang, Shiyu and Jiang, Yuyao and Xu, Shuaijianni and Liu, Yiwen and Yin,
+   Ming and He, Guofeng},
+Title = {Fine-tuning a vulnerability-specific large language model for a hybrid
+   software vulnerability detection method},
+Journal = {ENGINEERING APPLICATIONS OF ARTIFICIAL INTELLIGENCE},
+Year = {2026},
+Volume = {165},
+Number = {A},
+Month = {FEB 1},
+Abstract = {Detecting vulnerabilities in large-scale, multi-file software systems
+   remains a critical challenge, as traditional techniques and current
+   large language models (LLMs) struggle with long code dependencies and
+   complex control flows. This challenge is further compounded for Java,
+   which dominates enterprise software yet remains relatively underexplored
+   in vulnerability detection research. In this study, we first fine-tune a
+   vulnerability-specific LLM called VulDetLLM and then propose a hybrid
+   vulnerability detection method using VulDetLLM and programassisted
+   language (PAL) model for large-scale source code (HyVD-VP). HyVD-VP
+   performs static detection using semantically meaningful slices and
+   external knowledge, verifies predictions through lightweight dynamic
+   checks during runtime, and integrates static and dynamic signals via an
+   LLM-based decision module to achieve accurate and explainable detection.
+   We evaluate HyVD-VP primarily on Java, which is widely used in
+   missioncritical enterprise domains such as banking, telecommunications,
+   and large-scale web services. The method consistently outperforms
+   traditional analyzers (Fortify, SpotBugs) and recent research baselines,
+   achieving 96.3 \% accuracy, 95.7 \% F1-score while reducing false
+   negatives. Importantly, it also identified 16 previously unknown
+   vulnerabilities in six real-world enterprise projects, underscoring its
+   industrial relevance. Based on our current evaluation in Java, the
+   detection pipeline shows moderate runtime overhead mainly from dynamic
+   validation, as indicated by runtime profiling. A feasibility study
+   further suggests the potential adaptability of HyVD-VP to multiple
+   programming languages and constrained hardware scenarios simultaneously,
+   indicating both practical applicability and extensibility. These results
+   establish HyVD-VP as a promising step toward scalable, industry-ready
+   solutions for reliable vulnerability detection in large-scale software
+   systems.},
+Publisher = {PERGAMON-ELSEVIER SCIENCE LTD},
+Address = {THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, ENGLAND},
+Type = {Article},
+Language = {English},
+Affiliation = {Wang, SY; Xu, SJN (Corresponding Author), Res Inst China Telecom, Shanghai 200120, Peoples R China.
+   Wang, Shiyu; Jiang, Yuyao; Xu, Shuaijianni; Yin, Ming; He, Guofeng, Res Inst China Telecom, Shanghai 200120, Peoples R China.
+   Liu, Yiwen, Donghua Univ, Coll Informat Sci \& Technol, Shanghai 201620, Peoples R China.},
+DOI = {10.1016/j.engappai.2025.113410},
+EarlyAccessDate = {DEC 2025},
+Article-Number = {113410},
+ISSN = {0952-1976},
+EISSN = {1873-6769},
+Keywords = {Static analysis; Vulnerability detection; Large language models;
+   Knowledge-based retrieval-augmented generation; Program-assisted
+   language model; Large-language-model-as-a-judge},
+Research-Areas = {Automation \& Control Systems; Computer Science; Engineering},
+Web-of-Science-Categories  = {Automation \& Control Systems; Computer Science, Artificial
+   Intelligence; Engineering, Multidisciplinary; Engineering, Electrical \&
+   Electronic},
+Author-Email = {wangsy37@chinatelecom.cn
+   xusjn@chinatelecom.cn},
+Affiliations = {Donghua University},
+ResearcherID-Numbers = {Wang, Shiyu/LQL-0370-2024},
+Number-of-Cited-References = {83},
+Times-Cited = {0},
+Usage-Count-Last-180-days = {6},
+Usage-Count-Since-2013 = {6},
+Journal-ISO = {Eng. Appl. Artif. Intell.},
+Doc-Delivery-Number = {S8161},
+Web-of-Science-Index = {Science Citation Index Expanded (SCI-EXPANDED)},
+Unique-ID = {WOS:001636972700001},
+DA = {2026-04-07},
+}
+
+@article{ WOS:001378253500013,
+Author = {Naeem, Zan Ahmad and Ahmad, Mohammad Shahmeer and Eltabakh, Mohamed and
+   Ouzzani, Mourad and Tang, Nan},
+Title = {RetClean: Retrieval-Based Data Cleaning Using LLMs and Data Lakes},
+Journal = {PROCEEDINGS OF THE VLDB ENDOWMENT},
+Year = {2024},
+Volume = {17},
+Number = {12},
+Pages = {4421-4424},
+Month = {AUG},
+Abstract = {Large language models (LLMs) have shown great potential in data
+   cleaning, which is a fundamental task in all modern applications. In
+   this demo proposal, we demonstrate that indeed LLMs can assist in data
+   cleaning, e.g., filling in missing values in a data table, through
+   different approaches. For example, cloud-based non-private LLMs, e.g.,
+   OpenAI GPT family or Google Gemini, can assist in cleaning non-private
+   datasets that encompass world-knowledge information (Scenario 1).
+   However, such LLMs may struggle with datasets that they have never
+   encountered before, e.g., local enterprise data, or when the user
+   requires an explanation of the source of the suggested clean values. In
+   that case, retrieval-based methods using RAG (Retrieval Augmented
+   Generation) that complements the LLM power with a user-provided data
+   source, e.g., a data lake, are a must. The data lake is indexed, and
+   each time a new request comes, we retrieve the top-k relevant tuples to
+   the user's query tuple to be cleaned and leverage LLM inference power to
+   infer the correct value (Scenario 2). Nevertheless, even in Scenario 2,
+   sharing enterprise data with public LLMs (an externally hosted model)
+   might not be feasible for privacy reasons. In this scenario, we showcase
+   the practicality of locally hosted small LLMs in the cleaning process,
+   especially after fine-tuning them on a small number of examples
+   (Scenario 3). Our proposed system, RetClean, seamlessly supports all
+   three scenarios and provides a user-friendly GUI that enables the VLDB
+   audience to explore and experiment with different LLMs and investigate
+   their trade-offs.},
+Publisher = {ASSOC COMPUTING MACHINERY},
+Address = {1601 Broadway, 10th Floor, NEW YORK, NY USA},
+Type = {Article},
+Language = {English},
+Affiliation = {Naeem, ZA (Corresponding Author), HBKU, QCRI, Doha, Qatar.
+   Naeem, Zan Ahmad; Ahmad, Mohammad Shahmeer; Eltabakh, Mohamed; Ouzzani, Mourad, HBKU, QCRI, Doha, Qatar.
+   Tang, Nan, HKUST, HKUST GZ, Guangzhou, Peoples R China.},
+DOI = {10.14778/3685800.3685890},
+ISSN = {2150-8097},
+Research-Areas = {Computer Science},
+Web-of-Science-Categories  = {Computer Science, Information Systems; Computer Science, Theory \&
+   Methods},
+Author-Email = {znaeem@hbku.edu.qa
+   mohammadshahmeerah@hbku.edu.qa
+   meltabakh@hbku.edu.qa
+   mouzzani@hbku.edu.qa
+   nantang@hkust-gz.edu.cn},
+Affiliations = {Qatar Foundation (QF); Hamad Bin Khalifa University-Qatar; Qatar
+   Computing Research Institute; Hong Kong University of Science \&
+   Technology},
+Number-of-Cited-References = {7},
+Times-Cited = {10},
+Usage-Count-Last-180-days = {4},
+Usage-Count-Since-2013 = {13},
+Journal-ISO = {Proc. VLDB Endow.},
+Doc-Delivery-Number = {P5I8U},
+Web-of-Science-Index = {Science Citation Index Expanded (SCI-EXPANDED)},
+Unique-ID = {WOS:001378253500013},
+DA = {2026-04-07},
+}
+
+@article{ WOS:001318251700001,
+Author = {Liu, He and Ren, Yili and Li, Xin and Deng, Yue and Wang, Yongtao and
+   Cao, Qianwen and Du, Jinyang and Lin, Zhiwei and Wang, Wenjie},
+Title = {Research status and application of artificial intelligence large models
+   in the oil and gas industry},
+Journal = {PETROLEUM EXPLORATION AND DEVELOPMENT},
+Year = {2024},
+Volume = {51},
+Number = {4},
+Pages = {1049-1065},
+Month = {AUG},
+Abstract = {This article elucidates the concept of large model technology,
+   summarizes the research status of large model technology both
+   domestically and internationally, provides an overview of the
+   application status of large models in vertical industries, outlines the
+   challenges and issues confronted in applying large models in the oil and
+   gas sector, and offers prospects for the application of large models in
+   the oil and gas industry. The existing large models can be briefly
+   divided into three categories: large language models, visual large
+   models, and multimodal large models. The application of large models in
+   the oil and gas industry is still in its infancy. Based on open-source
+   large language models, some oil and gas enterprises have released large
+   language model products using methods like fine-tuning and retrieval
+   augmented generation. Scholars have attempted to develop
+   scenario-specific models for oil and gas operations by using
+   visual/multimodal foundation models. A few researchers have constructed
+   pre-trained foundation models for seismic data processing and
+   interpretation, as well as core analysis. The application of large
+   models in the oil and gas industry faces challenges such as current data
+   quantity and quality being difficult to support the training of large
+   models, high research and development costs, and poor algorithm autonomy
+   and control. The application of large models should be guided by the
+   needs of oil and gas business, taking the application of large models as
+   an opportunity to improve data lifecycle management, enhance data
+   governance capabilities, promote the construction of computing power,
+   strengthen the construction of ``artificial intelligence + energy{''}
+   composite teams, and boost the autonomy and control of large model
+   technology.},
+Publisher = {KEAI PUBLISHING LTD},
+Address = {16 DONGHUANGCHENGGEN NORTH ST, Building 5, Room 411, BEIJING, DONGCHENG
+   DISTRICT 100009, PEOPLES R CHINA},
+Type = {Article},
+Language = {English},
+Affiliation = {Ren, YL (Corresponding Author), Natl key Lab Multiresources Collaborat Green Prod, Daqing 163000, Peoples R China.
+   Ren, YL (Corresponding Author), Res Inst Petr Explorat \& Dev, Beijing 100083, Peoples R China.
+   Liu, He; Ren, Yili; Li, Xin, Natl key Lab Multiresources Collaborat Green Prod, Daqing 163000, Peoples R China.
+   Liu, He; Ren, Yili; Li, Xin; Wang, Wenjie, Res Inst Petr Explorat \& Dev, Beijing 100083, Peoples R China.
+   Deng, Yue; Du, Jinyang, Beijing Univ Aeronaut \& Astronaut, Beijing 100191, Peoples R China.
+   Wang, Yongtao; Lin, Zhiwei, Peking Univ, Beijing 100871, Peoples R China.
+   Cao, Qianwen, China Univ Petr, Beijing 102249, Peoples R China.},
+DOI = {10.1016/S1876-3804(24)60524-0},
+ISSN = {2096-4803},
+EISSN = {1876-3804},
+Keywords = {foundation model; large language mode; visual large model; multimodal
+   large model; large model of oil and gas industry; pre-training;
+   fine-tuning},
+Research-Areas = {Energy \& Fuels; Engineering; Geology},
+Web-of-Science-Categories  = {Energy \& Fuels; Engineering, Petroleum; Geosciences, Multidisciplinary},
+Author-Email = {renyili@petrochina.com.cn},
+Affiliations = {Beihang University; Peking University; China University of Petroleum},
+ResearcherID-Numbers = {du, jinyang/LZE-5392-2025
+   Wang, Yongtao/GQP-8919-2022
+   ZhiWei, Lin/AAQ-5438-2021
+   },
+ORCID-Numbers = {Mohamed, Yousef/0009-0008-9565-8767},
+Funding-Acknowledgement = {National Natural Science Foundation of China {[}72088101, 42372175];
+   PetroChina Science and Technology Innovation Fund Program
+   {[}2021DQ02-0904]},
+Funding-Text = {Foundation item: Supported by the National Natural Science Foundation of
+   China (72088101, 42372175) ; PetroChina Science and Technology
+   Innovation Fund Program (2021DQ02-0904) .},
+Number-of-Cited-References = {88},
+Times-Cited = {24},
+Usage-Count-Last-180-days = {45},
+Usage-Count-Since-2013 = {186},
+Journal-ISO = {Petroleum Explor. Dev.},
+Doc-Delivery-Number = {G7F5E},
+Web-of-Science-Index = {Science Citation Index Expanded (SCI-EXPANDED)},
+Unique-ID = {WOS:001318251700001},
+OA = {Green Submitted, gold},
+DA = {2026-04-07},
+}
+
+@article{ WOS:001701316400001,
+Author = {Sachenkova, Oxana and Andreasson, Melker and Tan, Dongzhu and Lincke,
+   Alisa},
+Title = {Agentic RAG for Maritime AIoT: Natural Language Access to Structured
+   Data},
+Journal = {SENSORS},
+Year = {2026},
+Volume = {26},
+Number = {4},
+Month = {FEB 13},
+Abstract = {Maritime operations are increasingly reliant on sensor data to drive
+   efficiency and enhance decision-making. However, despite rapid advances
+   in large language models, including expanded context windows and
+   stronger generative capabilities, critical industrial settings still
+   require secure, role-constrained access to enterprise data and explicit
+   limitation of model context. Retrieval-Augmented Generation (RAG)
+   remains essential to enforce data minimization, preserve privacy,
+   support verifiability, and meet regulatory obligations by retrieving
+   only permissioned, provenance-tracked slices of information at query
+   time. However, current RAG solutions lack robust validation protocols
+   for numerical accuracy for high-stakes industrial applications. This
+   paper introduces Lighthouse Bot, a novel Agentic RAG system specifically
+   designed to provide natural-language access to complex maritime sensor
+   data, including time-series and relational sensor data. The system
+   addresses a critical need for verifiable autonomous data analysis within
+   the Artificial Intelligence of Things (AIoT) domain, which we explore
+   through a case study on optimizing ferry operations. We present a
+   detailed architecture that integrates a Large Language Model with a
+   specialized database and coding agents to transform natural language
+   into executable tasks, enabling core AIoT capabilities such as
+   generating Python code for time-series analysis, executing complex SQL
+   queries on relational sensor databases, and automating workflows, while
+   keeping sensitive data outside the prompt and ensuring auditable,
+   policy-aligned tool use. To evaluate performance, we designed a test
+   suite of 24 questions with ground-truth answers, categorized by query
+   complexity (simple, moderate, complex) and data interaction type
+   (retrieval, aggregation, analysis). Our results show robust, controlled
+   data access with high factual fidelity: the proprietary Claude 3.7
+   achieved close to 90\% overall factual correctness, while the
+   open-source Qwen 72B achieved 66\% overall and 99\% on simple retrieval
+   and aggregation queries. These findings underscore the need for a secure
+   limited-context RAG in maritime AIoT and the potential for
+   cost-effective automation of routine exploratory analyses.},
+Publisher = {MDPI},
+Address = {MDPI AG, Grosspeteranlage 5, CH-4052 BASEL, SWITZERLAND},
+Type = {Article},
+Language = {English},
+Affiliation = {Sachenkova, O (Corresponding Author), Linnaeus Univ, Comp Sci \& Media Technol Dept, SE-39131 Kalmar, Sweden.
+   Sachenkova, Oxana; Andreasson, Melker; Tan, Dongzhu, Linnaeus Univ, Comp Sci \& Media Technol Dept, SE-39131 Kalmar, Sweden.
+   Lincke, Alisa, Linnaeus Univ, Comp Sci \& Media Technol Dept, SE-35253 Vaxjo, Sweden.},
+DOI = {10.3390/s26041227},
+Article-Number = {1227},
+EISSN = {1424-8220},
+Keywords = {IoT; GenAI; LLMs; RAG; sensor data; maritime industry},
+Research-Areas = {Chemistry; Engineering; Instruments \& Instrumentation},
+Web-of-Science-Categories  = {Chemistry, Analytical; Engineering, Electrical \& Electronic;
+   Instruments \& Instrumentation},
+Author-Email = {oxana@vild.ly
+   alisa.lincke@lnu.se},
+Affiliations = {Linnaeus University; Linnaeus University},
+Funding-Acknowledgement = {Swedish Transport Administration (Trafikverket) {[}309002]},
+Funding-Text = {This research was funded by the Swedish Transport Administration
+   (Trafikverket) through the Lighthouse industry program, grant number
+   309002 (Lighthouse pre-study: Retaining Swedish seafarers in the
+   profession at sea {[}43]).},
+Number-of-Cited-References = {43},
+Times-Cited = {0},
+Usage-Count-Last-180-days = {2},
+Usage-Count-Since-2013 = {2},
+Journal-ISO = {Sensors},
+Doc-Delivery-Number = {EH6RA},
+Web-of-Science-Index = {Science Citation Index Expanded (SCI-EXPANDED)},
+Unique-ID = {WOS:001701316400001},
+OA = {Green Submitted, gold},
+DA = {2026-04-07},
+}
+
+@article{ WOS:001399801800002,
+Author = {Kliestik, Tomas and Dragomir, Robert and Baluta, Aurelian Virgil and
+   Grecu, Iulia and Durana, Pavol and Karabolevski, Oana Ludmila and Kral,
+   Pavol and Balica, Raluca and Suler, Petr and Busu, Oprea Valentin and
+   Bugaj, Martin and Voinea, Dan-Valeriu and Vrbka, Jaromir and Cocosatu,
+   Madalina and Pera, Aurel and Gajdosikova, Dominika and Grupac, Marian},
+Title = {Enterprise generative artificial intelligence technologies, Internet of
+   Things and blockchain-based fintech management, and digital twin
+   industrial metaverse in the cognitive algorithmic economy},
+Journal = {OECONOMIA COPERNICANA},
+Year = {2024},
+Volume = {15},
+Number = {4},
+Pages = {1183-1221},
+Month = {DEC},
+Abstract = {Research background: Enterprise generative AI system-based worker
+   behavior tracking and monitoring, socially responsible organizational
+   practices, employee performance management satisfaction, and human
+   resource management procedures, relationships, and outcomes develop on
+   hiring and objective performance assessment algorithms in terms of human
+   resource management activities, functions, processes, practices,
+   policies, and productivity. Deep reinforcement and machine learning
+   techniques, operational and analytical generative AI and cloud
+   capabilities, and real-time anomalous behavior recognition systems
+   further fintech development for credit and lending services, payment
+   analytics processes, and risk assessment, monitoring, and mitigation.
+   Generative AI tools can bolster predictive analytics by collaborative
+   and interconnected sensor and machine data for tailored, seamless, and
+   finetuned product, operational process, and organizational workflow
+   development, efficiency, and innovation, driving agile transformative
+   changes in digital twin industrial metaverse. Purpose of the article: We
+   show that enterprise generative AI-driven schedule prediction tools, job
+   search and algorithmic hiring systems, and synthetic training data can
+   improve team selection, job performance and firing decisions, hiring
+   decision processes, and workforce productivity in terms of prediction
+   and decision-making by use of algorithmic management, system
+   performance, and production process tracking tools. Blockchain-based
+   fintech operations can shape cloud-based financial and digital banking
+   services, quote-to-cash process automation, cash-settled crypto futures,
+   digital loan decisioning, asset tokenization simulated transactions,
+   transaction switching and routing operations, tailored peer-to-peer
+   lending, and proactive credit line management. Collaborative
+   unstructured enterprise data processing, infrastructure, and governance
+   can develop on AI decision and behavior automation technology, retrieval
+   augmented generation and development management systems, and real-time
+   data descriptive and predictive analytics, driving productivity surges
+   and competitive advantage in digital twin industrial metaverse. Methods:
+   Reference and review management tools, together with evidence synthesis
+   screening software, harnessed were Abstrackr, AMSTAR, ASReview Lab,
+   CASP, Catchii, Citation- chaser, DistillerSR, JBI SUMARI, Litstream,
+   PICO Portal, and Rayyan. Findings \& value added: The current state of
+   the art is improved for theory on organizational issues and for policy
+   making as deep learning-based generative AI tools and workplace
+   monitoring systems can augment performance and productivity, gauge
+   employee effectiveness, build resilient, satisfied, and engaged
+   workforce, assess human capital, skill, and career development, drive
+   employee and productivity expectations in relation to flexibility and
+   stability, and shape turnover, retention, and loyalty. Cloud and account
+   servicing technologies can be deployed in generative AI fintechs for
+   embedded cryptocurrency trading, transaction moni toring and processing,
+   digital asset transfers, payment screening, corporate and retail banking
+   operations, and fraud prevention.
+   Generative AI technologies can reshape jobs and reimagine meaningful
+   work, involving creativity and innovation and adaptable and resilient
+   sustained performance, providing valuable constructive feedback,
+   optimizing workplace flexibility and psychological safety, and measuring
+   and supporting autonomy and flexibility-based efficien- cy, performance,
+   and productivity, while configuring demanding, engaging, and rewarding
+   experiences by cloud and edge computing devices in digital twin
+   industrial metaverse.},
+Publisher = {INST BADAN GOSPODARCZYCH},
+Address = {UL KS ROBERTA BILITEWSKIEGO NR 5, LOK 19, OLSZTYN, 10-693, POLAND},
+Type = {Article},
+Language = {English},
+Affiliation = {Durana, P (Corresponding Author), Univ Zilina, Zilina, Slovakia.
+   Kliestik, Tomas; Durana, Pavol; Kral, Pavol; Bugaj, Martin; Gajdosikova, Dominika; Grupac, Marian, Univ Zilina, Zilina, Slovakia.
+   Dragomir, Robert; Baluta, Aurelian Virgil; Grecu, Iulia; Karabolevski, Oana Ludmila, Spiru Haret Univ, Bucharest, Romania.
+   Balica, Raluca; Busu, Oprea Valentin; Voinea, Dan-Valeriu; Pera, Aurel, Univ Craiova, Craiova, Romania.
+   Suler, Petr; Vrbka, Jaromir, Inst Technol \& Business Ceske Budejovice, Ceske Budejovice, Czech Republic.
+   Cocosatu, Madalina, Natl Univ Polit Studies \& Publ Adm, Bucharest, Romania.},
+DOI = {10.24136/oc.3109},
+ISSN = {2083-1277},
+EISSN = {2353-1827},
+Keywords = {enterprise generative artificial intelligence; Internet of Thing;
+   blockchain; fintech; digital twin industrial metaverse; cognitive
+   algorithmic economy},
+Research-Areas = {Business \& Economics},
+Web-of-Science-Categories  = {Economics},
+Author-Email = {pavol.durana@uniza.sk},
+Affiliations = {University of Zilina; Spiru Haret University; University of Craiova;
+   Institute of Technology \& Business, Ceske Budejovice; National
+   University of Political Studies \& Public Administration (SNSPA) -
+   Romania},
+ResearcherID-Numbers = {Voinea, Dan/N-7291-2015
+   Vrbka, Jaromir/AAH-4429-2019
+   Durana, Pavol/P-6644-2015
+   Madalina, Cocosatu/JXY-4164-2024
+   Bugaj, Martin/ABE-3921-2021
+   Kral, Pavol/P-3291-2015
+   Grecu, Iulia/GYQ-9985-2022
+   Gajdosikova, Dominika/AAU-5103-2021
+   Kliestik, Tomas/O-8070-2015},
+ORCID-Numbers = {Karabolevski, Oana Ludmila/0000-0002-8661-6652
+   Durana, Pavol/0000-0001-5975-1958
+   Busu, Oprea-Valentin/0000-0001-5917-8821
+   Grecu, Iulia/0000-0001-8659-2972
+   Raluca-Ștefania, BALICA/0000-0003-4169-5892
+   Gajdosikova, Dominika/0000-0001-7705-3264
+   },
+Number-of-Cited-References = {128},
+Times-Cited = {29},
+Usage-Count-Last-180-days = {59},
+Usage-Count-Since-2013 = {188},
+Journal-ISO = {Oecon. Copernic.},
+Doc-Delivery-Number = {S7E2U},
+Web-of-Science-Index = {Social Science Citation Index (SSCI)},
+Unique-ID = {WOS:001399801800002},
+OA = {gold},
+DA = {2026-04-07},
+}
