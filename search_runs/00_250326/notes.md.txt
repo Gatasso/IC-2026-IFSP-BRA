@@ -1,0 +1,1 @@
+Este Piloto foi executado como forma de testar a instalação da linguagem R, IDE RStudio e Biblioteca Bibliometrix

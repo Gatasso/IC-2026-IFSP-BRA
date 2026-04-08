@@ -4,6 +4,9 @@ library(bibliometrix)
 library(janitor)
 library(dplyr)
 
+path_scripts <- setwd("C:/Users/Pesquisa/Documents/IC2026-MGR/R-scripts/")
+source(paste0(path_scripts,"init_libraries", sep="/"))
+
 wos_str1_1 <- convert2df(
   "C:/Users/Pesquisa/Documents/IC2026-MGR/Piloto-070426/wos_str01_artigos_1.bib",
   dbsource = "wos",
