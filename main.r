@@ -14,6 +14,7 @@ initialize_bibliometrix()
 initialize_libraries()
 raw_data_map <- import_data(RUN_PATH)
 converted_files <- convert_data(raw_data_map, "bibtex")
-
+final_database <- clean_and_merge_data(converted_files)
+export_bib_data(final_database, RUN_PATH)
 
 initialize_biblioshiny()

@@ -25,7 +25,8 @@ convert_data <- function(df_map, file_format) {
     if (!is.null(df)) {
       df$SOURCE_DB <- db
       df$SEARCH_STRING <- string
-      df_final <- rbind(df_final, df)
+      #df_final <- rbind(df_final, df)
+      df_final <- dplyr::bind_rows(df_final, df)
     }
   }
   return(df_final)
