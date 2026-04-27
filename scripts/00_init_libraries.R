@@ -1,11 +1,14 @@
 initialize_bibliometrix <- function() {
-  install.packages("bibliometrix")
+  install.packages("bibliometrix", dependencies = TRUE)
   library(bibliometrix)
-  biblioshiny()
 }
 
 initialize_libraries <- function() {
-  install.packages("janitor")
+  install.packages("janitor", dependencies = TRUE)
   library(janitor)
   library(dplyr)
+}
+
+initialize_biblioshiny <- function(){
+  biblioshiny()
 }
