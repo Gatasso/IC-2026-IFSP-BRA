@@ -5,7 +5,7 @@ export_bib_data <- function(df_final, RUN_PATH) {
   start_time <- Sys.time() # variável para marcação de tempo de processo
   
   # Define os caminhos completos usando a RUN_PATH da main.r
-  output_file_csv <- paste0(RUN_PATH, "final_database_bibliometrix.csv")
+  output_file_csv <- paste0(RUN_PATH, "final_database.csv")
   output_file_rds <- paste0(RUN_PATH, "final_database.rds")
   
   message(paste("Destino:", RUN_PATH))

@@ -1,15 +1,16 @@
 import_data <- function(RUN_PATH) {
+  # Armazena os nomes de todos os arquivos bibtex da search_run especificada em RUN_PATH
   files <- list.files(
     path = RUN_PATH,
-    pattern = "\\.bib$",
-    recursive = TRUE,
+    pattern = "\\.bib$", # limita à apenas arquivos .bib
+    recursive = TRUE, # permite busca nas sub-pastas
     full.names = TRUE
   )
   
-  # Criamos o mapeamento explícito
+  # Cria DataFrame, mapeando a base com a string de busca
   files_df <- data.frame(
     file = files,
-    # Forçamos a conversão para minúsculo para evitar "Scopus" vs "scopus"
+    # Conversão forçada para minúsculo para evitar "Scopus" vs "scopus"
     database = tolower(basename(dirname(dirname(files)))),
     search_string = basename(dirname(files)),
     stringsAsFactors = FALSE

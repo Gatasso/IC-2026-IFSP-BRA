@@ -11,6 +11,7 @@ source(paste0(path_scripts,"/04_export_converted_files.r"))
 RUN_PATH <- paste0(path_run, "02_270426/")
 
 initialize_libraries()
+run_scripts()
 data_raw_imported <- import_data(RUN_PATH)
 data_converted <- convert_data(data_raw_imported, "bibtex")
 data_cleaned <- clean_and_merge_data(data_converted)

@@ -2,7 +2,7 @@ convert_data <- function(df_map, file_format) {
   library(bibliometrix)
   df_final <- NULL
   
-  # Percorremos as linhas do dataframe de mapeamento
+  # Percorre as linhas do dataframe de mapeamento, atribuindo os valores em variáveis
   for (i in 1:nrow(df_map)) {
     f      <- df_map$file[i]
     db     <- df_map$database[i]
@@ -10,8 +10,9 @@ convert_data <- function(df_map, file_format) {
     
     message(paste("===> Processando:", basename(f), "| Base:", db))
     
+    # converte os arquivos .bib em DF com metadados bibliográficos
     df <- tryCatch({
-      # Forçamos o Bibliometrix a usar a base que mapeamos
+      # uso das informações mapeadas
       convert2df(
         file = f, 
         dbsource = db, 
@@ -22,6 +23,8 @@ convert_data <- function(df_map, file_format) {
       return(NULL)
     })
     
+    # se o dataframe convertido não estiver vazio, vincula as informações
+    # da base e da string de busca no DF final
     if (!is.null(df)) {
       df$SOURCE_DB <- db
       df$SEARCH_STRING <- string

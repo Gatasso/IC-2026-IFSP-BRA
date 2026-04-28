@@ -1,51 +1,36 @@
 clean_and_merge_data <- function(df_list) {
   library(dplyr)
   library(bibliometrix)
-  library(tictoc)
   
+  # Mensagens na tela sobre o processo
   cat("Iniciando processamento de", length(df_list), "arquivos...\n")
-  tic("Tempo Total de Limpeza")
+  start_time <- Sys.time()
   
-  # 1. Unificação inicial (Dividir)
-  tic("Fase 1: Unificação (bind_rows)")
-  raw_combined <- bind_rows(df_list)
-  toc()
+  # 1. Conversão em Único Objeto
+  raw_combined <- bind_rows(df_list) # reúne todos os registros em linhas, permitindo o trabalho com índices
   
-  # 2. Tratamento de Duplicatas (Conquistar)
-  
-  # A. Prioridade 1: DOI (DI) - Hashing de alta velocidade
-  tic("Fase 2A: Deduplicação por DOI")
+  # 2. Tratamento de Duplicatas
+  # Busca por DOI (DI)
   with_doi <- raw_combined %>% 
-    filter(!is.na(DI) & DI != "") %>% 
-    distinct(DI, .keep_all = TRUE)
-  toc()
+    filter(!is.na(DI) & DI != "") %>% #busca por registros onde o DI está preenchido
+    distinct(DI, .keep_all = TRUE) #remove registros com mesmo DOI em complexidade O(n)
   
-  # B. Prioridade 2: Título Normalizado (Para registros sem DOI)
-  tic("Fase 2B: Deduplicação por Título Normalizado")
+  # Busca por Título em registros sem DOI
   without_doi <- raw_combined %>% 
-    filter(is.na(DI) | DI == "") %>%
-    mutate(temp_title = toupper(gsub("[^[:alnum:]]", "", TI))) %>%
-    distinct(temp_title, .keep_all = TRUE) %>%
-    select(-temp_title)
-  toc()
+    filter(is.na(DI) | DI == "") %>% #busca por registros onde o DI não está preenchido
+    mutate(temp_title = toupper(gsub("[^[:alnum:]]", "", TI))) %>% #cria uma nova coluna, removendo símbolos e espaços, evitando manter duplicados por variação de título
+    distinct(temp_title, .keep_all = TRUE) %>% # remove os duplicados, através da coluna nova
+    select(-temp_title) #exclui a coluna temporaria
   
-  # 3. Merge Final e Refinamento
-  tic("Fase 3: Merge final e Similaridade")
-  final_df <- bind_rows(with_doi, without_doi)
-  
-  # Opcional: Apenas se o volume permitir, pois tol = 0.95 é pesado
-  # final_df <- duplicatedMatching(final_df, Field = "TI", tol = 0.95)
-  toc()
+  # 3. Merge
+  final_df <- bind_rows(with_doi, without_doi) #reune as colunas de   
   
   cat("\n--- Resumo de Desempenho ---\n")
-  toc() # Fecha o Tempo Total
-  
+  duration <- round(difftime(Sys.time(), start_time, units = "secs"), 2) # Fecha o Tempo Total
+  cat(paste("Processo concluído em:", duration, "segundos."))
   cat("Artigos iniciais:", nrow(raw_combined), "\n")
-  cat("Artigos após limpeza:", nrow(final_df), "\n")
+  cat("Artigos removidos: ", (nrow(raw_combined) - nrow(final_df)))
+  cat("Artigos finais:", nrow(final_df), "\n")
   
   return(final_df)
 }
-
-# Execução no fluxo principal (main.r)
-# converted_files <- convert_data(raw_data_map, "bibtex")
-data_cleaned <- clean_and_merge_data(converted_files)
