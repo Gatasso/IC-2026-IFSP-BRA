@@ -10,11 +10,10 @@ source(paste0(path_scripts,"/04_export_converted_files.r"))
 
 RUN_PATH <- paste0(path_run, "02_270426/")
 
-initialize_bibliometrix()
 initialize_libraries()
-raw_data_map <- import_data(RUN_PATH)
-converted_files <- convert_data(raw_data_map, "bibtex")
-final_database <- clean_and_merge_data(converted_files)
-export_bib_data(final_database, RUN_PATH)
+data_raw_imported <- import_data(RUN_PATH)
+data_converted <- convert_data(data_raw_imported, "bibtex")
+data_cleaned <- clean_and_merge_data(data_converted)
+export_bib_data(data_cleaned, RUN_PATH)
 
 initialize_biblioshiny()

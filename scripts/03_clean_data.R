@@ -1,57 +1,51 @@
-# scripts/03_clean_data.r
-
-clean_and_merge_data <- function(df_converted) {
-  library(bibliometrix)
+clean_and_merge_data <- function(df_list) {
   library(dplyr)
+  library(bibliometrix)
+  library(tictoc)
   
-  message("\n--- Iniciando Limpeza de Alta Performance ---")
-  start_time <- Sys.time()
+  cat("Iniciando processamento de", length(df_list), "arquivos...\n")
+  tic("Tempo Total de Limpeza")
   
-  # 1. Pré-processamento e Ordenação
-  # Ordenar coloca títulos similares próximos, permitindo busca otimizada
-  message("Passo 1: Ordenando base por títulos...")
-  df_sorted <- df_converted %>%
-    mutate(TI_clean = toupper(trimws(TI))) %>%
-    arrange(TI_clean)
+  # 1. Unificação inicial (Dividir)
+  tic("Fase 1: Unificação (bind_rows)")
+  raw_combined <- bind_rows(df_list)
+  toc()
   
-  # 2. Remoção de Duplicatas Exatas (Complexidade O(n))
-  message("Passo 2: Eliminando duplicatas exatas...")
-  df_unique_exact <- df_sorted %>% 
-    distinct(TI_clean, PY, .keep_all = TRUE)
+  # 2. Tratamento de Duplicatas (Conquistar)
   
-  # 3. Limpeza por Similaridade (Estratégia de Janela)
-  # Em vez de comparar 8000x8000, comparamos cada um com seus vizinhos
-  message("Passo 3: Verificando similaridade em vizinhança (Sliding Window)...")
+  # A. Prioridade 1: DOI (DI) - Hashing de alta velocidade
+  tic("Fase 2A: Deduplicação por DOI")
+  with_doi <- raw_combined %>% 
+    filter(!is.na(DI) & DI != "") %>% 
+    distinct(DI, .keep_all = TRUE)
+  toc()
   
-  # Reduzimos colunas para aliviar a memória durante o match
-  df_para_match <- df_unique_exact %>% 
-    select(AU, TI, PY, SO, DI)
+  # B. Prioridade 2: Título Normalizado (Para registros sem DOI)
+  tic("Fase 2B: Deduplicação por Título Normalizado")
+  without_doi <- raw_combined %>% 
+    filter(is.na(DI) | DI == "") %>%
+    mutate(temp_title = toupper(gsub("[^[:alnum:]]", "", TI))) %>%
+    distinct(temp_title, .keep_all = TRUE) %>%
+    select(-temp_title)
+  toc()
   
-  final_db <- tryCatch({
-    # O bibliometrix não suporta busca binária nativa, mas ao estarmos ordenados,
-    # aumentamos a eficiência do cache de memória do duplicatedMatching.
-    # Usamos tol = 0.99 para ser extremamente preciso e rápido.
-    duplicatedMatching(df_para_match, Field = "TI", tol = 0.99)
-  }, error = function(e) {
-    message("Erro no matching: ", e$message)
-    return(df_unique_exact)
-  })
+  # 3. Merge Final e Refinamento
+  tic("Fase 3: Merge final e Similaridade")
+  final_df <- bind_rows(with_doi, without_doi)
   
-  # 4. Recuperação dos dados completos usando Row Names
-  final_db <- df_unique_exact[rownames(final_db), ] %>%
-    select(-TI_clean) # Remove coluna auxiliar
+  # Opcional: Apenas se o volume permitir, pois tol = 0.95 é pesado
+  # final_df <- duplicatedMatching(final_df, Field = "TI", tol = 0.95)
+  toc()
   
-  # 5. Relatório e Tempo
-  end_time <- Sys.time()
-  duration <- round(difftime(end_time, start_time, units = "secs"), 2)
+  cat("\n--- Resumo de Desempenho ---\n")
+  toc() # Fecha o Tempo Total
   
-  message("\n==========================================")
-  message(paste("Tempo de Execução:", duration, "segundos"))
-  message(paste("Registros Iniciais:", nrow(df_converted)))
-  message(paste("Registros Finais:", nrow(final_db)))
-  message(paste("Eficiência (Removidos):", nrow(df_converted) - nrow(final_db)))
-  message("==========================================\n")
+  cat("Artigos iniciais:", nrow(raw_combined), "\n")
+  cat("Artigos após limpeza:", nrow(final_df), "\n")
   
-  gc() # Garbage Collection
-  return(final_db)
+  return(final_df)
 }
+
+# Execução no fluxo principal (main.r)
+# converted_files <- convert_data(raw_data_map, "bibtex")
+data_cleaned <- clean_and_merge_data(converted_files)
