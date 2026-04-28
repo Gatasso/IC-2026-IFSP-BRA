@@ -19,7 +19,7 @@ run_bibliometrix_pipeline <- function(folder_name) {
   
   # Fluxo de Dados
   data_raw       <- import_data(target_path)
-  data_converted <- convert_data(data_raw, "bibtex")
+  data_converted <- convert_data(data_raw, "csv")
   data_cleaned   <- clean_and_merge_data(data_converted)
   
   # Exportação dos Arquivos

@@ -23,7 +23,11 @@ clean_and_merge_data <- function(df_list) {
     select(-temp_title) #exclui a coluna temporaria
   
   # 3. Merge
-  final_df <- bind_rows(with_doi, without_doi) #reune as colunas de   
+  final_df <- bind_rows(with_doi, without_doi) #reune as colunas sem e com DOI
+  
+  if ("SR" %in% names(final_df)) {
+    final_df$SR <- make.unique(as.character(final_df$SR))
+  }
   
   cat("\n--- Resumo de Desempenho ---\n")
   duration <- round(difftime(Sys.time(), start_time, units = "secs"), 2) # Fecha o Tempo Total
