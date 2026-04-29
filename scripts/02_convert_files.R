@@ -1,36 +1,48 @@
-convert_data <- function(df_map, file_format) {
+convert_data <- function(df_map) {
   library(bibliometrix)
+  library(dplyr)
   df_final <- NULL
   
-  # Percorre as linhas do dataframe de mapeamento, atribuindo os valores em variáveis
   for (i in 1:nrow(df_map)) {
     f      <- df_map$file[i]
     db     <- df_map$database[i]
     string <- df_map$search_string[i]
     
+    ext <- tools::file_ext(f)
+    # Para WoS .txt, o formato ideal costuma ser "fieldtagged"
+    formato_bibliometrix <- ifelse(ext == "csv", "csv", "plaintext") 
+    
     message(paste("===> Processando:", basename(f), "| Base:", db))
     
-    # converte os arquivos .bib em DF com metadados bibliográficos
     df <- tryCatch({
-      # uso das informações mapeadas
-      convert2df(
+      temp_df <- convert2df(
         file = f, 
         dbsource = db, 
-        format = file_format
+        format = formato_bibliometrix
       )
+      
+      # Verifica se o dataframe foi criado e possui linhas
+      if (is.null(temp_df) || nrow(temp_df) == 0) {
+        message(paste("Aviso: Arquivo", basename(f), "não gerou dados (vazio ou formato incompatível). Ignorando..."))
+        NULL
+      } else {
+        temp_df
+      }
     }, error = function(e) {
-      message(paste("Erro no arquivo:", f, "-", e$message))
+      message(paste("Erro ao converter arquivo:", basename(f), "-", e$message))
       return(NULL)
     })
     
-    # se o dataframe convertido não estiver vazio, vincula as informações
-    # da base e da string de busca no DF final
     if (!is.null(df)) {
       df$SOURCE_DB <- db
       df$SEARCH_STRING <- string
-      #df_final <- rbind(df_final, df)
       df_final <- dplyr::bind_rows(df_final, df)
     }
   }
+  
+  if (is.null(df_final)) {
+    stop("Erro Crítico: Nenhum dado foi convertido com sucesso. Verifique os formatos de exportação.")
+  }
+  
   return(df_final)
 }

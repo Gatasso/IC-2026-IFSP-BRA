@@ -2,7 +2,7 @@ import_data <- function(RUN_PATH) {
   # Armazena os nomes de todos os arquivos bibtex da search_run especificada em RUN_PATH
   files <- list.files(
     path = RUN_PATH,
-    pattern = "\\.csv$", # limita à apenas arquivos .csv
+    pattern = "\\.(csv|txt)$", # limita à apenas arquivos .csv ou .txt
     recursive = TRUE, # permite busca nas sub-pastas
     full.names = TRUE
   )

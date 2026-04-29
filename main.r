@@ -7,7 +7,7 @@ path_run       <- paste0(path_directory, "/search_runs/")
 invisible(lapply(list.files(path_scripts, pattern = "\\.[Rr]$|\\.r$", full.names = TRUE), source))
 
 # --- PREENCHIMENTO MANUAL ---
-RUN_FOLDER <- "02_270426/" 
+RUN_FOLDER <- "03_290426/" 
 # ----------------------------
 
 run_bibliometrix_pipeline <- function(folder_name) {
@@ -19,7 +19,7 @@ run_bibliometrix_pipeline <- function(folder_name) {
   
   # Fluxo de Dados
   data_raw       <- import_data(target_path)
-  data_converted <- convert_data(data_raw, "csv")
+  data_converted <- convert_data(data_raw)
   data_cleaned   <- clean_and_merge_data(data_converted)
   
   # Exportação dos Arquivos
@@ -33,3 +33,4 @@ run_bibliometrix_pipeline <- function(folder_name) {
 
 # Execução Única
 run_bibliometrix_pipeline(RUN_FOLDER)
+

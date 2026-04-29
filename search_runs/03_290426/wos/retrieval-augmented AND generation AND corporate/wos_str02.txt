@@ -1,0 +1,1541 @@
+﻿FN Clarivate Analytics Web of Science
+VR 1.0
+PT J
+AU Chen, YW
+   Luo, X
+   Zhou, Y
+   Peng, QJ
+   Yuan, YQ
+   Chen, K
+   Liu, YH
+AF Chen, Yanwen
+   Luo, Xiong
+   Zhou, Ying
+   Peng, Qiaojuan
+   Yuan, Yuqi
+   Chen, Ke
+   Liu, Yinghui
+TI Virtual-Document-Augmented Retrieval-Augmented Generation for
+   Power-Domain Knowledge-Base Question Answering with Noise-Enhanced
+   Robustness
+SO PROCESSES
+LA English
+DT Article
+DE retrieval augmented generation (RAG); large language models (LLM);
+   information retrieval; power system
+AB The Retrieval-Augmented Generation (RAG) technology enables large language models (LLM) to access external knowledge bases by introducing external documents, enhancing their capability for knowledge question answering in professional domains and generating more reliable responses. It effectively addresses issues such as LLM hallucinations and knowledge obsolescence. In the electric power domain, RAG technology can be leveraged to fully utilize accumulated corporate data and resources. However, in the retrieval phase of RAG, there are significant differences in the semantic space representation between short sentences and long text documents. Additionally, when generating answers based on retrieved relevant documents, the generator prioritizes highly relevant document fragments, a strategy that may overlook sub-relevant documents containing useful information. This paper uses an LLM to generate hypothetical documents. These documents are combined with the original question to perform similarity retrieval in the corpus, followed by the first round of answer generation. Subsequently, the original question is combined with the answer generated in the first round, and this combined content is used to retrieve relevant documents. Finally, irrelevant documents are added to the context of the retrieved relevant documents to enhance the LLM's attention to the relevant documents. Based on the above strategies, experiments are conducted on the electricity dataset. The results show that, compared with the naive RAG method, the proposed model achieves a relative improvement of 4.63% in the ROUGE-L metric and 11.32% in the BLEU-4 metric on the electricity dataset. Meanwhile, experiments are also carried out on the public CMRC dataset, and the effectiveness of the proposed method is verified.
+C1 [Chen, Yanwen; Luo, Xiong; Zhou, Ying; Peng, Qiaojuan; Yuan, Yuqi; Chen, Ke; Liu, Yinghui] China Elect Power Res Inst, Beijing Key Lab Demand Side Multienergy Carriers O, Beijing 100192, Peoples R China.
+   [Chen, Yanwen; Luo, Xiong; Peng, Qiaojuan; Yuan, Yuqi] Univ Sci & Technol Beijing, Sch Comp & Commun Engn, Beijing 100083, Peoples R China.
+   [Chen, Yanwen; Luo, Xiong; Peng, Qiaojuan; Yuan, Yuqi] Univ Sci & Technol Beijing, Shunde Innovat Sch, Foshan 528399, Peoples R China.
+C3 State Grid Corporation of China; China Electric Power Research Institute
+   (CEPRI); University of Science & Technology Beijing; University of
+   Science & Technology Beijing
+RP Luo, X (corresponding author), China Elect Power Res Inst, Beijing Key Lab Demand Side Multienergy Carriers O, Beijing 100192, Peoples R China.; Luo, X (corresponding author), Univ Sci & Technol Beijing, Sch Comp & Commun Engn, Beijing 100083, Peoples R China.; Luo, X (corresponding author), Univ Sci & Technol Beijing, Shunde Innovat Sch, Foshan 528399, Peoples R China.
+EM xluo@ustb.edu.cn
+RI Yuan, Yuqi/GRY-5925-2022
+FU Beijing Key Laboratory of Demand Side Multi-Energy Carriers Optimization
+   and Interaction Technique [SGDK0000YDJS2504840-B1]
+FX This work is financially supported by 2025 Open Fund of Beijing Key
+   Laboratory of Demand Side Multi-Energy Carriers Optimization and
+   Interaction Technique (Project title: Research on multi-source
+   cognition-driven intelligent modeling and generative reasoning
+   techniques for user load forecasting, Project No.
+   SGDK0000YDJS2504840-B1).
+CR Al Sharou K., 2021, [No title captured], P53, DOI [10.26615/ 978-954-452-072-4_007, DOI 10.26615/978-954-452-072-4_007]
+   Brown T., 2020, Advances in Neural Information Processing Systems, V33, P1877, DOI DOI 10.48550/ARXIV.2005.14165
+   Chen JW, 2024, AAAI CONF ARTIF INTE, P17754
+   Cuconasu F, 2024, PROCEEDINGS OF THE 47TH INTERNATIONAL ACM SIGIR CONFERENCE ON RESEARCH AND DEVELOPMENT IN INFORMATION RETRIEVAL, SIGIR 2024, P719, DOI 10.1145/3626772.3657834
+   Cui YM, 2019, 2019 CONFERENCE ON EMPIRICAL METHODS IN NATURAL LANGUAGE PROCESSING AND THE 9TH INTERNATIONAL JOINT CONFERENCE ON NATURAL LANGUAGE PROCESSING (EMNLP-IJCNLP 2019), P5883
+   Devlin J, 2019, 2019 CONFERENCE OF THE NORTH AMERICAN CHAPTER OF THE ASSOCIATION FOR COMPUTATIONAL LINGUISTICS: HUMAN LANGUAGE TECHNOLOGIES (NAACL HLT 2019), VOL. 1, P4171
+   Es S, 2024, PROCEEDINGS OF THE 18TH CONFERENCE OF THE EUROPEAN CHAPTER OF THE ASSOCIATION FOR COMPUTATIONAL LINGUISTICS: SYSTEM DEMONSTRATIONS, P150
+   Gao LY, 2023, PROCEEDINGS OF THE 61ST ANNUAL MEETING OF THE ASSOCIATION FOR COMPUTATIONAL LINGUISTICS, ACL 2023, VOL 1, P1762
+   Gao Y., 2023, ARXIV
+   Jiang ZB, 2023, 2023 CONFERENCE ON EMPIRICAL METHODS IN NATURAL LANGUAGE PROCESSING, EMNLP 2023, P7969
+   Jin JJ, 2025, COMPANION PROCEEDINGS OF THE ACM WEB CONFERENCE 2025, WWW COMPANION 2025, P737, DOI 10.1145/3701716.3715313
+   Kandpal N., 2023, [No title captured], P15696, DOI [DOI 10.5555/3618408.3619049, 10.5555/3618408.3619049]
+   Karpukhin V, 2020, PROCEEDINGS OF THE 2020 CONFERENCE ON EMPIRICAL METHODS IN NATURAL LANGUAGE PROCESSING (EMNLP), P6769
+   Kim J., 2024, P INT C LEARNING REP, P15213, DOI [10.48550/arXiv.2404.13081, DOI 10.48550/ARXIV.2404.13081]
+   Lewis P, 2020, ADV NEUR IN, V33
+   Li Y., 2023, ARXIV
+   Lin Chin-Yew., TEXT SUMMARIZATION B
+   Ma XB, 2023, 2023 CONFERENCE ON EMPIRICAL METHODS IN NATURAL LANGUAGE PROCESSING, EMNLP 2023, P5303
+   Majumder S, 2024, JOULE, V8, DOI 10.1016/j.joule.2024.05.009
+   Mao YN, 2021, 59TH ANNUAL MEETING OF THE ASSOCIATION FOR COMPUTATIONAL LINGUISTICS AND THE 11TH INTERNATIONAL JOINT CONFERENCE ON NATURAL LANGUAGE PROCESSING (ACL-IJCNLP 2021), VOL 1, P4089
+   Pandia L, 2021, 2021 CONFERENCE ON EMPIRICAL METHODS IN NATURAL LANGUAGE PROCESSING (EMNLP 2021), P1583
+   Papineni K, 2002, 40TH ANNUAL MEETING OF THE ASSOCIATION FOR COMPUTATIONAL LINGUISTICS, PROCEEDINGS OF THE CONFERENCE, P311, DOI 10.3115/1073083.1073135
+   Shaol ZH, 2023, FINDINGS OF THE ASSOCIATION FOR COMPUTATIONAL LINGUISTICS (EMNLP 2023), P9248
+   Shi W, 2024, PROCEEDINGS OF THE 2024 CONFERENCE OF THE NORTH AMERICAN CHAPTER OF THE ASSOCIATION FOR COMPUTATIONAL LINGUISTICS: HUMAN LANGUAGE TECHNOLOGIES, VOL 1: LONG PAPERS, P8371
+   Sparck-Jones K, 2004, J DOC, V60, P493, DOI [10.1108/00220410410560573, 10.1108/eb026526]
+   Stickland AC, 2023, 17TH CONFERENCE OF THE EUROPEAN CHAPTER OF THE ASSOCIATION FOR COMPUTATIONAL LINGUISTICS, EACL 2023, P1375
+   Touvron H., 2023, ARXIV
+   Trivedi H., 2023, P 61 ANN M ASS COMP, P10014, DOI [10.18653/v1/2023.acl, DOI 10.18653/V1/2023.ACL]
+   Vaswani A., 2017, P 30 INT C NEUR INF
+   Wu JY, 2025, PROCEEDINGS OF THE 63RD ANNUAL MEETING OF THE ASSOCIATION FOR COMPUTATIONAL LINGUISTICS, VOL 1: LONG PAPERS, P5019
+   Xiao ST, 2024, PROCEEDINGS OF THE 47TH INTERNATIONAL ACM SIGIR CONFERENCE ON RESEARCH AND DEVELOPMENT IN INFORMATION RETRIEVAL, SIGIR 2024, P641, DOI 10.1145/3626772.3657878
+   Ye J., 2024, ARXIV
+   Zhang Y., 2023, ARXIV ARXIV230901219, DOI [DOI 10.48550/ARXIV.2309.01219, 10.48550/arXiv.2309.01219]
+NR 33
+TC 0
+Z9 0
+U1 1
+U2 1
+PU MDPI
+PI BASEL
+PA MDPI AG, Grosspeteranlage 5, CH-4052 BASEL, SWITZERLAND
+EI 2227-9717
+J9 PROCESSES
+JI Processes
+PD FEB 15
+PY 2026
+VL 14
+IS 4
+AR 670
+DI 10.3390/pr14040670
+PG 17
+WC Engineering, Chemical
+WE Science Citation Index Expanded (SCI-EXPANDED)
+SC Engineering
+GA EF9BK
+UT WOS:001700125100001
+OA gold
+DA 2026-04-29
+ER
+
+PT J
+AU Ribary, M
+   Wood, T
+   Orban, M
+   Vaccari, E
+   Krause, P
+AF Ribary, Marton
+   Wood, Thomas
+   Orban, Miklos
+   Vaccari, Eugenio
+   Krause, Paul
+TI A GENERATIVE AI-BASED LEGAL ADVICE TOOL FOR SMALL BUSINESSES IN DISTRESS
+SO JOURNAL OF INTERNATIONAL AND COMPARATIVE LAW
+LA English
+DT Article
+DE chatbot; insolvency law (England); large language models (LLM); legal
+   technology; natural language processing (NLP); prompt engineering;
+   retrieval augmented generation (RAG); vector index
+AB We developed and tested the performance of a retrieval augmented generation system for answering legal queries related to corporate insolvency in England and Wales. The Insolvency Bot relies on open-source legal information and HMRC forms to provide sound responses to a user's query focusing on insolvency matters regulated by English law. We evaluated our bot head-to-head on an unseen test set against the unmodified versions of large language models (LLMs) gpt-3.5-turbo, gpt-4, or gpt-4o with a mark scheme similar to those used in examinations in law schools. The Insolvency Bot outperformed each unmodified LLM (p = 0.05%). An additional user experience survey suggested the need for creating two versions of the bot, one for lay people who expect practical and actionable advice and another for professionals with the relevant legal authorities. Our legal chatbot demonstrates the benefits of combining a generative Artificial Intelligence system with a trusted knowledge base and shows future promise to cover cross-jurisdictional and insolvency-related queries and could be further improved in its technical architecture.
+C1 [Ribary, Marton; Vaccari, Eugenio] Royal Holloway Univ London, Law, London, England.
+   [Wood, Thomas] Univ Cambridge, Comp Speech Text & Internet Technol, Cambridge, England.
+   [Orban, Miklos; Krause, Paul] Univ Surrey, Practice, Guildford, England.
+C3 University of London; Royal Holloway University London; University of
+   Cambridge; University of Surrey
+RP Ribary, M (corresponding author), Royal Holloway Univ London, Law, London, England.
+EM marton.ribary@rhul.ac.uk; thomas@fastdatascience.com;
+   miklos.orban@gunnercooke.com; eugenio.vaccari@rhul.ac.uk;
+   p.krause@surrey.ac.uk
+RI Vaccari, Eugenio/JCP-3281-2023; Orban, Miklos/B-2060-2016
+CR [Anonymous], 2022, COM/2022/702
+   [Anonymous], 2020, Corporations Amendment (Corporate Insolvency Reforms) Act
+   [Anonymous], 2021, Thomson Reuters v ROSS Intelligence
+   Burigo F, 2023, J INT COMP LAW, V10
+   Companies House, 2018, Forms for Limited Companies that a Limited Company can File with Companies House
+   Companies House, 2022, Forms for Insolvency Rules 2016 in Accordance with Insolvency (England and Wales) Rules 2016
+   contractsfinder, About Us
+   Dahl M, 2024, J LEGAL ANAL, V16, P64, DOI 10.1093/jla/laae003
+   Guitton C, 2024, Artificial Intelligence and Law, V32, P412
+   Harden S, 2023, JURIX 2023 WORKSH AI
+   Hutchinson GB, 2021, Company Law Practice, V28, P122
+   Jain S.M., 2022, INTRO TRANSFORMERS N, P51, DOI [10.1007/978-1-4842-8844-3, DOI 10.1007/978-1-4842-8844-3, DOI 10.1007/978-1-4842-8844-3_4]
+   Katz DM, 2024, PHILOS T R SOC A, V382, DOI 10.1098/rsta.2023.0254
+   Kojima T., 2022, Advances in neural information processing systems, V35, P22199, DOI DOI 10.48550/ARXIV.2205.11916
+   Lorek LA, 2024, Ohio Northern University Law Review, V50, P513
+   Martorana M, 2025, The Semantic Web-ISWC 2024
+   midlandsbusinessrecovery, An AI bot developed by Paul Brindley with VAI Solutions
+   Mokal RJ, 2018, Micro, Small, and Medium Enterprise Insolvency: A Modular Approach
+   Murphy J, 2023, LEG INF MANAG, V23, P150, DOI 10.1017/S1472669623000373
+   Nguyen P, 2024, LECT NOTES ARTIF INT, V14741, P125, DOI 10.1007/978-981-97-3076-6_9
+   Norton III WL, 2020, Emory Bankruptcy Developments Journal, V36, P383
+   Novaes LP, 2023, P 10 INT COMP LEG IN, P27
+   OpenAI, 2024, Blog Post
+   Pipitone N, 2024, Arxiv, DOI arXiv:2408.10343
+   prolific, 2024, About Us
+   Ribary M, 2023, FRONT ARTIF INTEL AP, V379, P305, DOI 10.3233/FAIA230979
+   The Insolvency Service, 2024, Commentary-Company Insolvency Statistics June 2024
+   The National Archives, Find Case Law (Beta): Judgments and Decisions from 2001 Onwards
+   The World Bank, 2021, Principles for Effective Insolvency and Creditor/Debtor Regimes, pC18
+   theyworkforyou, 2025, About Us
+   UK Business Forum, Legal, Employment and Insolvency: The Forum for All Legal Questions Including Employment, Insolvency and Contracts
+   UNCITRAL, 1997, Model Law on Cross -Border Insolvency
+   United Nations, 2022, UNCITRAL Legislative Guide on Insolvency Law for Microand Small Enterprises
+   Vaccari E, 2022, Norton Journal of Bankruptcy Law and Practice, V31, P534
+   Vaccari E, 2022, English Corporate Insolvency Law: A Primer
+   Van Rossum G, 2009, Python 3 Reference Manual
+   Villasenor J., 2024, Minnesota Journal of Law, Science & Technology, V25, P25
+   Walters A, 2020, The Company Lawyer, V41, P324
+   Wiratunga N, 2024, LECT NOTES ARTIF INT, V14775, P445, DOI 10.1007/978-3-031-63646-2_29
+   Wood TA, 2023, Evaluate Insolvency
+   Wood TA, 2024, Results of Prolific Survey on Insolvency Bot, DOI [10.5281/zenodo.14175313, DOI 10.5281/ZENODO.14175313]
+   Wood Thomas Andrew, 2023, Zenodo, DOI 10.5281/ZENODO.8292105
+   World Bank, 2017, Report on the Treatment of MSME Insolvency (English)
+   Yu FY, 2023, FINDINGS OF THE ASSOCIATION FOR COMPUTATIONAL LINGUISTICS (ACL 2023), P13582
+NR 44
+TC 2
+Z9 2
+U1 2
+U2 2
+PU SWEET & MAXWELL
+PI TAIKOO SHING
+PA 16-F CITYPLAZA 3, TAIKOO SHING, 00000, HONG KONG
+EI 2313-3775
+J9 J INT COMP LAW
+JI J. Int. Comp. Law
+PD DEC
+PY 2025
+VL 12
+IS 2
+PG 24
+WC Law
+WE Emerging Sources Citation Index (ESCI)
+SC Government & Law
+GA K7840
+UT WOS:001628903100003
+DA 2026-04-29
+ER
+
+PT J
+AU Pattabiraman, K
+   Sachin, A
+   Lokeshkumar, R
+AF Pattabiraman, Kalyanaraman
+   Sachin, Arockia
+   Lokeshkumar, R.
+TI Enhancing business intelligence through NLP and contextual AI synergy
+SO ENGINEERING RESEARCH EXPRESS
+LA English
+DT Article
+DE AI-driven business intelligence; BI for non-technical users;
+   chain-of-thought reasoning (COT); conversational query processing;
+   hybrid dense-sparse retrieval; late chunking; metadata-based context
+   filtering; neural reranking; real-time decision support;
+   retrieval-augmented generation (RAG); self-querying retrieval; semantic
+   search and contextual enrichment
+ID LANGUAGE; SQL
+AB Organizations are now overwhelmed with data, posing challenges for several small business owners and managers who lack IT competence to understand. They sometimes have difficulties in obtaining information or, at best, understanding the organization's vast databases owing to technological issues and system complexity. This article introduces an innovative BI solution tailored for business experts to oversee complex structured SQL databases, extensive sales reports, and company laws and paperwork. The current application integrates technological advancements such Retrieval-Augmented Generation (RAG), Chain of Thought, and Natural Language to SQL (NL2SQL) to enhance user engagement with data through dialogue. They can analyze sales trends, policy details, define precise language, and simply compare data across many databases. The integration of advanced technology diminishes barriers to database access, enabling more easy, effective, and intelligible information retrieval for users in corporate entities. This project offers a unique and accessible business intelligence solution tailored for end-users without significant IT knowledge, aimed at improving decision-making and operational efficiency.
+C1 [Pattabiraman, Kalyanaraman; Sachin, Arockia; Lokeshkumar, R.] VIT Univ, Sch Comp Sci & Engn, Vellore, India.
+C3 Vellore Institute of Technology (VIT); VIT Vellore
+RP Pattabiraman, K (corresponding author), VIT Univ, Sch Comp Sci & Engn, Vellore, India.
+EM pkalyanaraman@vit.ac.in
+RI ; Ramasamy, lokeshkumar/G-6028-2018
+OI PATTABIRAMAN, KALYANARAMAN/0000-0002-3152-024X; Ramasamy,
+   lokeshkumar/0000-0002-6759-9279
+CR Bharadiya J.P., 2023, American Journal of Artificial Intelligence, V7, P24, DOI [10.11648/j.ajai.20230701.14, 10.11648/j.ajai.20230701.14, DOI 10.11648/J.AJAI.20230701.14]
+   Bharadiya JP, 2023, Journal of Engineering Research and Reports, V25, P85, DOI [10.9734/jerr/2023/v25i3893, 10.9734/jerr/2023/v25i3893, DOI 10.9734/JERR/2023/V25I3893]
+   Castaldo N, 2019, LECT NOTES COMPUT SC, V11496, P490, DOI 10.1007/978-3-030-19274-7_34
+   Deng Naihao, 2022, [No title captured], P2166
+   Enholm IM, 2022, INFORM SYST FRONT, V24, P1709, DOI 10.1007/s10796-021-10186-w
+   Franciscatto MH, 2022, 2022 IEEE 46TH ANNUAL COMPUTERS, SOFTWARE, AND APPLICATIONS CONFERENCE (COMPSAC 2022), P486, DOI 10.1109/COMPSAC54236.2022.00092
+   Freund J., 2020, ISACA Journal, V3
+   Gao DW, 2024, PROC VLDB ENDOW, V17, P1132, DOI 10.14778/3641204.3641221
+   Gu Zihui, 2023, Proceedings of the ACM on Management of Data, V1, DOI [10.1145/3589292, 10.1145/3589292]
+   Gunther M., 2023, P 3 WORKSHOP NATURAL, P8, DOI [10.18653/v1/2023, DOI 10.18653/V1/2023]
+   Jha R., 2024, 4 WORKSHOP MULTILING, P159
+   Kenthapadi K, 2024, PROCEEDINGS OF THE 30TH ACM SIGKDD CONFERENCE ON KNOWLEDGE DISCOVERY AND DATA MINING, KDD 2024, P6523, DOI 10.1145/3637528.3671467
+   Lee M, 2024, PROCEEDINGS OF THE 2024 CONFERENCE OF THE NORTH AMERICAN CHAPTER OF THE ASSOCIATION FOR COMPUTATIONAL LINGUISTICS: HUMAN LANGUAGE TECHNOLOGIES, VOL 1: LONG PAPERS, P6537
+   Lennerholt C, 2021, INFORM SYST MANAGE, V38, P309, DOI 10.1080/10580530.2020.1814458
+   Li BY, 2024, PROC VLDB ENDOW, V17, P3318, DOI 10.14778/3681954.3682003
+   Li J., 2024, P ADV NEUR INF PROC, P42330
+   Maamari K., 2024, NeurIPS 2024 Third Table Representation Learning Workshop
+   Mah PM, 2022, APPL SCI-BASEL, V12, DOI 10.3390/app12189207
+   Minor M, 2024, LECT NOTES ARTIF INT, V14775, P175, DOI 10.1007/978-3-031-63646-2_12
+   Posedaru BS, 2024, P INT CONF BUS EXCEL, V18, P209, DOI 10.2478/picbe-2024-0018
+   Pourreza M., 2024, Advances in Neural Information Processing Systems, V36, P36339, DOI DOI 10.48550/ARXIV.2304.11015
+   Shi ZF, 2024, Intern Con on Web Se, P100, DOI 10.1109/ICWS62655.2024.00029
+   Sukhwal D., 2024, Masters thesis
+   Wang Xiaohua, 2024, [No title captured], P17716, DOI DOI 10.18653/V1/2024.EMNLP-MAIN.981
+   Wastell D., 2001, J SYSTEMS INFORM TEC, V5, P21, DOI [10.1108/13287260180000764, DOI 10.1108/13287260180000764]
+NR 25
+TC 2
+Z9 2
+U1 6
+U2 9
+PU IOP Publishing Ltd
+PI BRISTOL
+PA TEMPLE CIRCUS, TEMPLE WAY, BRISTOL BS1 6BE, ENGLAND
+SN 2631-8695
+J9 ENG RES EXPRESS
+JI Eng. Res. Express
+PD JUN 30
+PY 2025
+VL 7
+IS 2
+AR 025279
+DI 10.1088/2631-8695/add9e6
+PG 18
+WC Engineering, Multidisciplinary
+WE Emerging Sources Citation Index (ESCI)
+SC Engineering
+GA 3LT5J
+UT WOS:001503376300001
+DA 2026-04-29
+ER
+
+PT J
+AU Wen, HL
+   Wang, SY
+   Liang, X
+   Li, BJ
+   Hu, WS
+   Luo, X
+AF Wen, Haolin
+   Wang, Songyi
+   Liang, Xin
+   Li, Bingjie
+   Hu, Wanshu
+   Luo, Xing
+TI Version 5.4.18-AI-KM: Knowledge enhancement with RAG and workflow
+SO SOFTWAREX
+LA English
+DT Article
+DE Knowledge management; Retrieval-augmented generation; Workflow; Large
+   language models
+AB The latest version of the AI-KM system integrates multiple Large language models (LLMs) and Retrievalaugmented generation (RAG) technology based on Ollama, supporting vectorization and intelligent processing of Markdown documents. It provides intelligent retrieval and Question and Answer (Q&A) within knowledge bases, along with a scalable workflow engine that significantly improves the accuracy of domain-specific knowledge queries. The system also features enhanced knowledge visualization and user interface, greatly improving usability and enabling flexible adaptation to various business scenarios. It has been successfully deployed in applications such as classroom demonstrations, teaching assistance, equipment information management, and regulation consulting, making it suitable for educational, corporate, and research environments.
+C1 [Wen, Haolin; Liang, Xin; Li, Bingjie] Naval Univ Engn, Dept Management Engn & Equipment Econ, Wuhan, Peoples R China.
+   [Wang, Songyi; Luo, Xing] Peng Cheng Lab, Shenzhen, Guangdong, Peoples R China.
+   [Wang, Songyi] Southern Univ Sci & Technol, Dept Stat & Data Sci, Shenzhen, Peoples R China.
+   [Hu, Wanshu] Nanjing Univ, Sch Journalism & Commun, Nanjing, Jiangsu, Peoples R China.
+C3 Wuhan Naval University of Engineering; Peng Cheng Laboratory; Southern
+   University of Science & Technology; Nanjing University
+RP Liang, X (corresponding author), Naval Univ Engn, Dept Management Engn & Equipment Econ, Wuhan, Peoples R China.; Luo, X (corresponding author), Peng Cheng Lab, Shenzhen, Guangdong, Peoples R China.
+EM 0911031004@nue.edu.cn; luox@pcl.ac.cn
+RI ; wen, haolin/HTM-1371-2023
+OI Wang, Songyi/0009-0001-4112-3379; 
+FU National Social Science Fund of China [2025-SKJJ-D-023,
+   2023-SKJJ-B-029]; Educational Science Research Project of Naval
+   University of Engineering [NUE2025ER71]; Major Key Project of PCL
+   [PCL2025A03]; Advanced Interdisciplinary Project of PCL [2025qyb011];
+   Educational Commission of Guangdong Province [2021ZDZX1069]; Key
+   Laboratory of TechFin in SUSTech
+FX This work was supported by the National Social Science Fund of China
+   (Grant No. 2025-SKJJ-D-023 and No. 2023-SKJJ-B-029) ; the Educational
+   Science Research Project of Naval University of Engineering (Grant No.
+   NUE2025ER71 and No. NUE2025ER10) ; the Major Key Project of PCL (Grant
+   No. PCL2025A03) ; the Advanced Interdisciplinary Project of PCL (Grant
+   No. 2025qyb011) ; the Educational Commission of Guangdong Province
+   (Grant No. 2021ZDZX1069) and Key Laboratory of TechFin in SUSTech.
+CR Arslan Muhammad, 2024, Procedia Computer Science, V246, P5027, DOI [10.1016/j.procs.2024.09.576, 10.1016/j.procs.2024.09.576]
+   Arslan Muhammad, 2024, Procedia Computer Science, V246, P4722, DOI [10.1016/j.procs.2024.09.337, 10.1016/j.procs.2024.09.337]
+   Chen J, 2024, Arxiv, DOI [arXiv:2402.03216, arXiv:2402.03216, DOI 10.48550/ARXIV.2402.03216]
+   Disher T., 2024, Value Health, V27, DOI [10.1016/j.jval.2024.10.2064.S401, DOI 10.1016/J.JVAL.2024.10.2064.S401]
+   Do C, 2025, SOFTWAREX, V31, DOI 10.1016/j.softx.2025.102191
+   Gao YL, 2025, PATTERN RECOGN, V165, DOI [10.1016/j.patcog.2025.111625, 10.1016/j.patcog.2025.111625]
+   Guo Daya, 2025, arXiv, DOI [10.48550/arXiv.2501.12948, DOI 10.48550/ARXIV.2501.12948]
+   Hang Ching Nam, 2025, IEEE Transactions on Artificial Intelligence, V6, P3148, DOI [10.1109/tai.2025.3567369, 10.1109/TAI.2025.3567369]
+   Hotelling H, 1933, J EDUC PSYCHOL, V24, P417, DOI 10.1037/h0071325
+   Lee J, 2024, AUTOMAT CONSTR, V168, DOI 10.1016/j.autcon.2024.105846
+   Neyem A, 2024, SOFTWAREX, V28, DOI 10.1016/j.softx.2024.101947
+   Patel S, 2024, SOFTW IMPACTS, V21, DOI 10.1016/j.simpa.2024.100687
+   Perini M, 2025, SOFTWAREX, V30, DOI 10.1016/j.softx.2025.102121
+   Rinjeni Tri Puspa, 2024, Procedia Computer Science, V234, P553, DOI [10.1016/j.procs.2024.03.039, 10.1016/j.procs.2024.03.039]
+   Salim MS, 2025, SOFTWAREX, V29, DOI 10.1016/j.softx.2024.102029
+   Shrivastava V, 2025, SOFTWAREX, V29, DOI 10.1016/j.softx.2025.102058
+   Torgerson WS, 1952, PSYCHOMETRIKA, V17, P401
+   Vake D, 2025, SOFTWAREX, V30, DOI 10.1016/j.softx.2025.102183
+   Wen HL, 2024, SOFTWAREX, V27, DOI 10.1016/j.softx.2024.101840
+   Yang C, 2025, EXPERT SYST APPL, V281, DOI [10.1016/j.eswa.2025.127517, 10.1016/j.eswa.2025.127517]
+   Yazan Mert, 2025, Advances in Information Retrieval: 47th European Conference on Information Retrieval, ECIR 2025. Lecture Notes in Computer Science (15574), P408, DOI 10.1007/978-3-031-88714-7_40
+NR 21
+TC 1
+Z9 1
+U1 13
+U2 14
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 2352-7110
+J9 SOFTWAREX
+JI SoftwareX
+PD SEP
+PY 2025
+VL 31
+AR 102349
+DI 10.1016/j.softx.2025.102349
+EA SEP 2025
+PG 6
+WC Computer Science, Software Engineering
+WE Science Citation Index Expanded (SCI-EXPANDED)
+SC Computer Science
+GA 7IQ5G
+UT WOS:001571925100001
+OA Green Submitted, gold
+DA 2026-04-29
+ER
+
+PT J
+AU Leonard, E
+   Sheehan, B
+   Mullins, M
+   Shannon, D
+AF Leonard, Eamon
+   Sheehan, Barry
+   Mullins, Martin
+   Shannon, Darren
+TI Generative AI for enhanced risk management in SMEs
+SO JOURNAL OF RISK RESEARCH
+LA English
+DT Article; Early Access
+DE Risk management cycle; risk register; generative artificial
+   intelligence; SMEs; retrieval augmented generation
+AB Establishing and sustaining small and medium-sized enterprises (SMEs) presents considerable challenges. Entrepreneurs must navigate limited resources and significant knowledge gaps across a spectrum of information requirements-from health and safety to corporate governance, taxation, and personnel management. Despite the extensive deployment of generative artificial intelligence (GAI) across sectors such as medicine, education, and finance, its application and research in SME risk management remain notably sparse. This research aims to bridge this gap by showcasing the benefits of GAI within the risk management cycle, which is critical to enhancing the prospects of success among smaller business entities. With rapid technological advancements and the widespread integration of GAI in office and home settings, an opportunity arises to develop customised risk management tools specifically tailored for SMEs. The analysis outlines a conceptual case study in the food and beverage sector, where an entrepreneur launches a new restaurant. The study tracks GAI's iterative application across all phases of the risk management cycle: identification, comprehension, assessment, treatment, and monitoring. Specifically, it integrates retrieval augmented generation (RAG), which accesses and incorporates information from the Irish Health and Safety Authority (HSA) into its processes. Additionally, GAI assistants are created and employed to execute tasks integral to the risk management cycle, such as calculating risk factors. A key outcome is the creation of a risk register for each potential hazard, demonstrating GAI's practical application in risk assessment. These tools illustrate the potential of GAI to navigate the complex, information-dense, and regulatory-heavy landscape of contemporary business environments. This exploration underscores how GAI can improve decision-making and risk evaluation and promotes further discussion and research on developing user-friendly GAI technologies.
+C1 [Leonard, Eamon; Sheehan, Barry; Mullins, Martin; Shannon, Darren] Univ Limerick, Kemmy Business Sch, Limerick, Ireland.
+C3 University of Limerick
+RP Leonard, E (corresponding author), Univ Limerick, Kemmy Business Sch, Limerick V94 PH93, Ireland.
+EM eamon.leonard@ul.ie
+RI Shannon, Darren/AAX-4421-2021; Sheehan, Barry/W-4850-2019
+FU Interreg [Project ID 01C0232]
+FX This sudy was funded by Interreg Europe Funding supported this work
+   under the Applied Data-Science and AI for proactive SME service
+   (PROACTsme) project, Project ID 01C0232.
+CR Alakus TB, 2020, CHAOS SOLITON FRACT, V140, DOI 10.1016/j.chaos.2020.110120
+   Althaus CE, 2005, RISK ANAL, V25, P567, DOI 10.1111/j.1539-6924.2005.00625.x
+   Atiase V, 2023, INT J ENTREP BEHAV R, V29, P1807, DOI 10.1108/IJEBR-05-2022-0405
+   Aven T., 2015, RISK ANAL
+   Aven T., 2018, SOC RISK ANAL
+   Aven T, 2013, SAFETY SCI, V57, P44, DOI 10.1016/j.ssci.2013.01.016
+   Aven T, 2010, RISK ANAL, V30, P354, DOI 10.1111/j.1539-6924.2009.01314.x
+   AWS, 2023, RETRIEVAL AUGMENTED
+   Boholm Å, 2019, J NANOPART RES, V21, DOI 10.1007/s11051-019-4524-3
+   Brynjolfsson E., 2023, GENERATIVE AI WORK
+   Bubeck S., 2023, ARXIV
+   Cao Y., 2023, ARXIV
+   Chalkidis I., 2020, ARXIV
+   Chavas J.-P., 2004, RISK ANAL THEORY PRA
+   Chidukwani A, 2022, IEEE ACCESS, V10, P85701, DOI 10.1109/ACCESS.2022.3197899
+   Crawford K., 2018, YOU AI THE POLITICS
+   Criddle C., 2024, FINANC TIMES
+   Crovini C, 2021, EUR MANAG J, V39, P118, DOI 10.1016/j.emj.2020.11.002
+   Crovini C, 2021, MANAGE DECIS, V59, P1085, DOI 10.1108/MD-10-2019-1402
+   Cui LM, 2023, EUR INTEGR STUD, P175, DOI 10.5755/j01.eis.1.17.33726
+   Dankiewicz R, 2020, EQUILIBRIUM, V15, P511, DOI 10.24136/eq.2020.023
+   Deming DJ, 2022, J ECON PERSPECT, V36, P75, DOI 10.1257/jep.36.3.75
+   Diro A, 2025, J INF SECUR APPL, V89, DOI 10.1016/j.jisa.2024.103960
+   El Shoubaki A, 2020, SMALL BUS ECON, V54, P1107, DOI 10.1007/s11187-018-0129-y
+   Erdogan G., 2023, CYBERSECURITY AWAREN, P296
+   European Commission, 2023, ANN REPORT EUROPEAN
+   European Commission, 2024, COMMISSION LAUNCHES
+   European Parliament, 2024, ARTIFICIAL INTELLIGE
+   European Parliament, 2024, TEXTS ADOPTED EUROPE
+   EUROSTAT, 2024, STAT EXPLAINED
+   Falkner EM, 2015, J RISK FINANC, V16, P122, DOI 10.1108/JRF-06-2014-0079
+   Flage R., 2009, EXPRESSING COMMUNICA
+   Floridi L, 2018, Philosophy & Technology, V31, P1, DOI [10.1007/s13347-018-0303-9, 10.1007/s13347-018-0315-5]
+   Fridman L., 2024, 419 SAM ALTMAN OPENA
+   Grant N., 2024, NEW YORK TIMES
+   Gupta M, 2023, IEEE ACCESS, V11, P80218, DOI 10.1109/ACCESS.2023.3300381
+   Hamidi A., 2023, ARXIV
+   Henschel T., 2006, International Journal of Entrepreneurship and Small Business, V3, P554
+   High-Level Expert Group On AI, 2019, ETH GUID TRUSTW AI
+   Holzmann P, 2023, INT J INFORM MANAGE, V68, DOI 10.1016/j.ijinfomgt.2022.102593
+   HSA Health & Safety Authority Ireland, 2024, CATERING HOSPITALITY
+   Huang K., 2019, ARXIV
+   INSIDER INTELLIGENCE, 2023, GENERATIVE AI HAS ST
+   Jacobsen A., 2020, FAIR PRINCIPLES INTE
+   Kanbach DK, 2024, REV MANAG SCI, V18, P1189, DOI 10.1007/s11846-023-00696-z
+   Kotsios Panagiotis, 2023, J Innov Entrep, V12, P37, DOI [10.1186/s13731-023-00304-0, 10.1186/s13731-023-00304-0]
+   Kusche I, 2024, J RISK RES, DOI 10.1080/13669877.2024.2350720
+   Laux J, 2024, REGUL GOV, V18, P3, DOI 10.1111/rego.12512
+   Lee P, 2023, NEW ENGL J MED, V388, P1233, DOI 10.1056/NEJMsr2214184
+   Lewis P, 2020, ADV NEUR IN, V33
+   Lima PFD, 2020, EUR MANAG J, V38, P78, DOI 10.1016/j.emj.2019.06.005
+   Ling C., 2023, ARXIV
+   Microsoft, 2023, INTRO MICROSOFT 365
+   Moschella J, 2023, CONTEMP ACCOUNT RES, V40, P668, DOI 10.1111/1911-3846.12819
+   OECD, 2024, 5 D4SME ROUNDTABLE G
+   Openai R., 2023, ARXIV
+   Oviedo-Trespalacios O, 2023, SAFETY SCI, V167, DOI 10.1016/j.ssci.2023.106244
+   Owens E, 2022, RISKS, V10, DOI 10.3390/risks10120230
+   Penco L, 2023, J SMALL BUS ENTERP D, V30, P311, DOI 10.1108/JSBED-10-2021-0423
+   Schwesig R, 2023, J RISK RES, V26, P1053, DOI 10.1080/13669877.2023.2249927
+   Sheehan B, 2018, INT J MOL SCI, V19, DOI 10.3390/ijms19030649
+   Soni V., 2023, Reviews of Contemporary Business Analytics, V6, P133
+   Sullivan-Taylor B, 2011, INT J PROD RES, V49, P5565, DOI 10.1080/00207543.2011.563837
+   Taylor R., 2022, ARXIV
+   Tchankova L., 2002, Environmental Management and Health, V13, P290, DOI DOI 10.1108/09566160210431088
+   Thekdi SA, 2025, J RISK RES, V28, P987, DOI 10.1080/13669877.2024.2340013
+   Vecchiarini M, 2023, INT J MANAG EDUC-OXF, V21, DOI 10.1016/j.ijme.2023.100879
+   VECTARA, 2024, VECTARAS HUGHES HALL
+   Wang D.-Q., 2023, MedComm-Future Med, V2, pe43, DOI [10.1002/mef2.43, 10.1002/mef2.43, DOI 10.1002/MEF2.43]
+   Wang HS, 2022, IEEE J-STSP, V16, P276, DOI 10.1109/JSTSP.2022.3152375
+   Wang WY, 2025, REV MANAG SCI, V19, P1949, DOI 10.1007/s11846-024-00742-4
+   Wei J., 2022, ARXIV
+   Wei J., 2022, ARXIV
+   Wu S., 2023, ARXIV
+   Xu Z. E. W. E. I., 2023, PROMPT ENG IMPROVING
+   Yang X., 2022, ARXIV
+   Zarifhonarvar A., 2023, J ELECT BUSINESS DIG
+   Zhao W. X., 2023, ARXIV
+NR 78
+TC 0
+Z9 0
+U1 9
+U2 9
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 1366-9877
+EI 1466-4461
+J9 J RISK RES
+JI J. Risk Res.
+PD 2026 FEB 17
+PY 2026
+DI 10.1080/13669877.2026.2627597
+EA FEB 2026
+PG 34
+WC Social Sciences, Interdisciplinary
+WE Social Science Citation Index (SSCI)
+SC Social Sciences - Other Topics
+GA EJ4WA
+UT WOS:001702548700001
+DA 2026-04-29
+ER
+
+PT J
+AU Senni, CC
+   Vaghefi, AS
+   Manekar, T
+   Schimanski, T
+   Leippold, M
+AF Colesanti Senni, Chiara
+   Vaghefi, Ario Saeid
+   Manekar, Tushar
+   Schimanski, Tobias
+   Leippold, Markus
+TI Using AI to assess the decision-usefulness of corporates' nature-related
+   disclosures
+SO ENVIRONMENTAL RESEARCH COMMUNICATIONS
+LA English
+DT Article
+DE AskNature; TNFD; disclosure; nature loss
+AB Companies' nature-related disclosure is insufficient for decision making. This situation is unlikely to improve as long as it remains voluntary, even under initiatives such as the Task Force on Nature-related Financial Disclosures (TNFD). To investigate the decision-usefulness of these disclosures, we develop AskNature, an AI-powered Question Answering (QA) tool that uses Retrieval Augmented Generation (RAG) to analyze corporate reports and score their alignment with TNFD recommendations. We apply AskNature to the Corporate Sustainability Reports (CSRs) of the Nature Action 100 (NA100) companies, a group selected for their systemic importance in reversing nature loss. Our analysis reveals a disconnect between reporting and reality: disclosures are dominated by positive sentiment despite ongoing biodiversity loss, geographically ignore many of the world's most critical natural assets, and contain commitments that score high on declaration but low on specificity and even lower on legal enforceability. Overall, current CSR disclosures, although aligned with the TNFD, are not sufficiently decision-useful for stakeholders and lack legal enforceability.
+C1 [Colesanti Senni, Chiara; Vaghefi, Ario Saeid; Manekar, Tushar; Schimanski, Tobias; Leippold, Markus] Univ Zurich, Zurich, Switzerland.
+   [Vaghefi, Ario Saeid] World Meteorol Org, Geneva, Switzerland.
+   [Leippold, Markus] Swiss Finance Inst, Zurich, Switzerland.
+C3 University of Zurich; Swiss Finance Institute (SFI)
+RP Senni, CC (corresponding author), Univ Zurich, Zurich, Switzerland.
+EM chiara.colesantisenni@df.uzh.ch; saeid.vaghefi@geo.uzh.ch;
+   tushar.manekar@df.uzh.ch; tobias.schimanski@df.uzh.ch;
+   markus.leippold@df.uzh.ch
+RI Colesanti Senni, Chiara/GYD-6843-2022; A Vaghefi, Saeid/N-7632-2016;
+   Schimanski, Tobias/NKP-9995-2025; Vaghefi, Seyed/N-7632-2016
+OI Colesanti Senni, Chiara/0000-0001-8029-4106; A Vaghefi,
+   Saeid/0000-0002-3061-6493; 
+FU Swiss National Science Foundation (SNSF) [100018 207800]
+FX This paper has received funding from the Swiss National Science
+   Foundation (SNSF) under the project 'How sustainable is sustainable
+   finance? Impact evaluation and automated greenwashing detection' (Grant
+   Agreement No. 100018_207800).
+CR Anil R, 2023, Arxiv, DOI [arXiv:2305.10403, DOI 10.48550/ARXIV.2305.10403]
+   [Anonymous], 2023, OpenAI
+   Berg F, 2022, REV FINANC, V26, P1315, DOI 10.1093/rof/rfac033
+   Bingler JA, 2024, J BANK FINANC, V164, DOI 10.1016/j.jbankfin.2024.107191
+   Bingler JA, 2022, FINANC RES LETT, V47, DOI 10.1016/j.frl.2022.102776
+   Brown T., 2020, Advances in Neural Information Processing Systems, V33, P1877, DOI DOI 10.48550/ARXIV.2005.14165
+   Callaghan M, 2021, NAT CLIM CHANGE, V11, P966, DOI 10.1038/s41558-021-01168-6
+   Ceballos G., 2015, The Annihilation of Nature: Human Extinction of Birds and Mammals
+   Chaplin-Kramer R, 2022, NAT ECOL EVOL, DOI 10.1038/s41559-022-01934-5
+   Chowdhery A, 2022, Arxiv, DOI arXiv:2204.02311
+   Dasgupta P., 2021, Hm Treasury
+   Diggelmann Thomas, 2020, arXiv
+   Elgohary A, 2020, 58TH ANNUAL MEETING OF THE ASSOCIATION FOR COMPUTATIONAL LINGUISTICS (ACL 2020), P2065
+   Gianinazzi V., 2024, Available at SSRN
+   Giglio S., 2023, Biodiversity risk. Technical report
+   Ji ZW, 2023, ACM COMPUT SURV, V55, DOI 10.1145/3571730
+   Leippold M., 2024, Automated fact-checking of climate change claims with large language models, DOI [10.2139/ssrn.4731802, DOI 10.2139/SSRN.4731802]
+   Lewis P, 2020, ADV NEUR IN, V33
+   Li MR, 2024, Arxiv, DOI [arXiv:2305.14623, DOI 10.18653/V1/2024.FINDINGS-NAACL.12]
+   Liu N F., 2023, Evaluating verifiability in generative search engines
+   Luccioni A., 2020, Analyzing sustainability reports using natural language processing
+   Luo Y., 2020, P FIND ASS COMP LING, P3296, DOI [10.18653/v1/2020.findings-emnlp.296, DOI 10.18653/V1/2020.FINDINGS-EMNLP.296]
+   Managi S., 2018, Inclusive Wealth Report 2018
+   Maskun, 2021, IOP Conference Series Earth and Environmental Science, V886, P012071, DOI [10.1088/1755-1315/886/1/012071, 10.1088/1755-1315/886/1/012071, DOI 10.1088/1755-1315/886/1/012071]
+   McGraw KO, 1996, PSYCHOL METHODS, V1, P30, DOI 10.1037/1082-989X.1.4.390
+   Ni J., 2023, P 2023 C EMP METH NA
+   OpenAI, 2023, Instructgpt: Ai for generating instructions
+   Ouyang L, 2022, ADV NEUR IN
+   Peng B., 2023, Check your facts and try again: Improving large language models with external knowledge and automated feedback
+   Pimm SL, 2014, SCIENCE, V344, P987, DOI 10.1126/science.1246752
+   Qiao S., 2023, Reasoning with language model prompting: a survey
+   Raghavan H., 2006, Active learning with feedback on both features and instances
+   Schick T., 2023, arXiv, DOI DOI 10.48550/ARXIV.2302.04761
+   Schimanski T., 2023, arXiv
+   Schimanski T, 2023, 2023 CONFERENCE ON EMPIRICAL METHODS IN NATURAL LANGUAGE PROCESSING (EMNLP 2023), P15745
+   Senni CC, 2025, ENVIRON RES COMMUN, V7, DOI 10.1088/2515-7620/ad9e88
+   Shen Y., 2023, Hugginggpt: Solving ai tasks with chatgpt and its friends in huggingface
+   SHROUT PE, 1979, PSYCHOL BULL, V86, P420, DOI 10.1037/0033-2909.86.2.420
+   Sodhi N., 2009, PRINCETON GUIDE ECOL, P514, DOI DOI 10.1515/9781400833023.514
+   Stammbach D., 2023, P 61 ANN M ASS COMP
+   Sun J., 2024, A survey of reasoning with foundation models
+   Tandon N., 2021, Interscript: a dataset for interactive learning of scripts through error feedback
+   Team G., 2024, Gemini: a family of highly capable multimodal models
+   Touvron H, 2023, Llama 2: open foundation and fine-tuned chat models
+   Touvron H, 2023, Arxiv, DOI arXiv:2302.13971
+   Vaghefi SA, 2023, COMMUN EARTH ENVIRON, V4, DOI 10.1038/s43247-023-01084-x
+   Webersinke N., 2022, ClimateBert: a pretrained language model for climate-related text, DOI DOI 10.2139/SSRN.4229146
+   Wilson E O., 2016, Half-Earth: Our Planet's Fight for Life
+   Wu Y., 2021, Active learning for graph neural networks via node feature propagation
+   WWF, 2022, Living planet report 2022
+   Xu Z., 2024, Hallucination is inevitable: an innate limitation of large language models
+   Yue X., 2023, Automatic evaluation of attribution by large language models
+   Zhou CT, 2023, Arxiv, DOI [arXiv:2305.11206, 10.48550/arXiv.2305.11206, DOI 10.48550/ARXIV.2305.11206]
+NR 53
+TC 0
+Z9 0
+U1 5
+U2 5
+PU IOP Publishing Ltd
+PI Bristol
+PA No.2 The Distillery, Glassfields, Avon Street, Bristol, ENGLAND
+SN 2515-7620
+J9 ENVIRON RES COMMUN
+JI Environ. Res. Commun.
+PD NOV 1
+PY 2025
+VL 7
+IS 11
+AR 115006
+DI 10.1088/2515-7620/ae1357
+PG 33
+WC Environmental Sciences
+WE Science Citation Index Expanded (SCI-EXPANDED)
+SC Environmental Sciences & Ecology
+GA 9KF0I
+UT WOS:001608324000001
+OA Green Submitted, gold
+DA 2026-04-29
+ER
+
+PT J
+AU Anagnostopoulos, C
+   Rizvi, SWF
+   Rahman, SA
+   Yiapanas, G
+   Swart, K
+   Thrassou, A
+AF Anagnostopoulos, Christos
+   Rizvi, Syeda Warisha Fatima
+   Rahman, Sumaya Abdul
+   Yiapanas, George
+   Swart, Kamilla
+   Thrassou, Alkis
+TI Harnessing sport for CSR: a study of Qatar Stock Exchange-listed
+   companies
+SO INTERNATIONAL JOURNAL OF ORGANIZATIONAL ANALYSIS
+LA English
+DT Article
+DE Sport-based corporate social responsibility; Corporate CSR strategies;
+   Sustainable development; Community engagement through sport
+ID CORPORATE SOCIAL-RESPONSIBILITY; PHILANTHROPY
+AB PurposeThis research addresses the integration of sport into corporate social responsibility (CSR) strategies by companies listed on the Qatar Stock Exchange (QSE). Theoretically underpinned by neo-institutional isomorphic pressures, the study aims to fill a gap in the literature on CSR practices in the Middle East by examining how Qatari firms use sport-related CSR initiatives to foster community engagement and meet sustainable development goals.Design/methodology/approachThe research involved a comprehensive analysis of annual reports from QSE-listed companies (n = 47), ensuring reliability through an automated data retrieval and analysis framework. The study handled extensive data sets consisting of annual reports spanning 10-15 years and primarily used two components: prompts and retrieval augmented generation.FindingsThe results highlight an increased focus on and utilisation of sport within CSR strategies across various sectors. They further demonstrate significant sectoral differences in CSR strategies, with banks and financial services leading in activities linked to philanthropy, sponsorships and personnel engagement. Given Qatar's strategic emphasis on sport, related CSR initiatives have seen parallel and substantial growth, strengthening their role in promoting societal well-being.Originality/valueThis study contributes to the understanding of CSR practices in the region, by offering theoretical and practical insights on developing effective "CSR through sport" programmes. The research further provides a methodological and data foundation for application into other/adjacent regional or sectoral contexts.
+C1 [Anagnostopoulos, Christos] Hamad Bin Khalifa Univ, Coll Sci & Engn, Div Engn Management & Decis Sci, Doha, Qatar.
+   [Anagnostopoulos, Christos] Molde Univ Coll, Fac Business Adm & Social Sci, Molde, Norway.
+   [Rizvi, Syeda Warisha Fatima; Rahman, Sumaya Abdul] Hamad Bin Khalifa Univ, Coll Sci & Engn, Doha, Qatar.
+   [Yiapanas, George] Univ Nicosia, Nicosia, Cyprus.
+   [Swart, Kamilla] Hamad Bin Khalifa Univ, Doha, Qatar.
+   [Thrassou, Alkis] Univ Nicosia, Dept Mkt, Nicosia, Cyprus.
+C3 Qatar Foundation (QF); Hamad Bin Khalifa University-Qatar; Molde
+   University College; Qatar Foundation (QF); Hamad Bin Khalifa
+   University-Qatar; University of Nicosia; Qatar Foundation (QF); Hamad
+   Bin Khalifa University-Qatar; University of Nicosia
+RP Anagnostopoulos, C (corresponding author), Hamad Bin Khalifa Univ, Coll Sci & Engn, Div Engn Management & Decis Sci, Doha, Qatar.; Anagnostopoulos, C (corresponding author), Molde Univ Coll, Fac Business Adm & Social Sci, Molde, Norway.
+EM canagnostopoulos@hbku.edu.qa; syri21453@hbku.edu.qa;
+   suab68361@hbku.edu.qa; yiapanas.g@unic.ac.cy; kswartarries@hbku.edu.qa;
+   thrassou.a@unic.ac.cy
+RI Thrassou, Alkis/AAJ-1047-2020; Anagnostopoulos, Christos/GQR-0580-2022;
+   Yiapanas, George/AAN-9224-2021
+FU HBKU Vice President for Research Office [HBKU-INT-VPR-TG-02-11]
+FX HBKU Vice President for Research Office No. HBKU-INT-VPR-TG-02-11
+CR Abdul Rahman S., 2024, INT C INF MAN, V2102, DOI [10.1007/978-3-031-64359-0_31, DOI 10.1007/978-3-031-64359-0_31]
+   Al-Muhannadi K, 2024, J INFRASTRUCT POLICY, V8, P6214, DOI [10.24294/jipd.v8i12.6214, 10.24294/jipd.v8i12.6214, DOI 10.24294/JIPD.V8I12.6214]
+   Al-Swidi AK, 2024, DISCOV SUSTAIN, V5, DOI 10.1007/s43621-024-00688-3
+   Al-Thani H., 2024, PREPRINTS, V2024, P2024051273, DOI [10.20944/preprints202405.1273.v1, DOI 10.20944/PREPRINTS202405.1273.V1]
+   Amara M., 2021, Sport and Development in Emerging Nations, P141
+   Anagnostopoulos C., 2021, UNDERSTANDING SPORT, P401
+   Anagnostopoulos C, 2025, INT J SPORT MARK SPO, V26, P803, DOI 10.1108/IJSMS-09-2024-0261
+   Anagnostopoulos C, 2021, EUR J INT MANAG, V15, P367, DOI 10.1504/EJIM.2021.113271
+   Anagnostopoulos C, 2025, RES HANDB BUS MANAG, P1
+   Bantekas I, 2023, STATUTE LAW REV, V44, DOI 10.1093/slr/hmad005
+   Bason T, 2015, SPORT BUS MANAG, V5, P218, DOI 10.1108/SBM-10-2014-0044
+   Behnam M, 2023, EUR SPORT MANAG Q, V23, P789, DOI 10.1080/16184742.2021.1929375
+   Bommarito M.J., 2022, ARXIV
+   Bradish C, 2009, J SPORT MANAGE, V23, P691, DOI 10.1123/jsm.23.6.691
+   Breitbarth T, 2015, CORP GOV-INT J BUS S, V15, P254, DOI 10.1108/CG-02-2015-0025
+   Burton N., 2024, RES HDB MAJOR SPORTI, P60
+   Carlini J, 2025, J STRATEG MARK, V33, P323, DOI 10.1080/0965254X.2021.1881147
+   Chadwick S, 2024, INT J SPORT POLICY P, V16, P331, DOI 10.1080/19406940.2023.2288815
+   Chen ZQ, 2024, FINANC RES LETT, V69, DOI 10.1016/j.frl.2024.106060
+   Chiu W, 2023, INT J SPORT MARK SPO, V24, P771, DOI 10.1108/IJSMS-09-2022-0178
+   Cury R, 2023, EUR SPORT MANAG Q, V23, P13, DOI 10.1080/16184742.2022.2126511
+   DIMAGGIO PJ, 1983, AM SOCIOL REV, V48, P147, DOI 10.2307/2095101
+   Douze M., 2024, ARXIV
+   Dubinsky Y, 2024, PLACE BRANDING PUBLI, V20, P218, DOI 10.1057/s41254-023-00311-8
+   Ekren D, 2023, INT J SPORT MARK SPO, V24, P570, DOI 10.1108/IJSMS-08-2023-245
+   Fatima T, 2023, J BUS ETHICS, V183, P105, DOI 10.1007/s10551-022-05047-8
+   Fechner D, 2023, EUR SPORT MANAG Q, V23, P1454, DOI 10.1080/16184742.2022.2029524
+   Gao Y., 2023, RETRIEVAL AUGMENTED
+   Godfrey PC, 2009, J SPORT MANAGE, V23, P698, DOI 10.1123/jsm.23.6.698
+   Kalyan Katikapalli Subramanyam, 2024, Natural Language Processing Journal, V6, DOI [10.2139/ssrn.4593895, 10.1016/j.nlp.2023.100048]
+   Kim M, 2024, SPORT MANAG REV, V27, P502, DOI 10.1080/14413523.2024.2307186
+   Kolyperas D, 2016, J SPORT MANAGE, V30, P702, DOI 10.1123/jsm.2016-0032
+   Mamo YZ, 2025, COMMUN SPORT, V13, P1010, DOI 10.1177/21674795241243374
+   McDonald S., 2009, SOC RESPONSIB J, P111
+   Moyo T., 2021, P 6 INT C BUSINESS M
+   Neelakantan A., 2022, ARXIV
+   Nicoliello M., 2024, BUSINESS SUSTAINABIL, DOI [10.1007/978-3-031-37365-7_8, DOI 10.1007/978-3-031-37365-7_8]
+   Onkila T, 2022, CORP SOC RESP ENV MA, V29, P435, DOI 10.1002/csr.2210
+   Ratten V, 2010, J MANAGE ORGAN, V16, P482, DOI 10.1017/S1833367200001875
+   Saivinod MS, 2025, INT J ORGAN ANAL, V33, P4360, DOI 10.1108/IJOA-10-2024-4935
+   Sarrakh R., 2021, SECONDARY RES METHOD, P88
+   Schonberner J., 2024, RES HDB MAJOR SPORTI, P207, DOI DOI 10.4337/9781800885653.00036
+   Siltaloppi J, 2021, J BUS ETHICS, V174, P507, DOI 10.1007/s10551-020-04569-3
+   Singh K, 2021, EUR RES MANAG BUS EC, V27, DOI 10.1016/j.iedeen.2020.100139
+   Siriwardhana S, 2023, T ASSOC COMPUT LING, V11, P1, DOI 10.1162/tacl_a_00530
+   Smith A.C. T., 2007, Journal of Corporate Citizenship, V54, P43, DOI [10.9774/gleaf.4700.2007.sp.00007, DOI 10.9774/GLEAF.4700.2007.SP.00007]
+   Topsakal O., 2023, INT C APPL ENG NAT S, V1, P1050, DOI [10.59287/icaens.1127, 10.59287/icaens.1127, DOI 10.59287/ICAENS.1127]
+   Toukabri M, 2023, SYST PRACT ACT RES, V36, P725, DOI 10.1007/s11213-022-09621-z
+   Valeri M, 2019, CSR SUSTAIN ETHIC, P149, DOI 10.1007/978-3-319-97649-5_5
+   Velte P, 2022, MANAG REV Q, V72, P627, DOI 10.1007/s11301-021-00211-2
+   Vrontis D., 2023, BUSINESS SUSTAINABIL
+   Webson A., 2022, NAACL 2022 2022 C N, P2300, DOI DOI 10.18653/V1/2022.NAACL-MAIN.167
+   Yang D, 2021, J SPORT MANAGE, V35, P395, DOI 10.1123/jsm.2020-0084
+   Yiapanas G, 2024, ACCOUNT AUDIT ACCOUN, V37, P552, DOI 10.1108/AAAJ-06-2022-5855
+NR 54
+TC 1
+Z9 1
+U1 0
+U2 0
+PU EMERALD GROUP PUBLISHING LTD
+PI Leeds
+PA Floor 5, Northspring 21-23 Wellington Street, Leeds, W YORKSHIRE,
+   ENGLAND
+SN 1934-8835
+EI 1758-8561
+J9 INT J ORGAN ANAL
+JI Int. J. Organ. Anal.
+PD APR 15
+PY 2026
+VL 34
+IS 5
+SI SI
+BP 1670
+EP 1697
+DI 10.1108/IJOA-02-2025-5251
+EA MAR 2026
+PG 28
+WC Management
+WE Emerging Sources Citation Index (ESCI)
+SC Business & Economics
+GA GM4IY
+UT WOS:001724380400001
+DA 2026-04-29
+ER
+
+PT J
+AU Jeong, C
+AF Jeong, Cheonsu
+TI A Study on the Implementation of Generative AI Services Using an
+   Enterprise Data-Based LLM Application Architecture
+SO ADVANCES IN ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING
+LA English
+DT Article
+DE Embedding; Generative AI; LLM framework; RAG; Vector store
+AB This study presents a method for implementing generative AI services by utilizing the Large Language Models (LLM) application architecture. With recent advancements in generative AI technology, LLMs have gained prominence across various domains. In this context, the research addresses the challenge of information scarcity and proposes specific remedies by harnessing LLM capabilities. The investigation delves into strategies for mitigating the issue of inadequate data, offering tailored solutions. The study delves into the efficacy of employing fine-tuning techniques and direct document integration to alleviate data insufficiency. A significant contribution of this work is the development of a Retrieval-Augmented Generation (RAG) model, which tackles the aforementioned challenges. The RAG model is carefully designed to enhance information storage and retrieval processes, ensuring improved content generation. The research elucidates the key phases of the information storage and retrieval methodology underpinned by the RAG model. A comprehensive analysis of these steps is undertaken, emphasizing their significance in addressing the scarcity of data. The study highlights the efficacy of the proposed method, showcasing its applicability through illustrative instances. By implementing the RAG model for information storage and retrieval, the research not only contributes to a deeper comprehension of generative AI technology but also facilitates its practical usability within enterprises utilizing LLMs. This work holds substantial value in advancing the field of generative AI, offering insights into enhancing data-driven content generation and fostering active utilization of LLM-based services within corporate settings.
+C1 [Jeong, Cheonsu] SAMSUND SDS, Dept AI Automat Team, Olymp Ro 125, Seoul, South Korea.
+RP Jeong, C (corresponding author), SAMSUND SDS, Dept AI Automat Team, Olymp Ro 125, Seoul, South Korea.
+EM csu.jeong@samsung.com
+RI Jeong, Cheonsu/JQX-2553-2023
+OI Jeong, Cheonsu/0000-0003-0751-3987
+CR a16z, ABOUT US
+   [Anonymous], today-gaze
+   [Anonymous], Gartner
+   [Anonymous], sedaily
+   Bommasani Rishi., 2021, arXiv: 2108.07258, DOI [DOI 10.48550/ARXIV.2108.07258, 10.48550/arXiv.2108.07258]
+   Cheonsu Jeong, 2023, Journal of Information Technology Applications & Management, V30, P11
+   Cheonsu Jeong, 2023, [KIPS Transactions on Software and Data Engineering, 정보처리학회논문지. 소프트웨어 및 데이터 공학], V12, P41
+   Cheonsu Jeong, 2020, [Journal of Information Technology Services, 한국IT서비스학회지], V19, P31, DOI [10.9716/kits.2020.19.4.031, 10.9716/KITS.2020.19.4.031]
+   Cho J.I, 2023, TTA Journal, V207, P36
+   huyenchip, ABOUT US
+   IDC, ABOUT US
+   Jang M., 2023, Prompt Engineering
+   Jeong Cheonsu, 2023, [Information Systems Review, 경영정보학연구], V25, P31, DOI [10.14329/isr.2023.25.2.031, 10.14329/isr.2023.25.2.031]
+   Jeong JH, 2022, International Journal of Scientific & Engineering Research, V1, P468
+   Korea Information Society Development Institute, 2016, Emergence and Development Trends of AI-Based Chatbot Services, ICT Convergence Issues & Trends
+   learn.microsoft, about us
+   Pinacolona, ABOUT US
+   research.aimultiple, ABOUT US
+   Samsungfundblog, About us
+   Sánchez-Díaz X, 2018, LECT NOTES ARTIF INT, V11289, P165, DOI 10.1007/978-3-030-04497-8_14
+   Sivarajkumar S, 2023, Arxiv, DOI arXiv:2309.08008
+   Zhao WX, 2025, Arxiv, DOI [arXiv:2303.18223, DOI 10.48550/ARXIV.2303.18223, 10.48550/arXiv.2303.18223]
+NR 22
+TC 17
+Z9 27
+U1 2
+U2 28
+PU Shimur Publications
+PI New Moti Nagar
+PA Tc-1/7, TC-1, New Moti Nagar, Delhi, INDIA
+EI 2582-9793
+J9 ADV ARTIF INTELL MAC
+JI Adv. Artif. Intell. Mach. Learn.
+PD OCT
+PY 2023
+VL 3
+IS 4
+BP 1588
+EP 1618
+PG 31
+WC Computer Science, Artificial Intelligence
+WE Emerging Sources Citation Index (ESCI)
+SC Computer Science
+GA I1B8I
+UT WOS:001327688000004
+DA 2026-04-29
+ER
+
+PT J
+AU Xu, CL
+   Liu, JY
+   Li, ZY
+   Lin, CMJ
+AF Xu, Congluo
+   Liu, Jiuyue
+   Li, Ziyang
+   Lin, Chengmengjia
+TI DeepGreen: Effective LLM-Driven Greenwashing Monitoring System Designed
+   for Empirical Testing - Evidence from China
+SO COMPUTATIONAL ECONOMICS
+LA English
+DT Article; Early Access
+DE Greenwashing monitoring; Large language models; Financial statement
+   analysis; Unstructured data analysis
+ID ENVIRONMENTAL DISCLOSURE
+AB Motivated by the emerging adoption of Large Language Models (LLMs) in economics and management research, this paper investigates whether LLMs can reliably identify corporate greenwashing narratives and, more importantly, whether and how the greenwashing signals extracted from textual disclosures can be used to empirically identify causal effects. To this end, this paper proposes DeepGreen, a dual-stage LLM-Driven system for detecting potential corporate greenwashing in annual reports. Applied to 9369 A-share annual reports published between 2021 and 2023, DeepGreen attains high reliability in random-sample validation at both stages. Ablation experiment shows that Retrieval-Augmented Generation (RAG) reduces hallucinations, as compared to simply lengthening the input window. Empirical tests indicate that "greenwashing" captured by DeepGreen can effectively reveal a positive relationship between greenwashing and environmental penalties, and IV, PSM, Placebo test, which enhance the robustness and causal effects of the empirical evidence. Further study suggests that the presence and number of green investors can weaken the positive correlation between greenwashing and penalties. Heterogeneity analysis shows that the positive relationship between "greenwashing - penalty" is less significant in large-sized corporations and corporations that have accumulated green assets, indicating that these green assets may be exploited as a credibility shield for greenwashing. Our findings demonstrate that LLMs can standardize ESG oversight by early warning and direct regulators' scarce attention toward the subsets of corporations where monitoring is more warranted.
+C1 [Xu, Congluo; Li, Ziyang; Lin, Chengmengjia] Sichuan Univ, Business Sch, Chengdu, Sichuan, Peoples R China.
+   [Liu, Jiuyue] Sichuan Univ, Sch Econ, Chengdu, Sichuan, Peoples R China.
+C3 Sichuan University; Sichuan University
+RP Li, ZY (corresponding author), Sichuan Univ, Business Sch, Chengdu, Sichuan, Peoples R China.
+EM lzy_feng@scu.edu.cn
+FU College Students' Innovative Entrepreneurial Training Plan Program
+   [202510610132]
+FX This study receives the funding of College Students' Innovative
+   Entrepreneurial Training Plan Program (202510610132).
+CR Acheampong A, 2024, ECON LETT, V234, DOI 10.1016/j.econlet.2023.111487
+   Amorim E., 2018, P 2018 C N AM CHAPTE, V1, P229, DOI DOI 10.18653/V1/N18-1021
+   Ashforth BE, 1990, ORGAN SCI, V1, P177, DOI 10.1287/orsc.1.2.177
+   Bai Y., 2025, ARXIV, DOI DOI 10.48550/ARXIV.2507.20534
+   Berg F, 2022, REV FINANC, V26, P1315, DOI 10.1093/rof/rfac033
+   Bernini F, 2024, BUS ETHICS ENV RESP, V33, P649, DOI 10.1111/beer.12631
+   Bingler JA, 2022, FINANC RES LETT, V47, DOI 10.1016/j.frl.2022.102776
+   Bochkay K, 2023, CONTEMP ACCOUNT RES, V40, P765, DOI 10.1111/1911-3846.12825
+   Boedijanto FJO, 2024, ENERGY RES SOC SCI, V115, DOI 10.1016/j.erss.2024.103638
+   Bridgeman B, 2012, APPL MEAS EDUC, V25, P27, DOI 10.1080/08957347.2012.635502
+   Bronzini M, 2024, EPJ DATA SCI, V13, DOI 10.1140/epjds/s13688-024-00481-2
+   Brown N., 1998, ACCOUNT BUS RES, V29, P21, DOI DOI 10.1080/00014788.1998.9729564
+   Cai L, 2016, J BUS ETHICS, V139, P563, DOI 10.1007/s10551-015-2630-4
+   Calamai T, 2025, Arxiv, DOI arXiv:2502.07541
+   Cao QL, 2022, FRONT PSYCHOL, V13, DOI 10.3389/fpsyg.2022.892415
+   Chen PY, 2024, BUS STRATEG ENVIRON, V33, P4162, DOI 10.1002/bse.3701
+   Cheng ZH, 2025, J ENVIRON MANAGE, V394, DOI 10.1016/j.jenvman.2025.127353
+   Christensen DM, 2022, ACCOUNT REV, V97, P147, DOI 10.2308/TAR-2019-0506
+   Clapham B, 2023, J BUS ECON-GER, V93, P1463, DOI [10.1007/s11573-022-01119-3, 10.1007/s11573-022-01119-3]
+   Cohen JR, 2015, BEHAV RES ACCOUNT, V27, P127, DOI 10.2308/bria-51185
+   Netto SVD, 2020, ENVIRON SCI EUR, V32, DOI 10.1186/s12302-020-0300-3
+   Delmas MA, 2011, CALIF MANAGE REV, V54, P64, DOI 10.1525/cmr.2011.54.1.64
+   Dubey A., 2024, ARXIV
+   Dyer T, 2017, J ACCOUNT ECON, V64, P221, DOI 10.1016/j.jacceco.2017.07.002
+   Esposito P, 2025, CORP SOC RESP ENV MA, V32, P3814, DOI 10.1002/csr.3111
+   Gorovaia N, 2025, EUR FINANC MANAG, V31, P427, DOI 10.1111/eufm.12509
+   Grigoras-Ichim CE., 2024, MANAGEMENT, V43, P225
+   Guo MY, 2021, SUSTAINABILITY-BASEL, V13, DOI 10.3390/su13020508
+   Harris ZS, 1954, WORD, V10, P146, DOI 10.1080/00437956.1954.11659520
+   Hu XW, 2023, PAC-BASIN FINANC J, V78, DOI 10.1016/j.pacfin.2023.101952
+   Hua SY, 2024, DATA INTELLIGENCE, V6, P201, DOI 10.1162/dint_a_00243
+   Jiang G., 2021, J FINANC RES-US, V05, P117
+   Jones E, 2019, SOCIOL PERSPECT, V62, P728, DOI 10.1177/0731121419849095
+   Kim EH, 2015, ORGAN SCI, V26, P705, DOI 10.1287/orsc.2014.0949
+   Kroon A, 2024, COMMUN METHODS MEAS, V18, P142, DOI 10.1080/19312458.2023.2261372
+   Lewis P, 2020, ADV NEUR IN, V33
+   Li W, 2023, BUS STRATEG ENVIRON, V32, P820, DOI 10.1002/bse.3177
+   Li WW, 2025, CHINA J ACCOUNT RES, V18, DOI 10.1016/j.cjar.2025.100434
+   Li ZY, 2024, INT REV FINANC ANAL, V96, DOI 10.1016/j.irfa.2024.103623
+   Liu AX, 2024, Arxiv, DOI arXiv:2412.19437
+   Liu MT, 2025, RENEW ENERG, V244, DOI 10.1016/j.renene.2025.122748
+   Liu YP, 2023, ENVIRON SCI POLLUT R, V30, P118102, DOI 10.1007/s11356-023-30571-z
+   Lublóy A, 2025, J ENVIRON MANAGE, V373, DOI 10.1016/j.jenvman.2024.123399
+   Lyon TP, 2015, ORGAN ENVIRON, V28, P223, DOI 10.1177/1086026615575332
+   Lyon TP, 2011, J ECON MANAGE STRAT, V20, P3, DOI 10.1111/j.1530-9134.2010.00282.x
+   Madaan A, 2023, ADV NEUR IN
+   Magness V., 2006, Accounting, Auditing and Accountability Journal, V19, P540, DOI [10.1108/09513570610679128, DOI 10.1108/09513570610679128]
+   Marquis C, 2016, ORGAN SCI, V27, P483, DOI 10.1287/orsc.2015.1039
+   Martin PR, 2016, J ACCOUNT ECON, V61, P239, DOI 10.1016/j.jacceco.2015.08.004
+   Mateo-Marquez AJ, 2022, J CLEAN PROD, V363, DOI 10.1016/j.jclepro.2022.132567
+   Mohanram P, 2025, REV ACCOUNT STUD, V30, P1638, DOI 10.1007/s11142-024-09868-y
+   Mu HL, 2023, SUSTAINABILITY-BASEL, V15, DOI 10.3390/su152215693
+   Ong K., 2025, arXiv
+   OpenAI, 2023, Arxiv, DOI [arXiv:2303.08774, 10.48550/arXiv.2303.08774, DOI 10.48550/ARXIV.2303.08774]
+   Pang RY., 2024, Advances in neural information processing systems, V37, P116617
+   Parguel B, 2015, INT J ADVERT, V34, P107, DOI 10.1080/02650487.2014.996116
+   Persakis A., 2025, INT REV PUB NON MARK, P36
+   Plumlee M, 2015, J ACCOUNT PUBLIC POL, V34, P336, DOI 10.1016/j.jaccpubpol.2015.04.004
+   Rodrigue M, 2013, J BUS ETHICS, V114, P107, DOI 10.1007/s10551-012-1331-5
+   Rohlfs C, 2025, NEUROCOMPUTING, V611, DOI 10.1016/j.neucom.2024.128701
+   Salemi A, 2025, PROCEEDINGS OF THE 2025 INTERNATIONAL ACM SIGIR CONFERENCE ON INNOVATIVE CONCEPTS AND THEORIES IN INFORMATION RETRIEVAL, ICTIR 2025, P286, DOI 10.1145/3731120.3744595
+   Seele P, 2017, BUS STRATEG ENVIRON, V26, P239, DOI 10.1002/bse.1912
+   Shi DQ, 2024, RES INT BUS FINANC, V71, DOI 10.1016/j.ribaf.2024.102461
+   Sneideriene A, 2025, SUSTAINABILITY-BASEL, V17, DOI 10.3390/su17188342
+   Sun YB, 2024, FINANC RES LETT, V63, DOI 10.1016/j.frl.2024.105279
+   Szabo S, 2021, J BUS ETHICS, V171, P719, DOI 10.1007/s10551-020-04461-0
+   Taboada M, 2011, COMPUT LINGUIST, V37, P267, DOI 10.1162/COLI_a_00049
+   Tan RP, 2024, ENERG ECON, V130, DOI 10.1016/j.eneco.2024.107319
+   Vaswani A, 2017, ADV NEUR IN, V30, DOI 10.1007/s11356-023-31437-0
+   Walker K, 2012, J BUS ETHICS, V109, P227, DOI 10.1007/s10551-011-1122-4
+   Wang X, 2025, EPJ DATA SCI, V14, DOI 10.1140/epjds/s13688-025-00562-w
+   Wei J, 2023, SUSTAINABILITY-BASEL, V15, DOI 10.3390/su151411461
+   Wu Y, 2020, MANAGE SCI, V66, P3095, DOI 10.1287/mnsc.2019.3340
+   Xu W, 2023, PLOS ONE, V18, DOI 10.1371/journal.pone.0279904
+   Yang A., 2025, ARXIV, DOI [DOI 10.48550/ARXIV.2505.09388, 10.48550/arXiv.2505.09388]
+   Yu EPY, 2020, RES INT BUS FINANC, V52, DOI 10.1016/j.ribaf.2020.101192
+   Yuan XY, 2024, FINANC RES LETT, V67, DOI 10.1016/j.frl.2024.105845
+   Yue J, 2023, FINANC RES LETT, V55, DOI 10.1016/j.frl.2023.104016
+   Zhang MZ, 2025, ECON ANAL POLICY, V85, P943, DOI 10.1016/j.eap.2025.01.007
+   Zhang Y., 2025, COMPUT LINGUIST, P1
+   Zhou K, 2024, FINANC RES LETT, V61, DOI 10.1016/j.frl.2024.105031
+   Ziolo M, 2024, CORP SOC RESP ENV MA, V31, P5343, DOI 10.1002/csr.2842
+   Zou Y, 2025, J CLEAN PROD, V489, DOI 10.1016/j.jclepro.2024.144572
+NR 83
+TC 0
+Z9 1
+U1 16
+U2 16
+PU SPRINGER
+PI DORDRECHT
+PA VAN GODEWIJCKSTRAAT 30, 3311 GZ DORDRECHT, NETHERLANDS
+SN 0927-7099
+EI 1572-9974
+J9 COMPUT ECON
+JI Comput. Econ.
+PD 2026 FEB 19
+PY 2026
+DI 10.1007/s10614-026-11328-5
+EA FEB 2026
+PG 35
+WC Economics; Management; Mathematics, Interdisciplinary Applications
+WE Science Citation Index Expanded (SCI-EXPANDED); Social Science Citation Index (SSCI)
+SC Business & Economics; Mathematics
+GA DY2UX
+UT WOS:001694939900001
+DA 2026-04-29
+ER
+
+PT J
+AU Bronzini, M
+   Nicolini, C
+   Lepri, B
+   Passerini, A
+   Staiano, J
+AF Bronzini, Marco
+   Nicolini, Carlo
+   Lepri, Bruno
+   Passerini, Andrea
+   Staiano, Jacopo
+TI Glitter or gold? Deriving structured insights from sustainability
+   reports via large language models
+SO EPJ DATA SCIENCE
+LA English
+DT Article
+DE ESG dimensions; Non-financial disclosures; Large language models;
+   In-context learning; Knowledge graphs; Bipartite graph analyses;
+   Interpretability
+ID BETWEENNESS CENTRALITY; GRAPHS; ERROR
+AB Over the last decade, several regulatory bodies have started requiring the disclosure of non-financial information from publicly listed companies, in light of the investors' increasing attention to Environmental, Social, and Governance (ESG) issues. Publicly released information on sustainability practices is often disclosed in diverse, unstructured, and multi-modal documentation. This poses a challenge in efficiently gathering and aligning the data into a unified framework to derive insights related to Corporate Social Responsibility (CSR). Thus, using Information Extraction (IE) methods becomes an intuitive choice for delivering insightful and actionable data to stakeholders. In this study, we employ Large Language Models (LLMs), In-Context Learning, and the Retrieval-Augmented Generation (RAG) paradigm to extract structured insights related to ESG aspects from companies' sustainability reports. We then leverage graph-based representations to conduct statistical analyses concerning the extracted insights. These analyses revealed that ESG criteria cover a wide range of topics, exceeding 500, often beyond those considered in existing categorizations, and are addressed by companies through a variety of initiatives. Moreover, disclosure similarities emerged among companies from the same region or sector, validating ongoing hypotheses in the ESG literature. Lastly, by incorporating additional company attributes into our analyses, we investigated which factors impact the most on companies' ESG ratings, showing that ESG disclosure affects the obtained ratings more than other financial or company data.
+C1 [Bronzini, Marco; Passerini, Andrea; Staiano, Jacopo] Univ Trento, Trento, Italy.
+   [Bronzini, Marco; Nicolini, Carlo; Lepri, Bruno] Ipazia SpA, Milan, Italy.
+   [Lepri, Bruno] Fdn Bruno Kessler FBK, Trento, Italy.
+C3 University of Trento; Fondazione Bruno Kessler
+RP Bronzini, M (corresponding author), Univ Trento, Trento, Italy.; Bronzini, M (corresponding author), Ipazia SpA, Milan, Italy.
+EM marco.bronzini-1@unitn.it
+RI ; Staiano, Jacopo/AAA-5977-2022; passerini, anea/JBS-4696-2023; Lepri,
+   Bruno/GVU-1184-2022
+OI Bronzini, Marco/0009-0004-9691-9464; Staiano,
+   Jacopo/0000-0002-1260-4640; passerini, anea/0000-0002-2765-5395; Lepri,
+   Bruno/0000-0003-1275-2333
+FU FAIR - Future AI Research
+FX We express our gratitude to the Reviewers for dedicating their time and
+   effort to assess the manuscript. We genuinely value the insightful
+   comments and suggestions that have contributed to enhancing the overall
+   quality of the manuscript.
+CR Abdi H., 2007, Encyclopedia of Measurement and Statistics, P508
+   Abhayawansa S., 2021, The Journal of Wealth Management, V24, P49, DOI [10.3905/JWM.2021.1.130, DOI 10.3905/JWM.2021.1.130, 10.3905/jwm.2021.1.130]
+   Admin@Evo, 2023, Why impact materiality is critical to double materiality assessments
+   Aliakbari E, 2023, The impracticality of standardizing ESG reporting (ESG: myths and realities)
+   Allen Institute for AI, open information extraction-demo
+   [Anonymous], ChatClimate grounded on the latest IPCC report
+   [Anonymous], Hugging Face: statistics on the number of monolingual models by language hosted on the Hugging Face platform
+   [Anonymous], European Union: fit for 55
+   [Anonymous], SDG Prospector-artificial intelligence serving the SDGs
+   [Anonymous], IR Solutions: ResponsibilityReports
+   [Anonymous], 2022, Environmental, Social and Governance from Refinitiv
+   [Anonymous], 2022, Working paper: balancing your materiality assessment
+   [Anonymous], Corporate sustainability reporting
+   [Anonymous], 2020, OECD BUSINESS FINANC, DOI DOI 10.1787/EB61FD29-EN
+   [Anonymous], Non-financial reporting | European Commission
+   [Anonymous], 2017, Recommendations of the task force on climate-related financial disclosures
+   [Anonymous], SUSTAINABLE DEV AGEN
+   Asratian A.S., 1998, Bipartite Graphs and their Applications, DOI DOI 10.1017/CBO9780511984068
+   Axelsson A, 2023, arXiv
+   Baldini M, 2018, J BUS ETHICS, V150, P79, DOI 10.1007/s10551-016-3139-1
+   Barthélemy M, 2004, EUR PHYS J B, V38, P163, DOI 10.1140/epjb/e2004-00111-4
+   Bast H, 2016, FOUND TRENDS INF RET, V10, P120, DOI 10.1561/1500000032
+   Benesty J, 2009, SPRINGER TOP SIGN PR, V2, P1, DOI 10.1007/978-3-642-00296-0
+   Berg F, 2022, REV FINANC, V26, P1315, DOI 10.1093/rof/rfac033
+   Berrar Daniel., 2019, Cross-Validation, V1, P542, DOI [DOI 10.1016/B978-0-12-809633-8.20349-X, 10.1016/B978-0-12-809633-8.20349-X]
+   Billio M, 2021, CORP SOC RESP ENV MA, V28, P1426, DOI 10.1002/csr.2177
+   Brandes U., 2005, Network Analysis: Methodological Foundations [outcome of a Dagstuhl seminar, 13-16 April 2004], V3418, DOI [DOI 10.1007/B106453, 10.1007/B106453]
+   Brown TB, 2020, ADV NEUR IN, V33
+   Busco C, 2020, J APPL CORP FINANC, V32, P117, DOI 10.1111/jacf.12411
+   Buttcher Stefan., 2016, INFORM RETRIEVAL IMP
+   Campbell JL, 2007, ACAD MANAGE REV, V32, P946, DOI 10.5465/AMR.2007.25275684
+   Carta Salvatore M., 2023, arXiv, DOI DOI 10.48550/ARXIV.2307.01128
+   Chatterji AK, 2016, STRATEGIC MANAGE J, V37, P1597, DOI 10.1002/smj.2407
+   Chen J., 2023, ARXIV, DOI arXiv:2305.09858
+   Chou C, 2023, CORP SOC RESP ENV MA, V30, P2664, DOI 10.1002/csr.2509
+   Chung HW, 2022, Arxiv, DOI arXiv:2210.11416
+   Costa LD, 2021, Arxiv, DOI [arXiv:2110.09619, DOI 10.48550/ARXIV.2110.09619, 10.48550/arXiv.2110.09619]
+   Cover T.M., 1999, Elements of information theory, DOI DOI 10.1002/047174882X.CH2
+   Croft W.Bruce., 2010, Search Engines: Information Retrieval in Practice
+   Devlin J, 2019, Arxiv, DOI [arXiv:1810.04805, 10.48550/arXiv.1810.04805]
+   Dismuke C., 2006, METHODS DESIGNS OUTC, V93, P93
+   Dobrick J, 2023, FINANC RES LETT, V55, DOI 10.1016/j.frl.2023.104014
+   Dong QX, 2024, Arxiv, DOI [arXiv:2301.00234, 10.48550/arXiv.2301.00234]
+   Doyle TM, 2018, American Council for Capital Formation, P65
+   Draper N R., 1998, APPL REGRESSION ANAL, V1st, DOI DOI 10.1002/9781118625590
+   Drempetic S, 2020, J BUS ETHICS, V167, P333, DOI 10.1007/s10551-019-04164-1
+   Eccles RG, 2012, J APPL CORP FINANC, V24, P65, DOI 10.1111/j.1745-6622.2012.00380.x
+   Ehlers T., 2023, IMF Work Pap, V2023, DOI [10.5089/9798400235283.001.A001, DOI 10.5089/9798400235283.001.A001]
+   Estrada E., 2012, STRUCTURE COMPLEX NE, DOI [10.1093/acprof:oso/9780199591756.001.0001, DOI 10.1093/ACPROF:OSO/9780199591756.001.0001]
+   European Union, EU emissions trading system
+   Faust K, 1997, SOC NETWORKS, V19, P157, DOI 10.1016/S0378-8733(96)00300-0
+   Fensel D., 2020, Knowledge Graphs, P1
+   Gotelli NJ, 2012, OIKOS, V121, P171, DOI 10.1111/j.1600-0706.2011.20301.x
+   Guillaume JL, 2006, PHYSICA A, V371, P795, DOI 10.1016/j.physa.2006.04.047
+   Guo JF, 2022, ACM T INFORM SYST, V40, DOI 10.1145/3486250
+   Gutierrez C, 2021, COMMUN ACM, V64, P96, DOI [10.1145/3418294, 10.1145/3447772]
+   Hewitt J, 2022, Arxiv, DOI arXiv:2210.15191
+   Ji SX, 2022, IEEE T NEUR NET LEAR, V33, P494, DOI 10.1109/TNNLS.2021.3070843
+   Jia Z, 2021, PROCEEDINGS OF THE 30TH ACM INTERNATIONAL CONFERENCE ON INFORMATION & KNOWLEDGE MANAGEMENT, CIKM 2021, P792, DOI 10.1145/3459637.3482416
+   Jobbins T, TheBloke/wizardLM-7B-HF Hugging Face
+   Katiyar A, 2017, PROCEEDINGS OF THE 55TH ANNUAL MEETING OF THE ASSOCIATION FOR COMPUTATIONAL LINGUISTICS (ACL 2017), VOL 1, P917, DOI 10.18653/v1/P17-1085
+   Kim S, 2016, INT J FORECASTING, V32, P669, DOI 10.1016/j.ijforecast.2015.12.003
+   Kojima T, 2022, ADV NEUR IN
+   LaBella MJ., 2019, The Devil Is in the Details: The Divergence in ESG Data and Implications for Sustainable Investing Legg Mason Global Asset Management
+   Lewis P, 2020, ADV NEUR IN, V33
+   Liu P, 2024, Arxiv, DOI [arXiv:2208.08690, DOI 10.13140/RG.2.2.14945.99681]
+   Lundberg SM, 2017, ADV NEUR IN, V30
+   Marodon R, 2022, Working paper 85f81dba-c8-2-4255-878a-0
+   Meyer LP, 2023, Arxiv, DOI arXiv:2307.06917
+   Muennighoff N, 2022, Arxiv, DOI [arXiv:2202.08904, DOI 10.48550/ARXIV.2202.08904]
+   Nelson LS, 1998, J QUAL TECHNOL, V30, P298
+   Newman M.E.J., 2010, Networks : an introduction, P1, DOI [10.1093/acprof:oso/9780199206650.001.0001, DOI 10.1093/ACPROF:OSO/9780199206650.001.0001]
+   Ni J, 2023, PREPRINT
+   Niklaus C, 2018, Arxiv, DOI arXiv:1806.05599
+   NLP Group of The University of Hong Kong, Instructor-xl Hugging Face-huggingface.co
+   Ott R.L., 2001, An Introduction to Statistical Methods and Data Analysis, V5th
+   Palangi H, 2016, IEEE-ACM T AUDIO SPE, V24, P694, DOI 10.1109/TASLP.2016.2520371
+   Pan SR, 2024, Arxiv, DOI arXiv:2306.08302
+   Raghupathi V, 2020, SUSTAINABILITY-BASEL, V12, DOI 10.3390/su12114753
+   Reimers N, 2019, Arxiv, DOI [arXiv:1908.10084, 10.48550/arXiv.1908.10084, DOI 10.18653/V1/D19-1410]
+   Reinanda R, 2020, FOUND TRENDS INF RET, V14, P289, DOI 10.1561/1500000063
+   Reynolds L, 2021, EXTENDED ABSTRACTS OF THE 2021 CHI CONFERENCE ON HUMAN FACTORS IN COMPUTING SYSTEMS (CHI'21), DOI 10.1145/3411763.3451760
+   Ro Y, 2020, FINDINGS OF THE ASSOCIATION FOR COMPUTATIONAL LINGUISTICS, EMNLP 2020, P1107
+   Sadvilkar N., 2020, [No title captured], P110
+   Sadvilkar N, about us
+   Sahin Ö, 2022, CORP SOC RESP ENV MA, V29, P1782, DOI 10.1002/csr.2326
+   sasb, Find industry topics
+   Shao BL, 2021, EXPERT SYST APPL, V165, DOI 10.1016/j.eswa.2020.113764
+   SSAB, SASB reporters
+   Su HJ, 2023, Arxiv, DOI arXiv:2212.09741
+   Sustainalytics, ESG Risk Ratings Methodology
+   Taori Rohan., 2023, GitHub Repository
+   Touvron H, 2023, Arxiv, DOI arXiv:2302.13971
+   Trajanoska M., 2023, arXiv, DOI DOI 10.48550/ARXIV.2305.04676
+   Trevor H., 2009, ELEMENTS STAT LEARNI, P84858, DOI [10.1007/978-0-387-84858-7, DOI 10.1007/978-0-387-84858-7]
+   Trott S, 2023, COGNITIVE SCI, V47, DOI 10.1111/cogs.13309
+   Tunstall L., 2022, Natural Language Processing with Transformers
+   Vaghefi SA, 2023, Chatclimate: grounding conversational AI in climate science
+   Wang CG, 2021, 2021 CONFERENCE ON EMPIRICAL METHODS IN NATURAL LANGUAGE PROCESSING (EMNLP 2021), P1225
+   Wang YC, 2020, Arxiv, DOI [arXiv:2010.13415, DOI 10.48550/ARXIV.2010.13415]
+   Wang YF, 2023, Arxiv, DOI [arXiv:2307.12966, DOI 10.48550/ARXIV.2307.12966]
+   Webersinke N, 2021, Arxiv, DOI [arXiv:2110.12010, DOI 10.48550/ARXIV.2110.12010]
+   Wei J., 2021, arXiv
+   Wei JS, 2022, Arxiv, DOI arXiv:2206.07682
+   Willmott CJ, 2005, CLIMATE RES, V30, P79, DOI 10.3354/cr030079
+   Wong C, 2020, Survey report
+   Wray NR, 2018, NAT GENET, V50, P668, DOI [10.1038/s41588-018-0090-3, 10.2308/accr-51383]
+   Xu C, 2025, Arxiv, DOI arXiv:2304.12244
+   Yan JH, 2018, FRONT COMPUT SCI-CHI, V12, P55, DOI 10.1007/s11704-016-5228-9
+   Yang W, 2019, Arxiv, DOI arXiv:1903.10972
+   Yu EPY, 2021, INT REV FINANC ANAL, V75, DOI 10.1016/j.irfa.2021.101731
+   Yurtsev E, Kor-pypi.org
+   Zhang DB, 2017, AM STAT, V71, P310, DOI 10.1080/00031305.2016.1256839
+   Zhang JL, 2017, ADV INTEL SYS RES, V132, P300
+   Zhang SY, 2025, Arxiv, DOI [arXiv:2308.10792, DOI 10.48550/ARXIV.2308.10792]
+   Zhao TZ, 2021, PR MACH LEARN RES, V139
+   Zhao WX, 2025, Arxiv, DOI [arXiv:2303.18223, DOI 10.48550/ARXIV.2303.18223, 10.48550/arXiv.2303.18223]
+   Zheng A., 2018, FEATURE ENG MACHINE
+   Zhu YQ, 2024, Arxiv, DOI [arXiv:2305.13168, DOI 10.48550/ARXIV.2305.13168]
+   Zou H, 2005, J ROY STAT SOC B, V67, P301, DOI 10.1111/j.1467-9868.2005.00503.x
+   Zou XH, 2020, J PHYS CONF SER, V1487, DOI 10.1088/1742-6596/1487/1/012016
+   US
+NR 122
+TC 21
+Z9 23
+U1 11
+U2 67
+PU SPRINGER
+PI NEW YORK
+PA ONE NEW YORK PLAZA, SUITE 4600, NEW YORK, NY, UNITED STATES
+EI 2193-1127
+J9 EPJ DATA SCI
+JI EPJ Data Sci.
+PD JUN 7
+PY 2024
+VL 13
+IS 1
+AR 41
+DI 10.1140/epjds/s13688-024-00481-2
+PG 41
+WC Mathematics, Interdisciplinary Applications; Social Sciences,
+   Mathematical Methods
+WE Science Citation Index Expanded (SCI-EXPANDED); Social Science Citation Index (SSCI)
+SC Mathematics; Mathematical Methods In Social Sciences
+GA TT0L4
+UT WOS:001243391100001
+OA Green Submitted, gold
+DA 2026-04-29
+ER
+
+PT J
+AU Giuntelli, G
+   Spreafico, C
+   Precorvi, A
+   Russo, D
+AF Giuntelli, Guido
+   Spreafico, Christian
+   Precorvi, Andrea
+   Russo, Davide
+TI Patent intelligence in the age of AI: Unlocking strategic insights
+   through granular classification
+SO WORLD PATENT INFORMATION
+LA English
+DT Article
+DE Artificial intelligence; Patent analytics; LLM; Competitive
+   intelligence; RAG
+AB Patent intelligence is increasingly constrained by the volume, technical density, and linguistic variability of patent documents, which limit the feasibility of producing high-granularity, analyst-facing outputs, such as matrices, trajectories, and comparative maps, using conventional keyword- or bibliometric-based methods. This study addresses this feasibility gap by proposing an Artificial Intelligence (AI)-based framework designed to stabilize patent content for scalable strategic analysis. Methodologically, the framework transforms patent documents into structured semantic summaries optimized for large language model processing and uses these representations to support AI-driven clustering and multidimensional classification. A retrieval-augmented generation (RAG) architecture ensures that summaries and classifications remain grounded in the underlying patent corpus, enhancing reliability and transparency. The framework is demonstrated through a large-scale robotics case study focusing on Siemens, Toshiba, and Mitsubishi. Results show improved recall and precision compared with keyword-based searches for semantically ambiguous categories, illustrated through a leggedrobot benchmark. The approach enables the systematic construction of technology-application matrices that reveal competitive positioning, white spaces, and cross-domain innovation patterns. It further supports cell-level deep dives via grounded clustering and evolutionary timelines, as well as technology-acceleration analysis and normalized portfolio benchmarking. An additional application to European funded-project data highlights misalignments between corporate patenting trajectories and public R&D investment priorities. Overall, the study demonstrates that AI-based semantic stabilization provides a robust and scalable foundation for advanced patent intelligence in complex technological domains.
+C1 [Giuntelli, Guido; Spreafico, Christian; Russo, Davide] Univ Bergamo, Viale Marconi 5, I-24044 Dalmine, BG, Italy.
+   [Precorvi, Andrea] Tinexta Innovat Hub, Corso Mazzini 11, I-42015 Correggio, RE, Italy.
+C3 University of Bergamo
+RP Russo, D (corresponding author), Univ Bergamo, Viale Marconi 5, I-24044 Dalmine, BG, Italy.
+EM davide.russo@unibg.it
+RI Spreafico, Christian/AAU-5355-2020
+CR Avogadri S., 2025, INT TRIZ ARTIFICIAL, P87
+   Balsmeieri B, 2018, J ECON MANAGE STRAT, V27, P535, DOI 10.1111/jems.12259
+   Beltagy Iz., 2020, LONGFORMER LONG DOCU
+   Carrara P, 2017, WORLD PAT INF, V49, P43, DOI 10.1016/j.wpi.2017.05.003
+   Chu JM, 2024, PROCEEDINGS OF THE 1ST WORKSHOP ON TOWARDS KNOWLEDGEABLE LANGUAGE MODELS, KNOWLLM 2024, P146
+   Degroote B, 2018, WORLD PAT INF, V54, pS78, DOI [10.1016/j.wpi.2017.10.001, 10.1016/j.wpi.2017.10.001, DOI 10.1016/J.WPI.2017.10.001]
+   Devlin J, 2019, 2019 CONFERENCE OF THE NORTH AMERICAN CHAPTER OF THE ASSOCIATION FOR COMPUTATIONAL LINGUISTICS: HUMAN LANGUAGE TECHNOLOGIES (NAACL HLT 2019), VOL. 1, P4171
+   Entezari A, 2023, ENERGY STRATEG REV, V45, DOI 10.1016/j.esr.2022.101017
+   Giuntelli G., 2025, INT TRIZ ARTIFICIAL, P169
+   Igna I, 2023, RES POLICY, V52, DOI 10.1016/j.respol.2022.104661
+   Ji ZW, 2023, FINDINGS OF THE ASSOCIATION FOR COMPUTATIONAL LINGUISTICS - EMNLP 2023, P1827
+   Kalinichenko A.L., 2025, World Pat. Inf., Patent No. [82, 102387]
+   Krestel R., 2021, World Pat. Inf., V65, Patent No. 102035
+   Lee S., 2019, World Pat. Inf., V58, Patent No. 101841
+   Lewis P, 2020, ADV NEUR IN, V33
+   Lin T.Y., 2025, World Pat. Inf., V82, Patent No. 102383
+   Meguro K, 2019, WORLD PAT INF, V57, P70, DOI 10.1016/j.wpi.2019.03.008
+   Miric M, 2023, STRATEGIC MANAGE J, V44, P491, DOI 10.1002/smj.3441
+   Montecchi T, 2013, ADV ENG INFORM, V27, P335, DOI 10.1016/j.aei.2013.02.002
+   Porter A.L., 2022, TECH MINING EXPLOITI, Vsecond
+   Risch J., 2019, WORLD PAT INF, V57
+   Russo D., 2010, GLOBAL PRODUCT DEV P, P567
+   Sakaoka S., 2025, World Pat. Inf., Patent No. [82, 102381]
+   Son J, 2022, IEEE ACCESS, V10, P59205, DOI 10.1109/ACCESS.2022.3176877
+   Soutrenon P, 2023, WORLD PAT INF, V74, DOI 10.1016/j.wpi.2023.102223
+   Tran H., 2025, LONG PAPERS, V1, P18305
+   Verendel V, 2023, NAT CLIM CHANGE, DOI 10.1038/s41558-022-01536-w
+   Villa AM, 2022, WORLD PAT INF, V68, DOI 10.1016/j.wpi.2022.102096
+   Wang HY, 2025, WORLD PAT INF, V81, DOI 10.1016/j.wpi.2025.102352
+   Zhu YT, 2026, ACM T INFORM SYST, V44, DOI 10.1145/3748304
+NR 30
+TC 0
+Z9 0
+U1 0
+U2 0
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0172-2190
+EI 1874-690X
+J9 WORLD PAT INF
+JI World Pat. Inf.
+PD JUN
+PY 2026
+VL 85
+AR 102454
+DI 10.1016/j.wpi.2026.102454
+PG 20
+WC Information Science & Library Science
+WE Emerging Sources Citation Index (ESCI)
+SC Information Science & Library Science
+GA GE5KR
+UT WOS:001734507300001
+OA Green Submitted, hybrid
+DA 2026-04-29
+ER
+
+PT J
+AU Zou, Y
+   Shi, MY
+   Chen, ZJ
+   Deng, Z
+   Lei, ZX
+   Zeng, ZH
+   Yang, SM
+   Tong, HX
+   Xiao, L
+   Zhou, WW
+AF Zou, Yi
+   Shi, Mengying
+   Chen, Zhongjie
+   Deng, Zhu
+   Lei, Zongxiong
+   Zeng, Zihan
+   Yang, Shiming
+   Tong, Hongxiang
+   Xiao, Lei
+   Zhou, Wenwen
+TI ESGReveal: An LLM-based approach for extracting structured data from ESG
+   reports
+SO JOURNAL OF CLEANER PRODUCTION
+LA English
+DT Article
+DE ESG; Data extraction; Large language models; ChatGPT
+AB As an important source for disclosure a company's environmental, social, and governance (ESG) performance, stock exchanges gradually strengthen their requirements for listed companies to periodically submit their ESG exports. However, these documents are often unstructured, making it difficult to directly evaluate a company's disclosure level as well as the performance quantitatively. In this study, we develop a quantitative framework, ESGReveal, for assessing corporate ESG performance based on large language model (LLM) techniques. Specifically, by integrating retrieval-augmented generation (RAG) technology with LLMs, we extract relevant performance data from complex corporate ESG reports. The ESGReveal framework consists of three primary modules: an ESG Metadata module for standardized queries, a Report Preprocessing module for database construction, and an LLM Agent module for data extraction. We evaluated the performance of various LLMs, including GPT-3.5, GPT-4, ChatGLM, and QWEN, and found that GPT-4 achieved 76.9% accuracy in data extraction and 83.7% accuracy in disclosure analysis, showing the best improvement over baseline models. We applied this ESGReveal model to 2249 ESG reports published by 166 companies across 12 industries listed on the Hong Kong Stock Exchange (HKEx), analyzing the disclosure and performance of key ESG indicators. Results show that for mandatory environmental and social indicators required by HKEx, the sample companies achieved disclosure rates of 69.5% and 57.2%, respectively. Different industries exhibited varying performance in key ESG indicators, such as the proportion of direct and indirect greenhouse gas emissions, highlighting key areas for future emission reduction efforts. These findings underscore the need to strengthen ESG practices across sectors and emphasize both general and sector-specific ESG initiatives. In summary, by leveraging the capabilities of LLM and RAG technologies, ESGReveal offers a practical and efficient solution to the pressing need for consistent and accurate ESG information retrieval.
+C1 [Zou, Yi; Chen, Zhongjie; Deng, Zhu; Lei, Zongxiong; Tong, Hongxiang; Xiao, Lei; Zhou, Wenwen] Alibaba Cloud, Hangzhou, Peoples R China.
+   [Shi, Mengying] Tsinghua Univ, Dept Earth Syst Sci, Beijing, Peoples R China.
+   [Deng, Zhu] Univ Hong Kong, Dept Geog, Hong Kong, Peoples R China.
+   [Zeng, Zihan; Yang, Shiming] Sun Yat Sen Univ, Dept Environm Sci & Engn, Guangzhou, Peoples R China.
+C3 Alibaba Group; Tsinghua University; University of Hong Kong; Sun Yat Sen
+   University
+RP Deng, Z; Zhou, WW (corresponding author), Alibaba Cloud, Hangzhou, Peoples R China.
+EM zoe.zou.23@outlook.com; shimy22@mails.tsinghua.edu.cn; zhudeng@hku.hk;
+   zhouwenwen@tsinghua.org.cn
+RI DENG, Zhu/JBS-2566-2023; Yang, Shiming/I-3695-2015
+OI DENG, Zhu/0000-0002-6409-9578; Zhou, Wenwen/0000-0001-6973-318X; Chen,
+   Zhongjie/0000-0001-7487-4614
+FU Alibaba Cloud
+FX This work is supported by Alibaba Cloud. We thank all the anonymous
+   reviewers who generously contributed their time and efforts. Their
+   professional recommendations have greatly enhanced the quality of the
+   manuscript.
+CR Abhayawansa S., 2021, The Journal of Wealth Management, V24, P49, DOI [10.3905/JWM.2021.1.130, DOI 10.3905/JWM.2021.1.130, 10.3905/jwm.2021.1.130]
+   [Anonymous], 2023, GPT-4, Technical Report, DOI [10.48550/arXiv.2303.08774, DOI 10.48550/ARXIV.2303.08774]
+   Bai JZ, 2023, Arxiv, DOI [arXiv:2309.16609, 10.48550/arXiv.2309.16609, DOI 10.48550/ARXIV.2309.16609]
+   Bronzini M, 2024, EPJ DATA SCI, V13, DOI 10.1140/epjds/s13688-024-00481-2
+   Bronzini M, 2024, Arxiv, DOI arXiv:2310.05628
+   Bui B, 2020, BRIT ACCOUNT REV, V52, DOI 10.1016/j.bar.2019.100880
+   Burnaev E, 2023, SUSTAINABILITY-BASEL, V15, DOI 10.3390/su151712731
+   Clarkson P, 2019, ACCOUNT AUDIT ACCOUN, V32, P2451, DOI 10.1108/AAAJ-03-2018-3424
+   Du ZX, 2022, PROCEEDINGS OF THE 60TH ANNUAL MEETING OF THE ASSOCIATION FOR COMPUTATIONAL LINGUISTICS (ACL 2022), VOL 1: (LONG PAPERS), P320
+   Fischbach J, 2024, Arxiv, DOI [arXiv:2212.06540, 10.1109/Bigdata59044.2023.10386488, DOI 10.1109/BIGDATA59044.2023.10386488]
+   Hong Kong Exchanges and Clearing Limited, 2023, Corporate governance code
+   Hong Kong Exchanges and Clearing Limited, 2023, ESG reporting guide
+   Huang YP, 2022, PROCEEDINGS OF THE 30TH ACM INTERNATIONAL CONFERENCE ON MULTIMEDIA, MM 2022, P4083, DOI 10.1145/3503161.3548112
+   Johnson J, 2021, IEEE T BIG DATA, V7, P535, DOI [10.1155/2019/4823791, 10.1109/TBDATA.2019.2921572]
+   Kim A G., 2023, CHICAGO BOOTH RES PA, P23
+   LangChain, 2023, Langchain: Building applications with llms through composability
+   Lee O, 2022, SUSTAINABILITY-BASEL, V14, DOI 10.3390/su14148745
+   Lewis P, 2020, ADV NEUR IN, V33
+   Li ZZ, 2024, SCI REP-UK, V14, DOI 10.1038/s41598-024-70376-9
+   Liu LY, 2024, BLOCKCHAIN-RES APPL, V5, DOI 10.1016/j.bcra.2024.100189
+   Liu MY, 2023, J CLEAN PROD, V387, DOI 10.1016/j.jclepro.2022.135840
+   Luccioni A, 2020, Arxiv, DOI [arXiv:2011.08073, DOI 10.48550/ARXIV.2011.08073]
+   Moodaley W, 2023, EUR J SUSTAIN DEV, V12, P319, DOI 10.14207/ejsd.2023.v12n4p319
+   Ni JW, 2023, Arxiv, DOI arXiv:2307.15770
+   OpenAI, 2023, InstructGPT: AI for generating instructions
+   Pasch Stefan, 2022, 2022 IEEE International Conference on Big Data (Big Data), P3532, DOI 10.1109/BigData55660.2022.10020755
+   Perazzoli S., 2022, SSRN Electron. J
+   Raffel C, 2020, J MACH LEARN RES, V21
+   Raman N., 2020, Mapping ESG Trends by Distant Supervision of Neural Language Models
+   Ruberg N., 2023, GreenAI-an NLP Approach to ESG Financing
+   S&P Dow Jones Indices, 2023, ESG score methodology
+   Schiemann F, 2022, INT REV FINANC ANAL, V84, DOI 10.1016/j.irfa.2022.102373
+   Smock B, 2022, PROC CVPR IEEE, P4624, DOI 10.1109/CVPR52688.2022.00459
+   Tsang A, 2023, BRIT ACCOUNT REV, V55, DOI 10.1016/j.bar.2022.101149
+   Visalli F., 2023, ICEIS (1), P468
+   Wang JG, 2021, INT CONF MANAGE DATA, P2614, DOI 10.1145/3448016.3457550
+   Wang Y., 2023, M3e: Moka massive mixed embedding model
+   Xing HD, 2023, AAAI CONF ARTIF INTE, P2992
+   Yang Hongyang., 2023, FinGPT: Open-Source Financial Large Language Models, DOI [DOI 10.2139/SSRN.4489826, 10.2139/ssrn.4489826]
+   Zhang AY, 2024, ASIAN REV ACCOUNT, V32, P554, DOI 10.1108/ARA-07-2023-0201
+NR 40
+TC 25
+Z9 28
+U1 56
+U2 134
+PU ELSEVIER SCI LTD
+PI London
+PA 125 London Wall, London, ENGLAND
+SN 0959-6526
+EI 1879-1786
+J9 J CLEAN PROD
+JI J. Clean Prod.
+PD JAN 15
+PY 2025
+VL 489
+AR 144572
+DI 10.1016/j.jclepro.2024.144572
+EA JAN 2025
+PG 9
+WC Green & Sustainable Science & Technology; Engineering, Environmental;
+   Environmental Sciences
+WE Science Citation Index Expanded (SCI-EXPANDED)
+SC Science & Technology - Other Topics; Engineering; Environmental Sciences
+   & Ecology
+GA U1B8E
+UT WOS:001409239500001
+OA Green Submitted
+DA 2026-04-29
+ER
+
+PT J
+AU Kliestik, T
+   Dragomir, R
+   Baluta, AV
+   Grecu, I
+   Durana, P
+   Karabolevski, OL
+   Kral, P
+   Balica, R
+   Suler, P
+   Busu, OV
+   Bugaj, M
+   Voinea, DV
+   Vrbka, J
+   Cocosatu, M
+   Pera, A
+   Gajdosikova, D
+   Grupac, M
+AF Kliestik, Tomas
+   Dragomir, Robert
+   Baluta, Aurelian Virgil
+   Grecu, Iulia
+   Durana, Pavol
+   Karabolevski, Oana Ludmila
+   Kral, Pavol
+   Balica, Raluca
+   Suler, Petr
+   Busu, Oprea Valentin
+   Bugaj, Martin
+   Voinea, Dan-Valeriu
+   Vrbka, Jaromir
+   Cocosatu, Madalina
+   Pera, Aurel
+   Gajdosikova, Dominika
+   Grupac, Marian
+TI Enterprise generative artificial intelligence technologies, Internet of
+   Things and blockchain-based fintech management, and digital twin
+   industrial metaverse in the cognitive algorithmic economy
+SO OECONOMIA COPERNICANA
+LA English
+DT Article
+DE enterprise generative artificial intelligence; Internet of Thing;
+   blockchain; fintech; digital twin industrial metaverse; cognitive
+   algorithmic economy
+AB Research background: Enterprise generative AI system-based worker behavior tracking and monitoring, socially responsible organizational practices, employee performance management satisfaction, and human resource management procedures, relationships, and outcomes develop on hiring and objective performance assessment algorithms in terms of human resource management activities, functions, processes, practices, policies, and productivity. Deep reinforcement and machine learning techniques, operational and analytical generative AI and cloud capabilities, and real-time anomalous behavior recognition systems further fintech development for credit and lending services, payment analytics processes, and risk assessment, monitoring, and mitigation. Generative AI tools can bolster predictive analytics by collaborative and interconnected sensor and machine data for tailored, seamless, and finetuned product, operational process, and organizational workflow development, efficiency, and innovation, driving agile transformative changes in digital twin industrial metaverse. Purpose of the article: We show that enterprise generative AI-driven schedule prediction tools, job search and algorithmic hiring systems, and synthetic training data can improve team selection, job performance and firing decisions, hiring decision processes, and workforce productivity in terms of prediction and decision-making by use of algorithmic management, system performance, and production process tracking tools. Blockchain-based fintech operations can shape cloud-based financial and digital banking services, quote-to-cash process automation, cash-settled crypto futures, digital loan decisioning, asset tokenization simulated transactions, transaction switching and routing operations, tailored peer-to-peer lending, and proactive credit line management. Collaborative unstructured enterprise data processing, infrastructure, and governance can develop on AI decision and behavior automation technology, retrieval augmented generation and development management systems, and real-time data descriptive and predictive analytics, driving productivity surges and competitive advantage in digital twin industrial metaverse. Methods: Reference and review management tools, together with evidence synthesis screening software, harnessed were Abstrackr, AMSTAR, ASReview Lab, CASP, Catchii, Citation- chaser, DistillerSR, JBI SUMARI, Litstream, PICO Portal, and Rayyan. Findings & value added: The current state of the art is improved for theory on organizational issues and for policy making as deep learning-based generative AI tools and workplace monitoring systems can augment performance and productivity, gauge employee effectiveness, build resilient, satisfied, and engaged workforce, assess human capital, skill, and career development, drive employee and productivity expectations in relation to flexibility and stability, and shape turnover, retention, and loyalty. Cloud and account servicing technologies can be deployed in generative AI fintechs for embedded cryptocurrency trading, transaction moni toring and processing, digital asset transfers, payment screening, corporate and retail banking operations, and fraud prevention.
+   Generative AI technologies can reshape jobs and reimagine meaningful work, involving creativity and innovation and adaptable and resilient sustained performance, providing valuable constructive feedback, optimizing workplace flexibility and psychological safety, and measuring and supporting autonomy and flexibility-based efficien- cy, performance, and productivity, while configuring demanding, engaging, and rewarding experiences by cloud and edge computing devices in digital twin industrial metaverse.
+C1 [Kliestik, Tomas; Durana, Pavol; Kral, Pavol; Bugaj, Martin; Gajdosikova, Dominika; Grupac, Marian] Univ Zilina, Zilina, Slovakia.
+   [Dragomir, Robert; Baluta, Aurelian Virgil; Grecu, Iulia; Karabolevski, Oana Ludmila] Spiru Haret Univ, Bucharest, Romania.
+   [Balica, Raluca; Busu, Oprea Valentin; Voinea, Dan-Valeriu; Pera, Aurel] Univ Craiova, Craiova, Romania.
+   [Suler, Petr; Vrbka, Jaromir] Inst Technol & Business Ceske Budejovice, Ceske Budejovice, Czech Republic.
+   [Cocosatu, Madalina] Natl Univ Polit Studies & Publ Adm, Bucharest, Romania.
+C3 University of Zilina; Spiru Haret University; University of Craiova;
+   Institute of Technology & Business, Ceske Budejovice; National
+   University of Political Studies & Public Administration (SNSPA) -
+   Romania
+RP Durana, P (corresponding author), Univ Zilina, Zilina, Slovakia.
+EM pavol.durana@uniza.sk
+RI Vrbka, Jaromir/AAH-4429-2019; Kliestik, Tomas/O-8070-2015; Kral,
+   Pavol/P-3291-2015; Madalina, Cocosatu/JXY-4164-2024; Bugaj,
+   Martin/ABE-3921-2021; Durana, Pavol/P-6644-2015; Gajdosikova,
+   Dominika/AAU-5103-2021; Grecu, Iulia/GYQ-9985-2022; Voinea,
+   Dan/N-7291-2015
+OI Busu, Oprea-Valentin/0000-0001-5917-8821; Durana,
+   Pavol/0000-0001-5975-1958; Karabolevski, Oana
+   Ludmila/0000-0002-8661-6652; Gajdosikova, Dominika/0000-0001-7705-3264;
+   Grecu, Iulia/0000-0001-8659-2972; Raluca-Ștefania,
+   BALICA/0000-0003-4169-5892
+CR Abakah EJA, 2023, TECHNOL FORECAST SOC, V192, DOI 10.1016/j.techfore.2023.122566
+   Agarwal A, 2023, TRANSFORM GOV-PEOPLE, V17, P688, DOI 10.1108/TG-03-2023-0036
+   Agrawal A, 2023, SCIENCE, V381, P155, DOI 10.1126/science.adh9429
+   Agrawal K, 2024, J COMPUT INFORM SYST, V64, P636, DOI 10.1080/08874417.2023.2240744
+   Ahelegbey D, 2023, SOCIO-ECON PLAN SCI, V87, DOI 10.1016/j.seps.2023.101555
+   Akmal S, 2023, COGENT ECON FINANC, V11, DOI 10.1080/23322039.2023.2217583
+   Alaassar A, 2023, REV MANAG SCI, V17, P33, DOI 10.1007/s11846-022-00531-x
+   Ali O, 2023, COGENT BUS MANAG, V10, DOI 10.1080/23311975.2023.2216430
+   Almansour M, 2023, RESOUR POLICY, V80, DOI 10.1016/j.resourpol.2022.103250
+   Altrock S, 2024, IEEE T ENG MANAGE, V71, P7876, DOI 10.1109/TEM.2023.3291820
+   Andronie M, 2023, ISPRS INT J GEO-INF, V12, DOI 10.3390/ijgi12020035
+   Andronie M, 2023, ELECTRONICS-SWITZ, V12, DOI 10.3390/electronics12010022
+   Andronie M, 2021, ELECTRONICS-SWITZ, V10, DOI 10.3390/electronics10202497
+   Andronie M, 2021, SUSTAINABILITY-BASEL, V13, DOI 10.3390/su13020751
+   [Anonymous], International Journal of Production Economics, V265
+   [Anonymous], of Business Research, V155
+   Arora A, 2023, BENCHMARKING, V30, P4342, DOI 10.1108/BIJ-10-2021-0621
+   Awais M, 2023, RESOUR POLICY, V81, DOI 10.1016/j.resourpol.2023.103309
+   Ayhan F, 2023, TECHNOL FORECAST SOC, V190, DOI 10.1016/j.techfore.2023.122439
+   Babaei G, 2023, J ECON BUS, V125, DOI 10.1016/j.jeconbus.2023.106126
+   Bankins S, 2024, J ORGAN BEHAV, V45, P159, DOI 10.1002/job.2735
+   Barbu CM, 2021, J THEOR APPL EL COMM, V16, P1415, DOI 10.3390/jtaer16050080
+   Bartelheimer C, 2023, INFORM SYST J, V33, P1085, DOI 10.1111/isj.12435
+   Bellalouna F, 2023, PROC CIRP, V119, P638, DOI [10.1016/j.procir.2023.03.116, 10.1016/j.procir.2023.03.116]
+   Ben Romdhane Y, 2024, ARAB GULF J SCI RES, V42, P161, DOI [10.1108/agjsr-08-2022-0146, 10.1108/AGJSR-08-2022-0146, DOI 10.1108/AGJSR-08-2022-0146]
+   Bhat ZH, 2023, COGENT BUS MANAG, V10, DOI 10.1080/23311975.2023.2242160
+   Bhattacharya P, 2023, MATHEMATICS-BASEL, V11, DOI 10.3390/math11040941
+   Bhutto SA, 2023, HELIYON, V9, DOI 10.1016/j.heliyon.2023.e13967
+   Bilgram V, 2023, IEEE ENG MANAG REV, V51, P18, DOI [10.1109/emr.2023.3272799, 10.1109/EMR.2023.3272799]
+   Birkbeck A, 2024, J FAM BUS MANAG, V14, P727, DOI 10.1108/JFBM-09-2023-0157
+   Böhmer N, 2023, EMPL RELAT, V45, P1057, DOI 10.1108/ER-04-2022-0202
+   Bonsu MOA, 2023, ACCOUNT RES J, V36, P129, DOI 10.1108/ARJ-07-2022-0178
+   Booyse D, 2024, MANAG RES REV, V47, P64, DOI 10.1108/MRR-09-2021-0701
+   Bouschery SG, 2023, J PROD INNOVAT MANAG, V40, P139, DOI 10.1111/jpim.12656
+   Budhwar P, 2023, HUM RESOUR MANAG J, V33, P606, DOI 10.1111/1748-8583.12524
+   Campanella F, 2023, J BUS RES, V155, DOI 10.1016/j.jbusres.2022.113376
+   Cao J, 2023, IEEE WIREL COMMUN, V30, P40, DOI 10.1109/MWC.2001.2200396
+   Caragea D, 2024, J FINANC SERV RES, V65, P103, DOI 10.1007/s10693-023-00413-7
+   Castañé G, 2023, INT J PROD RES, V61, P2288, DOI 10.1080/00207543.2022.2069525
+   Cebulla A, 2023, INT J WORKPLACE HEAL, V16, P294, DOI 10.1108/IJWHM-09-2022-0141
+   Chaklader B, 2023, J BUS RES, V161, DOI 10.1016/j.jbusres.2023.113847
+   Chang YL, 2024, HUM RESOUR DEV REV, V23, P88, DOI 10.1177/15344843231200930
+   Chen SY, 2023, N AM J ECON FINANC, V68, DOI 10.1016/j.najef.2023.101963
+   Chen TH, 2024, AM REV PUBLIC ADM, V54, P255, DOI 10.1177/02750740231200522
+   Chen WR, 2023, J MANAG ANAL, V10, P89, DOI 10.1080/23270012.2023.2180676
+   Chen W, 2023, J BEHAV EXP FINANC, V39, DOI 10.1016/j.jbef.2023.100838
+   Cheng AJ, 2023, FINANC RES LETT, V55, DOI 10.1016/j.frl.2023.103966
+   Cheng MY, 2023, EMERG MARK FINANC TR, V59, P4012, DOI 10.1080/1540496X.2022.2164464
+   Choudhary V, 2025, J MANAGE, V51, P536, DOI 10.1177/01492063231194968
+   Cohen S, 2013, J BUS ETHICS, V117, P513, DOI 10.1007/s10551-012-1535-8
+   Dong X, 2023, INT REV FINANC ANAL, V89, DOI 10.1016/j.irfa.2023.102805
+   Doumpos M, 2023, EUR J OPER RES, V306, P1, DOI 10.1016/j.ejor.2022.04.027
+   Ferrari F, 2023, DISTINKTION, V24, P338, DOI 10.1080/1600910X.2022.2137546
+   Furendal M., 2023, PHILOS TECHNOLOGY, V36, P36, DOI [10.1007/s13347-023-00631-w, 10.1007/s13347-023-00631-w, DOI 10.1007/S13347-023-00631-W]
+   Gama F, 2025, J PROD INNOVAT MANAG, V42, P76, DOI 10.1111/jpim.12698
+   Gandhi TK, 2023, JAMIA OPEN, V6, DOI 10.1093/jamiaopen/ooad079
+   Gonçalves AR, 2023, INT J BANK MARK, DOI 10.1108/IJBM-07-2022-0295
+   Guliyev H, 2023, RES GLOB, V7, DOI 10.1016/j.resglo.2023.100140
+   Guo JY, 2023, J INT FINANC MARK I, V82, DOI 10.1016/j.intfin.2022.101713
+   Guo P, 2023, RES INT BUS FINANC, V64, DOI 10.1016/j.ribaf.2022.101858
+   Ha L, 2023, ENVIRON SCI POLLUT R, V30, P83530, DOI 10.1007/s11356-023-28089-5
+   He CY, 2023, J BUS RES, V164, DOI 10.1016/j.jbusres.2023.113923
+   He M, 2023, FINANC RES LETT, V57, DOI 10.1016/j.frl.2023.104235
+   Jagatheesaperumal SK, 2023, IEEE WIREL COMMUN, V30, P38, DOI 10.1109/MWC.003.2200616
+   Jagatheesaperumal SK, 2022, IT PROF, V24, P34, DOI 10.1109/MITP.2022.3225064
+   Jaimini U, 2022, IEEE INTERNET COMPUT, V26, P59, DOI 10.1109/MIC.2022.3212085
+   Jarrahi MH, 2023, J ASSOC INF SCI TECH, V74, P303, DOI 10.1002/asi.24730
+   Jiang B, 2023, ENVIRON SCI POLLUT R, V30, P65141, DOI 10.1007/s11356-023-27030-0
+   Kaarlela T, 2023, ACTUATORS, V12, DOI 10.3390/act12060219
+   Kambur E, 2023, INT J MANPOWER, V44, P422, DOI 10.1108/IJM-10-2021-0622
+   Kanbach DK, 2024, REV MANAG SCI, V18, P1189, DOI 10.1007/s11846-023-00696-z
+   Kanitz R, 2023, J APPL BEHAV SCI, V59, P345, DOI 10.1177/00218863231168974
+   Kar A K., 2023, GLOBAL J FLEXIBLE SY, V24, P659, DOI [10.1007/s40171-023-00356-x, DOI 10.1007/S40171-023-00356-X, 10.1007/s40171-023-00356-x]
+   Kazachenok OP, 2023, HUM SOC SCI COMMUN, V10, DOI 10.1057/s41599-023-01652-8
+   Kemp A, 2024, ACAD MANAGE REV, V49, P618, DOI 10.5465/amr.2020.0205
+   Khan S, 2023, MEAS CONTROL-UK, V56, P713, DOI 10.1177/00202940221124130
+   Cortez EK, 2023, EUR J RISK REGUL, V14, P457, DOI 10.1017/err.2023.61
+   Kliestik T, 2023, MATHEMATICS-BASEL, V11, DOI 10.3390/math11030601
+   Koivisto M, 2023, SCI REP-UK, V13, DOI 10.1038/s41598-023-40858-3
+   Kolbjornsrud V, 2024, CALIF MANAGE REV, V66, P44, DOI 10.1177/00081256231211020
+   Kraus S, 2023, J INNOV KNOWL, V8, DOI 10.1016/j.jik.2023.100438
+   Kshetri N, 2023, IT PROF, V25, P84, DOI 10.1109/MITP.2023.3236494
+   Lai XB, 2023, ECON ANAL POLICY, V77, P281, DOI 10.1016/j.eap.2022.11.017
+   Lazaroiu G, 2022, ISPRS INT J GEO-INF, V11, DOI 10.3390/ijgi11050277
+   Lee J, 2022, MANUF LETT, V34, P12, DOI 10.1016/j.mfglet.2022.08.012
+   Lisha L, 2023, RESOUR POLICY, V80, DOI 10.1016/j.resourpol.2022.103119
+   Liu SG, 2023, DISPLAYS, V79, DOI 10.1016/j.displa.2023.102463
+   Lyu Z, 2024, J ADV RES, V66, P31, DOI 10.1016/j.jare.2023.11.019
+   Magalhaes LC, 2022, APPL SCI-BASEL, V12, DOI 10.3390/app12199864
+   Mahmud K., 2023, J OPEN INNOV-TECHNOL, V9, DOI DOI 10.1016/J.JOITMC.2023.100032
+   Malhan R, 2023, J COMPUT INF SCI ENG, V23, DOI 10.1115/1.4062939
+   Mazarakis A, 2023, FRONT ARTIF INTELL, V6, DOI 10.3389/frai.2023.1257057
+   Mikhaylov A, 2023, FINANC INNOV, V9, DOI 10.1186/s40854-022-00399-6
+   Mirza N, 2023, RES INT BUS FINANC, V66, DOI 10.1016/j.ribaf.2023.102009
+   Mirza N, 2023, ECON ANAL POLICY, V78, P33, DOI 10.1016/j.eap.2023.02.001
+   Mourad N, 2024, IEEE T CONSUM ELECTR, V70, P3212, DOI 10.1109/TCE.2023.3326047
+   Nagy M, 2023, APPL SCI-BASEL, V13, DOI 10.3390/app13031681
+   Nagy M, 2022, MATHEMATICS-BASEL, V10, DOI 10.3390/math10193543
+   Naz F, 2024, PROD PLAN CONTROL, V35, P2154, DOI 10.1080/09537287.2023.2248947
+   Negri E, 2023, IFAC PAPERSONLINE, V56, P6351, DOI 10.1016/j.ifacol.2023.10.818
+   Garibay OO, 2023, INT J HUM-COMPUT INT, V39, P391, DOI 10.1080/10447318.2022.2153320
+   Pan Y, 2023, HUM RESOUR MANAGE R, V33, DOI 10.1016/j.hrmr.2022.100924
+   Pelau C, 2021, COMPUT HUM BEHAV, V122, DOI 10.1016/j.chb.2021.106855
+   Peters MA, 2024, EDUC PHILOS THEORY, V56, P828, DOI 10.1080/00131857.2023.2213437
+   Qiu ZG, 2024, ECON POLIT STUD-EPS, V12, P1, DOI 10.1080/20954816.2023.2222447
+   Rafiuddin A., 2023, J Open Innov. Technol. Mark. Complex, V9, DOI [10.1016/j.joitmc.2023.100023, DOI 10.1016/J.JOITMC.2023.100023]
+   Rjoub H, 2023, FINANC INNOV, V9, DOI 10.1186/s40854-023-00469-3
+   Sampat B, 2024, INT J BANK MARK, V42, P38, DOI 10.1108/IJBM-07-2022-0328
+   Sawyer S, 2023, INFORM TECHNOL PEOPL, V36, P1, DOI 10.1108/ITP-12-2020-0857
+   Sharma SK, 2024, ELECTRON COMMER RES, V24, P535, DOI 10.1007/s10660-023-09705-5
+   Sharma S, 2023, VISION-INDIA, DOI [10.1177/09722629221141553, 10.1177/09722629221141553, DOI 10.1177/09722629221141553]
+   Starly B, 2023, MANUF LETT, V37, P50, DOI 10.1016/j.mfglet.2023.07.021
+   Stary C, 2023, SUSTAINABILITY-BASEL, V15, DOI 10.3390/su152216062
+   Su F, 2023, J INNOV KNOWL, V8, DOI 10.1016/j.jik.2022.100292
+   Sun R., 2023, Economic research-Ekonomska istrazivanja, V36, DOI [10.1080/1331677x.2023.2185795, 10.1080/1331677x.2023.2185795, DOI 10.1080/1331677X.2023.2185795, 10.1080/1331677X.2023.2185795]
+   Sun Y, 2023, REV MANAG SCI, V17, P715, DOI 10.1007/s11846-021-00513-5
+   Tan ZH, 2023, FINANC RES LETT, V55, DOI 10.1016/j.frl.2023.103830
+   Thomas NM, 2023, INT J BANK MARK, DOI 10.1108/IJBM-01-2023-0039
+   Tu XY, 2023, FRONT VIRTUAL REAL, V4, DOI 10.3389/frvir.2023.1019080
+   Upreti K, 2023, OPTIK, V272, DOI 10.1016/j.ijleo.2022.170309
+   Wu DP, 2023, IEEE INTERNET THINGS, V10, P15788, DOI 10.1109/JIOT.2023.3265848
+   Wu G, 2024, APPL ECON, V56, P639, DOI 10.1080/00036846.2023.2169243
+   Yan XZ, 2023, APPL ARTIF INTELL, V37, DOI 10.1080/08839514.2023.2222258
+   Yang J, 2022, IEEE-CAA J AUTOMATIC, V9, P2063, DOI 10.1109/JAS.2022.106097
+   Yang XP, 2023, J BUS RES, V155, DOI 10.1016/j.jbusres.2022.113406
+   Zaidan AA, 2023, IEEE SYST J, V17, P5303, DOI 10.1109/JSYST.2023.3266842
+   Zhao Y, 2023, INT REV FINANC ANAL, V87, DOI 10.1016/j.irfa.2023.102648
+   Zheng GW, 2023, ENVIRON SCI POLLUT R, V30, P25959, DOI 10.1007/s11356-022-23956-z
+NR 128
+TC 34
+Z9 39
+U1 57
+U2 190
+PU INST BADAN GOSPODARCZYCH
+PI OLSZTYN
+PA UL KS ROBERTA BILITEWSKIEGO NR 5, LOK 19, OLSZTYN, 10-693, POLAND
+SN 2083-1277
+EI 2353-1827
+J9 OECON COPERNIC
+JI Oecon. Copernic.
+PD DEC
+PY 2024
+VL 15
+IS 4
+BP 1183
+EP 1221
+DI 10.24136/oc.3109
+PG 39
+WC Economics
+WE Social Science Citation Index (SSCI)
+SC Business & Economics
+GA S7E2U
+UT WOS:001399801800002
+OA gold
+DA 2026-04-29
+ER
+
+EF
